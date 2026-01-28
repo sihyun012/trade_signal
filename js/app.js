@@ -941,7 +941,7 @@ const App = {
                 <span class="chart-summary-value">${fmt(sp500Return)}</span>
             </div>
             <div class="chart-summary-item">
-                <span class="chart-summary-label">초과 수익익 <span class="text-muted" style="font-size:0.85em">(???)</span></span>
+                <span class="chart-summary-label">초과 수익률 <span class="text-muted" style="font-size:0.85em"> </span></span>
                 <span class="chart-summary-value ${isOutperforming ? 'text-success' : 'text-danger'}">
                     ${isOutperforming ? '+' : ''}${excess}%
                 </span>
