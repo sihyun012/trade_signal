@@ -54,10 +54,10 @@ const Router = {
         if (matchedRoute && this.routes[matchedRoute]) {
             this.currentRoute = matchedRoute;
             
-            // Track page view in GA4
+            // Track page view in GA4 (실제 경로/ID가 보이도록 path 사용)
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'page_view', {
-                    page_title: matchedRoute,
+                    page_title: path,
                     page_location: window.location.href,
                     page_path: path
                 });
