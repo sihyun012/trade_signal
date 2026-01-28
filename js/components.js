@@ -591,7 +591,7 @@ const Components = {
 
                     <div style="margin-top: 20px;">
                         <a href="${trade.sourceUrl}" target="_blank" class="btn btn-outline">
-                            <i class="fas fa-file-pdf"></i> SEC 공시 원문 보기
+                            <i class="fas fa-file-pdf"></i> view origin file
                         </a>
                         <span class="text-muted" style="margin-left: 12px; font-size: 12px;">
                             Source ID: ${trade.sourceId}
