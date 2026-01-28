@@ -703,7 +703,7 @@ const App = {
         const submitBtn = document.getElementById('subscription-submit-btn');
         
         if (!email || !email.trim()) {
-            errorDiv.textContent = '이메일 주소를 입력해주세요요.';
+            errorDiv.textContent = '이메일 주소를 입력해주세요.';
             errorDiv.style.display = 'block';
             emailInput.classList.add('error');
             if (submitBtn) submitBtn.disabled = true;
@@ -712,7 +712,7 @@ const App = {
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            errorDiv.textContent = '??? ??? ??? ????.';
+            errorDiv.textContent = '올바른 양식이 아닙니다.';
             errorDiv.style.display = 'block';
             emailInput.classList.add('error');
             if (submitBtn) submitBtn.disabled = true;
