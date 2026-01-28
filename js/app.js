@@ -17,7 +17,7 @@ const App = {
     async init() {
         Toast.init();
 
-        // ?? ?? ??
+        // 로딩 화면 표시
         document.getElementById('app').innerHTML = `
             <div class="login-page">
                 <div class="login-container text-center">
@@ -30,7 +30,7 @@ const App = {
             </div>
         `;
 
-        // CSV ??? ??
+        // CSV 데이터 로드
         await loadCSVData();
 
         // Register routes
@@ -72,7 +72,6 @@ const App = {
 
         Router.init();
 
-        // ??? ?? ??? ?? ?? ??? ??
         const hash = window.location.hash.slice(1);
         if (!hash || hash === '/') {
             if (!Auth.isOnboardingCompleted()) {
@@ -120,7 +119,7 @@ const App = {
         const politician = MOCK_POLITICIANS.find(p => p.id === parseInt(id));
 
         if (!politician) {
-            Toast.show('의원을 찾을 수 없습니다다.', 'error');
+            Toast.show('의원을 찾을 수 없습니다.', 'error');
             Router.navigate('/');
             return;
         }
@@ -144,7 +143,7 @@ const App = {
         const trade = MOCK_TRADES.find(t => t.id === parseInt(id));
 
         if (!trade) {
-            Toast.show('거래를 찾을 수 없습니다다.', 'error');
+            Toast.show('거래를 찾을 수 없습니다.', 'error');
             Router.navigate('/');
             return;
         }
@@ -589,7 +588,7 @@ const App = {
     onboardingNext() {
         if (this.onboardingStep === 1) {
             if (!this.onboardingData.selectedPolitician) {
-                Toast.show('?의원 1명을 선택해주세요요.', 'error');
+                Toast.show('의원 1명을 선택해주세요.', 'error');
                 return;
             }
 
@@ -654,11 +653,9 @@ const App = {
         paywallEl.innerHTML = Components.renderPaywall();
         document.body.appendChild(paywallEl);
 
-        // ??? ?? ?? ??? ? ??? ??? ??? ?? ???
         const emailInput = document.getElementById('subscription-email');
         const submitBtn = document.getElementById('subscription-submit-btn');
         
-        // ???? ???? ??? ?? ???
         const user = Auth.getUser();
         if (emailInput) {
             if (user && user.email) {
@@ -669,7 +666,6 @@ const App = {
             }
         }
         
-        // ???? ??? ?? ????
         if (submitBtn && (!emailInput || !emailInput.value.trim())) {
             submitBtn.disabled = true;
         }
@@ -738,7 +734,6 @@ const App = {
         Toast.show('결제 페이지로 이동합니다...', 'info');
         this.closePaywall();
 
-        // ?? ??? ??? ?? ??
         Auth.trackEvent('free_trial_email_submitted', {
             event_category: 'conversion',
             email: this.subscriptionEmail,
@@ -746,7 +741,6 @@ const App = {
         });
     },
 
-    // Chart.js ???? ??
     performanceChart: null,
     stockChart: null,
 
@@ -758,22 +752,18 @@ const App = {
 
         const ctx = canvas.getContext('2d');
 
-        // ?? ?? ??
         if (this.performanceChart) {
             this.performanceChart.destroy();
         }
 
-        // ????? ?? ??? ??
         const { politicianData, sp500Data } = generatePoliticianPerformanceData(politician.id);
 
-        // ???? ??? ????? ??? ??
         let chartPoliticianData, chartSp500Data;
 
         if (politicianData.length > 0 && sp500Data.length > 0) {
             chartPoliticianData = politicianData;
             chartSp500Data = sp500Data;
         } else {
-            // ????? ??? ??
             const startValue = 100;
             const simData = generateChartData('2016-01-01', '2026-01-01', startValue);
             const finalValue = startValue * (1 + (politician.return10Y || 50) / 100);
@@ -792,7 +782,6 @@ const App = {
                 : chartPoliticianData.map(d => ({ date: d.date, value: 100 + Math.random() * 150 }));
         }
 
-        // ?? ??? ?? (0?? ??? ??)
         const pFirst = chartPoliticianData.length > 0 ? chartPoliticianData[0].value : 0;
         const pLast = chartPoliticianData.length > 0 ? chartPoliticianData[chartPoliticianData.length - 1].value : 0;
         const politicianFinalReturn = (chartPoliticianData.length > 0 && pFirst > 0 && Number.isFinite(pLast / pFirst))
@@ -805,7 +794,6 @@ const App = {
             : '0.0';
         const fmtPct = (v) => { const n = parseFloat(v); return (Number.isFinite(n) ? (n >= 0 ? '+' : '') + n + '%' : '-'); };
 
-        // Chart.js ??
         this.performanceChart = new Chart(ctx, {
             type: 'line',
             data: {
@@ -930,7 +918,6 @@ const App = {
             }
         });
 
-        // ?? ?? ????
         this.updateChartSummary(politician, politicianFinalReturn, sp500FinalReturn);
     },
 
@@ -1036,7 +1023,6 @@ const App = {
             }
         }
 
-        // 2) API ???? ??? ????? ??? ??
         if (priceData.length === 0) {
             priceData = generateChartData(trade.tradeDate, endDateStr, startPrice);
             if (priceData.length === 0 && trade.tradeDate) {
@@ -1057,7 +1043,6 @@ const App = {
             return;
         }
 
-        // ????? ???? ?? CURRENT_PRICES? ??. ?? API ???? ??? ??
         if (!usedApi) {
             const lastVal = priceData[priceData.length - 1].value;
             const currentPrice = (typeof CURRENT_PRICES !== 'undefined' && trade.ticker && CURRENT_PRICES[trade.ticker] > 0)
