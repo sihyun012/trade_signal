@@ -1,0 +1,119 @@
+year	filing_id	filing_date	owner	asset	ticker	type	transaction_date	notification_date	amount_range	price_trade_date	price_filing_date	pdf_url
+2022	20021142	06/03/2022	SP	Apple Inc.	AAPL	Buy	05/13/2022	05/13/2022	$500,001 - $1,000,000	146.1067	145.9367	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021142.pdf
+2022	20021142	06/03/2022	SP	Apple Inc.	AAPL	Buy	05/24/2022	05/24/2022	$250,001 - $500,000	139.8867	145.9367	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021142.pdf
+2022	20021142	06/03/2022	SP	Microsoft Corporation	MSFT	Buy	05/24/2022	05/24/2022	$50,001 - $100,000	258.15	270.6267	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021142.pdf
+2022	20021142	06/03/2022	SP	Microsoft Corporation	MSFT	Buy	05/24/2022	05/24/2022	$250,001 - $500,000	258.15	270.6267	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021142.pdf
+2022	20020662	03/21/2022	SP	Tesla, Inc.	TSLA	Buy	03/17/2022	03/17/2022	$1,000,001	285.8133	307.9	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020662.pdf
+2022	20020515	02/28/2022	SP	AllianceBernstein Holding l.	AB	Buy	01/27/2022	01/27/2022	$250,001	46.35	44.89	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020515.pdf
+2022	20020515	02/28/2022	SP	American Express Company	AXP	Buy	01/21/2022	01/21/2022	$250,001	159.4333	192.9667	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020515.pdf
+2022	20020515	02/28/2022	SP	Apple Inc.	AAPL	Buy	01/21/2022	01/21/2022	$1,000,001	163.68	164.3233	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020515.pdf
+2022	20020515	02/28/2022	SP	PayPal Holdings, Inc.	PYPL	Buy	01/21/2022	01/21/2022	$500,001	166.6	111.465	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020515.pdf
+2022	20020515	02/28/2022	SP	Walt Disney Company	DIS	Buy	01/21/2022	01/21/2022	$1,000,001	138.6267	148.1333	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020515.pdf
+2022	20022063	11/30/2022	SP	Visa Inc.	V	Sell	11/08/2022	11/08/2022	$1,000,001 - $5,000,000	201.88	214.0033	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20022063.pdf
+2022	20020916	05/03/2022	SP	Warner Bros. Discovery, Inc. - Series	WBD	Exchange	04/11/2022	04/11/2022	$50,001	24.8467	19.21	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020916.pdf
+2022	20021374	07/14/2022	SP	Apple Inc.	AAPL	Sell	06/17/2022	06/17/2022	$100,001 - $250,000	131.4833	146.89	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021374.pdf
+2022	20021374	07/14/2022	SP	NVIDIA Corporation	NVDA	Buy	06/17/2022	06/17/2022	$1,000,001 - $5,000,000	15.7343	15.191	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021374.pdf
+2022	20021374	07/14/2022	SP	Visa Inc.	V	Sell	06/21/2022	06/21/2022	$1,000,001 - $5,000,000	194.95	203.3233	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021374.pdf
+2022	20021837	10/14/2022	SP	Alphabet Inc. - Class C Capital Stock	GOOGL	Buy	09/16/2022	09/16/2022	$1,000,001	102.29	97.8733	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021837.pdf
+2022	20021837	10/14/2022	SP	Micron Technology, Inc.	MU	Sell	09/16/2022	09/16/2022	$15,001 - $50,000	52.45	53.5867	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021837.pdf
+2022	20021837	10/14/2022	SP	NVIDIA Corporation	NVDA	Sell	09/16/2022	09/16/2022	$100,001 - $250,000	13.009	11.514	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021837.pdf
+2022	20021837	10/14/2022	SP	Walt Disney Company	DIS	Sell	09/16/2022	09/16/2022	$1	108.2633	95.6233	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021837.pdf
+2022	20021438	07/26/2022	SP	NVIDIA Corporation	NVDA	Sell	07/26/2022	07/26/2022	$1,000,001 - $5,000,000	16.6433	16.6433	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021438.pdf
+2022	20020208	01/12/2022	SP	Apple Inc.	AAPL	Sell	12/30/2021	12/30/2021	$500,001	178.9533	175.8433	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020208.pdf
+2022	20020208	01/12/2022	SP	Apple Inc.	AAPL	Sell	12/30/2021	12/30/2021	$500,001	178.9533	175.8433	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020208.pdf
+2025	20033337	10/24/2025	SP	Apple Inc. - Common Stock	AAPL	Sell	10/22/2025	10/22/2025	$100,001	258.91	262.0433	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033337.pdf
+2025	20026590	01/17/2025	SP	Alphabet Inc. - Class A Common	GOOGL	Buy	01/14/2025	01/14/2025	$250,001	189.9833	195.66	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf
+2025	20026590	01/17/2025	SP	Amazon.com, Inc. - Common Stock	AMZN	Buy	01/14/2025	01/14/2025	$250,001	218.5933	225.1767	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf
+2025	20026590	01/17/2025	SP	Apple Inc. - Common Stock	AAPL	Sell	12/31/2024	12/31/2024	$5,000,001	251.0433	230.25	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf
+2025	20026590	01/17/2025	SP	NVIDIA Corporation - Common	NVDA	Sell	12/31/2024	12/31/2024	$1,000,001	135.3967	137.2233	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf
+2025	20026590	01/17/2025	SP	NVIDIA Corporation - Common	NVDA	Buy	12/20/2024	12/20/2024	$500,001	132.7333	137.2233	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf
+2025	20026590	01/17/2025	SP	NVIDIA Corporation - Common	NVDA	Buy	01/14/2025	01/14/2025	$250,001	132.73	137.2233	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf
+2025	20026590	01/17/2025	SP	Palo Alto Networks, Inc.	PANW	Buy	12/20/2024	12/20/2024	$1,000,001	188.2167	178.4867	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf
+2025	20026590	01/17/2025	SP	Tempus AI, Inc. - Class A Common	TEM	Buy	01/14/2025	01/14/2025	$50,001	32.7033	35.1433	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf
+2025	20026590	01/17/2025	SP	Vistra Corp. Common Stock	VST	Buy	01/14/2025	01/14/2025	$500,001	170.4	170.2133	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf
+2025	20030630	07/09/2025	SP	Broadcom Inc. - Common Stock	AVGO	Buy	06/20/2025	06/20/2025	$1,000,001	249.2267	276.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030630.pdf
+2024	20025368	07/02/2024	SP	Broadcom Inc. - Common Stock	AVGO	Buy	06/24/2024	06/24/2024	$1,000,001	161.4623	164.6227	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025368.pdf
+2024	20025368	07/02/2024	SP	NVIDIA Corporation - Common	NVDA	Buy	06/26/2024	06/26/2024	$1,000,001	125.7067	122.37	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025368.pdf
+2024	20025368	07/02/2024	SP	Tesla, Inc. - Common Stock	TSLA	Sell	06/24/2024	06/24/2024	$250,001	184.6433	226.8733	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025368.pdf
+2024	20025368	07/02/2024	SP	Visa Inc.	V	Sell	07/01/2024	07/01/2024	$500,001 - $1,000,000	263.4367	266.2867	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025368.pdf
+2024	20025535	07/30/2024	SP	Microsoft Corporation - Common	MSFT	Sell	07/26/2024	07/26/2024	$1,000,001	423.82	423.11	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025535.pdf
+2024	20025535	07/30/2024	SP	NVIDIA Corporation - Common Stock	NVDA	Buy	07/26/2024	07/26/2024	$1,000,001	113.6133	106.0867	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025535.pdf
+2024	20024542	02/23/2024	SP	Palo Alto Networks, Inc.	PANW	Buy	02/12/2024	02/12/2024	$500,001	185.9667	139.6717	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024542.pdf
+2024	20024542	02/23/2024	SP	Palo Alto Networks, Inc.	PANW	Buy	02/21/2024	02/21/2024	$100,001	133.0067	139.6717	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024542.pdf
+2023	20023080	06/06/2023	SP	Apple Inc.	AAPL	Sell	05/08/2023	05/08/2023	$500,001 - $1,000,000	173.1533	178.92	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023080.pdf
+2023	20023192	06/22/2023	SP	Apple Inc.	AAPL	Buy	06/15/2023	06/15/2023	$250,001 - $500,000	185.4367	185.9067	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023192.pdf
+2023	20023192	06/22/2023	SP	Microsoft Corporation	MSFT	Buy	06/15/2023	06/15/2023	$500,001 - $1,000,000	345.0467	337.7233	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023192.pdf
+2023	20022664	04/06/2023	SP	Apple Inc.	AAPL	Buy	03/17/2023	03/17/2023	$500,001 - $1,000,000	155.34	163.8733	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022664.pdf
+2023	20022260	01/12/2023	SP	Alphabet Inc. - Class A	GOOGL	Sell	12/28/2022	12/28/2022	$500,001 - $1,000,000	86.6667	90.9167	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	Alphabet Inc. - Class A	GOOGL	Sell	12/20/2022	12/20/2022	$500,001 - $1,000,000	88.5467	90.9167	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	Alphabet Inc. - Class A	GOOGL	Sell	12/21/2022	12/21/2022	$500,001 - $1,000,000	89.3733	90.9167	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	Netflix, Inc.	NFLX	Sell	12/29/2022	12/29/2022	$250,001 - $500,000	28.921	32.874	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	Netflix, Inc.	NFLX	Sell	12/30/2022	12/30/2022	$250,001 - $500,000	29.1037	32.874	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	PayPal Holdings, Inc.	PYPL	Sell	12/21/2022	12/21/2022	$250,001 - $500,000	69.1567	79.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	PayPal Holdings, Inc.	PYPL	Sell	12/28/2022	12/28/2022	$250,001 - $500,000	68.104	79.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	Roblox Corporation Class A	RBLX	Sell	12/28/2022	12/28/2022	$100,001	26.1117	32.8317	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	Salesforce, Inc.	CRM	Sell	12/20/2022	12/20/2022	$9	128.5433	147.7867	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	Tesla, Inc.	TSLA	Sell	12/20/2022	12/20/2022	$500,001 - $1,000,000	141.31	121.5633	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20022260	01/12/2023	SP	Walt Disney Company	DIS	Sell	12/21/2022	12/21/2022	$500,001 - $1,000,000	87.1667	99.3367	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022260.pdf
+2023	20024186	12/21/2023	SP	NVIDIA Corporation	NVDA	Buy	11/22/2023	11/22/2023	$1,000,001 - $5,000,000	48.9137	48.8347	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20024186.pdf
+2023	20022320	01/25/2023	SP	Roblox Corporation Class A	RBLX	Sell	01/20/2023	01/20/2023	$1	34.7637	35.178	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022320.pdf
+2026	20033725	01/23/2026	SP	AllianceBernstein Holding L.	AB	Buy	01/16/2026	01/16/2026	$1,000,001	39.8667	39.01	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Alphabet Inc. - Class A Common	GOOGL	Buy	01/16/2026	01/16/2026	$500,001	330.7833	329.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Alphabet Inc. - Class A Common	GOOGL	Buy	12/30/2025	12/30/2025	$250,001	314.42	329.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Alphabet Inc. - Class A Common	GOOGL	Sell	12/30/2025	12/30/2025	$1,000,001	314.42	329.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Amazon.com, Inc. - Common Stock	AMZN	Buy	12/30/2025	12/30/2025	$100,001	231.8333	238.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Amazon.com, Inc. - Common Stock	AMZN	Sell	12/24/2025	12/24/2025	$1,000,001	232.22	238.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Amazon.com, Inc. - Common Stock	AMZN	Buy	01/16/2026	01/16/2026	$500,001	238.3667	238.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Apple Inc. - Common Stock	AAPL	Sell	12/24/2025	12/24/2025	$5,000,001	273.8133	247.3767	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Apple Inc. - Common Stock	AAPL	Buy	12/30/2025	12/30/2025	$250,001	273.1467	247.3767	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Apple Inc. - Common Stock	AAPL	Sell	12/30/2025	12/30/2025	$5,000,001	273.1467	247.3767	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	NVIDIA Corporation - Common Stock	NVDA	Buy	12/30/2025	12/30/2025	$100,001	187.82	188.03	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	NVIDIA Corporation - Common Stock	NVDA	Sell	12/24/2025	12/24/2025	$1,000,001	188.0367	188.03	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	NVIDIA Corporation - Common Stock	NVDA	Buy	01/16/2026	01/16/2026	$250,001	187.5833	188.03	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	PayPal Holdings, Inc. - Common	PYPL	Sell	12/30/2025	12/30/2025	$250,001	59.26	56.6717	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Tempus AI, Inc. - Class A Common	TEM	Buy	01/16/2026	01/16/2026	$50,001	70.26	66.37	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Vistra Corp. Common Stock	VST	Buy	01/16/2026	01/16/2026	$100,001	166.91	160.33	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2026	20033725	01/23/2026	SP	Walt Disney Company	DIS	Sell	12/30/2025	12/30/2025	$1,000,001 - $5,000,000	114.7233	111.4933	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf
+2019	20012288	09/18/2019	SP	Visa Inc.	V	Sell	08/07/2019	08/07/2019	$100,001	173.7967	175.1	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012288.pdf
+2019	20012288	09/18/2019	SP	Visa Inc.	V	Sell	08/07/2019	08/07/2019	$100,001	173.7967	175.1	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012288.pdf
+2019	20012127	08/13/2019	SP	Amazon.com, Inc. [oP]	AMZN	Buy	07/22/2019	07/22/2019	$500,001	98.8815	90.6013	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012127.pdf
+2019	20012127	08/13/2019	SP	Netflix, Inc. [oP]	NFLX	Buy	07/22/2019	07/22/2019	$100,001	31.0323	31.229	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012127.pdf
+2019	20012127	08/13/2019	SP	Netflix, Inc. [oP]	NFLX	Buy	07/05/2019	07/05/2019	$250,001	37.917	31.229	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012127.pdf
+2021	20018011	01/21/2021	SP	AllianceBernstein Holding l.	AB	Buy	12/22/2020	12/22/2020	$500,001	33.39	35.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018011.pdf
+2021	20018011	01/21/2021	SP	Apple Inc.	AAPL	Buy	12/22/2020	12/22/2020	$250,001	131.98	136.71	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018011.pdf
+2021	20018011	01/21/2021	SP	Tesla, Inc.	TSLA	Buy	12/22/2020	12/22/2020	$500,001	211.6056	282.4589	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018011.pdf
+2021	20018011	01/21/2021	SP	Walt Disney Company	DIS	Buy	12/22/2020	12/22/2020	$500,001	170.3533	172.4333	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018011.pdf
+2021	20019331	08/20/2021	SP	NVIDIA Corporation	NVDA	Buy	07/23/2021	07/23/2021	$500,001	19.5027	20.538	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019331.pdf
+2021	20019331	08/20/2021	SP	NVIDIA Corporation	NVDA	Buy	07/23/2021	07/23/2021	$250,001	19.5027	20.538	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019331.pdf
+2021	20018539	04/09/2021	SP	Microsoft Corporation	MSFT	Buy	03/19/2021	03/19/2021	$1,000,001	230.7233	254.76	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018539.pdf
+2021	20018539	04/09/2021	SP	Microsoft Corporation	MSFT	Buy	03/19/2021	03/19/2021	$1,000,001	230.7233	254.76	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018539.pdf
+2021	20018539	04/09/2021	SP	Roblox Corporation	RBLX	Buy	03/10/2021	03/10/2021	$500,001	68.2767	72.3417	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018539.pdf
+2021	20020106	12/29/2021	SP	Alphabet Inc. - Class C Capital	GOOGL	Buy	12/17/2021	12/17/2021	$500,001	142.2865	146.5732	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20020106.pdf
+2021	20020106	12/29/2021	SP	Micron Technology, Inc.	MU	Buy	12/21/2021	12/21/2021	$250,001	89.7233	95.61	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20020106.pdf
+2021	20020106	12/29/2021	SP	Roblox Corporation Class A	RBLX	Buy	12/20/2021	12/20/2021	$250,001	98.78	97.05	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20020106.pdf
+2021	20020106	12/29/2021	SP	Salesforce.com Inc	CRM	Buy	12/20/2021	12/20/2021	$500,001	248.4167	254.6967	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20020106.pdf
+2021	20020106	12/29/2021	SP	Salesforce.com Inc	CRM	Buy	12/20/2021	12/20/2021	$100,001	248.4167	254.6967	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20020106.pdf
+2021	20020106	12/29/2021	SP	Walt Disney Company	DIS	Buy	12/17/2021	12/17/2021	$100,001	148.39	154.99	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20020106.pdf
+2021	20019004	07/02/2021	SP	Alphabet Inc. - Class A	GOOGL	Buy	06/18/2021	06/18/2021	$1,000,001	120.5763	124.5737	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019004.pdf
+2021	20019004	07/02/2021	SP	Amazon.com, Inc.	AMZN	Buy	05/21/2021	05/21/2021	$500,001	160.9463	174.327	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019004.pdf
+2021	20019004	07/02/2021	SP	Apple Inc.	AAPL	Buy	05/21/2021	05/21/2021	$100,001	126.2133	139.2367	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019004.pdf
+2021	20019004	07/02/2021	SP	NVIDIA Corporation	NVDA	Buy	06/03/2021	06/03/2021	$1,000,001	16.9373	20.4267	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019004.pdf
+2021	20018355	03/09/2021	SP	AllianceBernstein Holding l.	AB	Buy	02/18/2021	02/18/2021	$500,001	37.8967	37.92	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018355.pdf
+2021	20018355	03/09/2021	SP	AllianceBernstein Holding l.	AB	Buy	02/23/2021	02/23/2021	$500,001	36.1133	37.92	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018355.pdf
+2020	20017123	09/03/2020	SP	Facebook, Inc. - Class A	FB	Sell	08/07/2020	08/07/2020	$1,000,001	270.2533	290.7833	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017123.pdf
+2020	20017834	12/10/2020	SP	Apple Inc.	AAPL	Sell	11/06/2020	11/06/2020	$500,001	118.0067	122.42	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017834.pdf
+2020	20016726	06/09/2020	SP	apple Inc.	AAPL	Sell	05/08/2020	05/08/2020	$500,001	77.0642	85.1342	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016726.pdf
+2020	20016726	06/09/2020	SP	apple Inc.	AAPL	Sell	05/08/2020	05/08/2020	$500,001	77.0642	85.1342	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016726.pdf
+2020	20016726	06/09/2020	SP	apple Inc.	AAPL	Sell	05/08/2020	05/08/2020	$1,000,001	77.0642	85.1342	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016726.pdf
+2020	20016726	06/09/2020	SP	Facebook, Inc. - Class a	FB	Sell	05/08/2020	05/08/2020	$1,000,001	212.1367	236.2833	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016726.pdf
+2020	20016726	06/09/2020	SP	Morningstar, Inc.	MORN	Sell	05/08/2020	05/08/2020	$100,001	143.4267	152.9333	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016726.pdf
+2020	20016726	06/09/2020	SP	Visa Inc.	V	Sell	05/08/2020	05/08/2020	$500,001	184.82	199.6633	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016726.pdf
+2020	20016726	06/09/2020	SP	Visa Inc.	V	Sell	05/08/2020	05/08/2020	$500,001	184.82	199.6633	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016726.pdf
+2020	20016961	07/20/2020	SP	American Express Company	AXP	Buy	06/24/2020	06/24/2020	$100,001	96.25	94.3133	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016961.pdf
+2020	20016961	07/20/2020	SP	Apple Inc.	AAPL	Sell	06/18/2020	06/18/2020	$1,000,001	87.8667	97.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016961.pdf
+2020	20016961	07/20/2020	SP	Netflix, Inc.	NFLX	Buy	06/18/2020	06/18/2020	$1,000,001	44.8477	49.7037	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016961.pdf
+2020	20016961	07/20/2020	SP	PayPal Holdings, Inc.	PYPL	Buy	06/12/2020	06/12/2020	$500,001	154.7867	177.0467	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016961.pdf
+2020	20016961	07/20/2020	SP	PayPal Holdings, Inc.	PYPL	Buy	06/12/2020	06/12/2020	$500,001	154.7867	177.0467	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016961.pdf
+2020	20016961	07/20/2020	SP	PayPal Holdings, Inc.	PYPL	Buy	06/24/2020	06/24/2020	$250,001	168.59	177.0467	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016961.pdf
+2020	20016961	07/20/2020	SP	Salesforce.com Inc	CRM	Buy	06/18/2020	06/18/2020	$1,000,001	186.0933	192.5567	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016961.pdf
+2018	20009293	04/16/2018	SP	Dropbox, Inc. - Class a	DBX	Buy	03/27/2018	03/27/2018	$250,001 - $500,000	29.86	29.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2018/20009293.pdf

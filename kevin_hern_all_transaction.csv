@@ -1,0 +1,583 @@
+year	filing_id	filing_date	owner	asset	ticker	type	transaction_date	notification_date	amount_range	price_trade_date	price_filing_date	pdf_url
+2019	20010982	1/15/2019	JT	Corporate Capital Trust, Inc. (CCT)	CCT	Exchange	12/20/2018	12/20/2018	$100,001	12.56	12.56	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20010982.pdf
+2019	20010982	1/15/2019	JT	Fs KKR Capital Corp. (FsK) [sT]	FSK	Exchange	12/20/2018	12/20/2018	$100,001	7.8	8.7	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20010982.pdf
+2019	20011693	5/16/2019	JT	Fs KKR Capital Corp. (FsK) [sT]	FSK	Buy	04/02/2019	04/02/2019	$1,001 - $15,000	9.52	9.46	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20011693.pdf
+2019	20012167	8/15/2019	JT	Fs KKR Capital Corp. (FsK) [sT]	FSK	Buy	07/02/2019	07/02/2019	$1,001 - $15,000	9.62	8.99	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012167.pdf
+2019	20012167	8/15/2019	JT	Red Hat, Inc. (RHT) [sT]	RHT	Sell	07/10/2019	07/10/2019	$15,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012167.pdf
+2019	20012328	9/16/2019	JT	Chubb limited (Cb) [sT]	CB	Buy	08/07/2019	08/07/2019	$15,001	137.52	142.56	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	Coca-Cola Company (KO) [sT]	KO	Buy	08/07/2019	08/07/2019	$15,001	43.26	44.57	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	Colgate-Palmolive Company (Cl)	CL	Buy	08/07/2019	08/07/2019	$15,001	59.94	59.68	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	Danaher Corporation (DHR) [sT]	DHR	Buy	08/07/2019	08/07/2019	$15,001	118.16	121.18	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	Estee lauder Companies, Inc. (El)	EL	Buy	08/07/2019	08/07/2019	$50,001	166.43	177.44	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	Exxon Mobil Corporation (XOM)	XOM	Buy	08/07/2019	08/07/2019	$50,001	51.9	55.47	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	Honeywell International Inc.	HON	Buy	08/07/2019	08/07/2019	$50,001	134.03	137.76	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	ICON plc - Ordinary shares (IClR)	ICLR	Buy	08/07/2019	08/07/2019	$50,001	153.9	149.96	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	Intel Corporation (INTC) [sT]	INTC	Buy	08/07/2019	08/07/2019	$50,001	40.82	45.67	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	linde plc Ordinary share (lIN)	LIN	Buy	08/07/2019	08/07/2019	$50,001	172.44	173.03	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	ONEOK, Inc. (OKE) [sT]	OKE	Buy	08/14/2019	08/14/2019	$1,001 - $15,000	45.03	50.37	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012328	9/16/2019	JT	Procter & gamble Company (Pg)	PG	Buy	08/07/2019	08/07/2019	$15,001	97.55	102.16	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012328.pdf
+2019	20012619	11/14/2019	JT	accenture plc Class a ordinary	ACN	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	170.25	179.09	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	blackRock, Inc. (blK) [sT]	BLK	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	380.1	415.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Chevron Corporation (CVX) [sT]	CVX	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	88.33	92.52	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Chubb limited (Cb) [sT]	CB	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	140.75	137.15	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Coca-Cola Company (Ko) [sT]	KO	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	44.16	43.39	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Colgate-Palmolive Company (Cl)	CL	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	58.93	57.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Comcast Corporation - Class a	CMCSA	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	35.88	35.74	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Crane Co. (CR) [sT]	CR	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Diageo plc (DEo) [sT]	DEO	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	137.87	136.85	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Exxon Mobil Corporation (XoM)	XOM	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	51.96	51.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Fs KKR Capital Corp. (FsK) [sT]	FSK	Buy	10/02/2019	10/02/2019	$1,001 - $15,000	9.39	9.7	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Home Depot, Inc. (HD) [sT]	HD	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	202.56	202.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Intel Corporation (INTC) [sT]	INTC	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	46.07	50.99	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	JP Morgan Chase & Co. (JPM) [sT]	JPM	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	101.08	108.28	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	linde plc ordinary share (lIN)	LIN	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	179.13	190.17	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	lockheed Martin Corporation	LMT	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	323.92	329.33	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Microsoft Corporation (MsFT)	MSFT	Buy	10/15/2019	10/15/2019	$15,001	133.48	139.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Procter & gamble Company (Pg)	PG	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	100.39	103.12	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	Rockwell automation, Inc. (RoK)	ROK	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	149.06	178.76	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012619	11/14/2019	JT	V.F. Corporation (VFC) [sT]	VFC	Buy	10/15/2019	10/15/2019	$1,001 - $15,000	74.78	70.42	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012619.pdf
+2019	20012750	12/15/2019	JT	Adobe Inc. (ADbE) [sT]	ADBE	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	290.42	317.8	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	Amazon.com, Inc. (AMZN) [sT]	AMZN	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	89.63	88.08	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	Costco Wholesale Corporation	COST	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	278.79	266.95	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	Danaher Corporation (DHR) [sT]	DHR	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	116.12	129.08	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	Honeywell International Inc.	HON	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	149.25	147.66	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	ICoN plc - ordinary shares (IClR)	ICLR	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	146.98	160.03	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	lowe's Companies, Inc. (loW)	LOW	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	100.78	105.26	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	oNEoK, Inc. (oKE) [sT]	OKE	Buy	11/14/2019	11/14/2019	$1,001 - $15,000	47.17	48.93	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	o'Reilly Automotive, Inc. (oRlY)	ORLY	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	29.4	29.35	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	Thermo Fisher scientific Inc	TMO	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	289.05	314.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2019	20012750	12/15/2019	JT	Visa Inc. (V) [sT]	V	Buy	11/07/2019	11/07/2019	$1,001 - $15,000	170.94	176.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2019/20012750.pdf
+2020	20013916	1/14/2020	JT	Fs KKR Capital Corp. (FsK) [sT]	FSK	Sell	12/04/2019	12/04/2019	$100,001	10.33	10.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20013916.pdf
+2020	20013916	1/14/2020	JT	schlumberger N.V. (slb) [sT]	SLB	Sell	12/04/2019	12/04/2019	$15,001	31.2	33.99	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20013916.pdf
+2020	20016254	3/17/2020	JT	Estee lauder Companies, Inc. (El)	EL	Buy	02/14/2020	02/14/2020	$1,001 - $15,000	198.56	140.28	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016254.pdf
+2020	20016254	3/17/2020	JT	Intercontinental Exchange Inc.	ICE	Buy	02/14/2020	02/14/2020	$1,001 - $15,000	88.97	71.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016254.pdf
+2020	20016254	3/17/2020	JT	oNEoK, Inc. (oKE) [sT]	OKE	Buy	02/14/2020	02/14/2020	$1,001 - $15,000	52.09	15.18	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016254.pdf
+2020	20016419	4/16/2020	JT	accenture plc Class a ordinary	ACN	Buy	03/26/2020	03/26/2020	$100,001	151.11	156.28	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016419.pdf
+2020	20016419	4/16/2020	JT	amazon.com, Inc. (aMZN) [sT]	AMZN	Buy	03/26/2020	03/26/2020	$100,001	96.69	120.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016419.pdf
+2020	20016419	4/16/2020	JT	Home Depot, Inc. (HD) [sT]	HD	Buy	03/26/2020	03/26/2020	$100,001	167.15	173.82	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016419.pdf
+2020	20016419	4/16/2020	JT	Microsoft Corporation (MsFT)	MSFT	Buy	03/26/2020	03/26/2020	$250,001	146.35	167.32	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016419.pdf
+2020	20016419	4/16/2020	JT	oNEoK, Inc. (oKE) [sT]	OKE	Buy	03/26/2020	03/26/2020	$15,001	16.19	18.05	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016419.pdf
+2020	20016419	4/16/2020	JT	Williams Companies, Inc. (WMb)	WMB	Buy	03/27/2020	03/27/2020	$15,001	10.19	12.27	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016419.pdf
+2020	20016419	4/16/2020	JT	Williams Companies, Inc. (WMb)	WMB	Buy	03/26/2020	03/26/2020	$100,001	10.35	12.27	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016419.pdf
+2020	20016419	4/16/2020	JT	WPX Energy, Inc. (WPX) [sT]	WPX	Buy	03/26/2020	03/26/2020	$100,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016419.pdf
+2020	20016419	4/16/2020	JT	WPX Energy, Inc. (WPX) [sT]	WPX	Buy	03/26/2020	03/26/2020	$15,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016419.pdf
+2020	20016607	5/15/2020	JT	Adobe Inc. (ADbE) [sT]	ADBE	Buy	04/09/2020	04/09/2020	$1,001 - $15,000	316.76	360.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016607	5/15/2020	JT	American Tower Corporation	AMT	Buy	04/09/2020	04/09/2020	$1,001 - $15,000	217.01	193.85	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016607	5/15/2020	JT	boeing Company (bA) [sT]	BA	Buy	04/09/2020	04/09/2020	$1,001 - $15,000	153.3	119.89	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016607	5/15/2020	JT	Danaher Corporation (DHR) [sT]	DHR	Buy	04/09/2020	04/09/2020	$1,001 - $15,000	125.89	140.46	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016607	5/15/2020	JT	Ecolab Inc. (ECL) [sT]	ECL	Buy	04/09/2020	04/09/2020	$1,001 - $15,000	166.83	181.63	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016607	5/15/2020	JT	JNL/JPMorgan Hedged Equity	JPM	Buy	02/24/2020	02/24/2020	$50,001	112.13	73.92	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016607	5/15/2020	JT	JNL/JPMorgan Hedged Equity	JPM	Buy	04/24/2020	04/24/2020	$50,001	77.3	73.92	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016607	5/15/2020	JT	Linde plc ordinary share (LIN)	LIN	Buy	04/09/2020	04/09/2020	$1,001 - $15,000	172.96	166.94	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016607	5/15/2020	JT	Microsoft Corporation (MsFT)	MSFT	Buy	04/09/2020	04/09/2020	$1,001 - $15,000	157.36	173.66	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016607	5/15/2020	JT	Thermo Fisher scientific Inc	TMO	Buy	04/09/2020	04/09/2020	$1,001 - $15,000	308.95	335.51	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016607.pdf
+2020	20016796	6/16/2020	JT	Accenture plc Class A Ordinary	ACN	Buy	05/15/2020	05/15/2020	$1,001 - $15,000	168.03	188.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016796.pdf
+2020	20016796	6/16/2020	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	05/14/2020	05/14/2020	$1,001 - $15,000	21.24	26.5	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016796.pdf
+2020	20016983	7/20/2020	JT	AST BlACKROCK glOBAl	BLK	Exchange	06/09/2020	06/09/2020	$250,001	487.6	509.3	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016983.pdf
+2020	20016983	7/20/2020	JT	Exxon Mobil Corporation (XOM)	XOM	Buy	06/10/2020	06/10/2020	$1,001	40.37	33.52	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016983.pdf
+2020	20016983	7/20/2020	JT	JNl/JPMORgAN HEDgED	JPM	Buy	06/11/2020	06/11/2020	$50,001	84.46	84.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016983.pdf
+2020	20016983	7/20/2020	JT	Microsoft Corporation (MSFT) [ST]	MSFT	Buy	06/11/2020	06/11/2020	$1,001	180.79	199.51	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016983.pdf
+2020	20016983	7/20/2020	JT	Williams Companies, Inc. (WMB)	WMB	Buy	06/29/2020	06/29/2020	$1,001	13.86	14.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20016983.pdf
+2020	20017192	8/15/2020	JT	Accenture plc Class A Ordinary	ACN	Buy	07/27/2020	07/27/2020	$1,001	206.65	213.74	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Amazon.com, Inc. (AMZN) [ST]	AMZN	Buy	07/27/2020	07/27/2020	$1,001	152.82	157.44	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Ameriprise Financial, Inc. (AMP)	AMP	Buy	07/27/2020	07/27/2020	$1,001	141.87	146.83	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	blackRock, Inc. (bLK) [ST]	BLK	Buy	07/27/2020	07/27/2020	$1,001	502.64	516.1	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Carrier global Corporation (CARR)	CARR	Sell	07/22/2020	07/22/2020	$1,001	24.75	27.49	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Chubb Limited (Cb) [ST]	CB	Buy	07/27/2020	07/27/2020	$1,001	122	120.2	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Coca-Cola Company (KO) [ST]	KO	Buy	07/27/2020	07/27/2020	$1,001	40.98	40.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Comcast Corporation - Class A	CMCSA	Buy	07/27/2020	07/27/2020	$1,001	34.83	35.04	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Costco Wholesale Corporation	COST	Buy	07/27/2020	07/27/2020	$1,001	300.52	310.02	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Crane Co. (CR) [ST]	CR	Buy	07/27/2020	07/27/2020	$1,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Dollar general Corporation (Dg)	DG	Buy	07/27/2020	07/27/2020	$1,001	175.68	182.38	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Exact Sciences Corporation (EXAS)	EXAS	Buy	07/27/2020	07/27/2020	$1,001	95.54	85.86	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Exxon Mobil Corporation (XOM)	XOM	Sell	07/22/2020	07/22/2020	$1,001	34.21	34.29	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	07/27/2020	07/27/2020	$1,001	233.92	245.76	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Honeywell International Inc.	HON	Buy	07/27/2020	07/27/2020	$1,001	126.26	135.29	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	ICON plc - Ordinary Shares (ICLR)	ICLR	Buy	07/27/2020	07/27/2020	$1,001	186.6	189.13	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Intel Corporation (INTC) [ST]	INTC	Buy	07/27/2020	07/27/2020	$1,001	44.63	43.9	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Intercontinental Exchange Inc.	ICE	Buy	07/27/2020	07/27/2020	$1,001	88.78	94.97	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Intercontinental Exchange Inc.	ICE	Sell	07/22/2020	07/22/2020	$1,001	89.1	94.97	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	JNL/JPMORgAN HEDgED	JPM	Exchange	07/09/2020	07/09/2020	$15,001	79.75	88.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	07/27/2020	07/27/2020	$1,001	126.38	127	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	07/27/2020	07/27/2020	$1,001	83.94	88.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Lockheed Martin Corporation	LMT	Buy	07/27/2020	07/27/2020	$1,001	329.27	336.57	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Lowe's Companies, Inc. (LOW) [ST]	LOW	Buy	07/27/2020	07/27/2020	$1,001	134.46	140.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Microsoft Corporation (MSFT) [ST]	MSFT	Buy	07/27/2020	07/27/2020	$1,001	193.71	199.22	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	07/27/2020	07/27/2020	$1,001	60.66	61.34	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Novartis Ag (NVS) [ST]	NVS	Buy	07/27/2020	07/27/2020	$1,001	69.53	69.61	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	O'Reilly Automotive, Inc. (ORLY)	ORLY	Buy	07/27/2020	07/27/2020	$1,001	29.91	30.92	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Otis Worldwide Corporation (OTIS)	OTIS	Sell	07/22/2020	07/22/2020	$1,001	53.8	59.05	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Parker-Hannifin Corporation (PH)	PH	Buy	07/27/2020	07/27/2020	$1,001	170.84	193.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Phillips 66 (PSX) [ST]	PSX	Buy	07/27/2020	07/27/2020	$1,001	51.43	50.38	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Procter & gamble Company (Pg)	PG	Buy	07/27/2020	07/27/2020	$1,001	109.94	117.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Raytheon Technologies	RTX	Buy	07/27/2020	07/27/2020	$1,001	53.77	56.2	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Republic Services, Inc. (RSg) [ST]	RSG	Buy	07/27/2020	07/27/2020	$1,001	78.95	83.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	07/27/2020	07/27/2020	$1,001	207.73	212.35	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Salesforce.com Inc (CRM) [ST]	CRM	Buy	07/27/2020	07/27/2020	$1,001	188.1	191.49	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Sherwin-Williams Company (SHW)	SHW	Buy	07/27/2020	07/27/2020	$1,001	199.12	212.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Suncor Energy Inc. (Su) [ST]	SU	Buy	07/27/2020	07/27/2020	$1,001	13.47	13.65	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	TJX Companies, Inc. (TJX) [ST]	TJX	Buy	07/27/2020	07/27/2020	$1,001	48.42	53.52	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	V.F. Corporation (VFC) [ST]	VFC	Buy	07/27/2020	07/27/2020	$1,001	50.38	53.4	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017192	8/15/2020	JT	Visa Inc. (V) [ST]	V	Buy	07/27/2020	07/27/2020	$1,001	188.75	189.53	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017192.pdf
+2020	20017380	9/15/2020	JT	Accenture plc Class A Ordinary	ACN	Buy	08/14/2020	08/14/2020	$1,001 - $15,000	213.74	223.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017380.pdf
+2020	20017380	9/15/2020	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	08/14/2020	08/14/2020	$1,001 - $15,000	21.25	19.31	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017380.pdf
+2020	20017527	10/15/2020	JT	Exxon Mobil Corporation (XOM)	XOM	Buy	09/10/2020	09/10/2020	$1,001 - $15,000	29.87	27.18	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017527.pdf
+2020	20017527	10/15/2020	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	09/17/2020	09/17/2020	$1,001 - $15,000	246.44	252.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017527.pdf
+2020	20017527	10/15/2020	JT	Microsoft Corporation (MSFT)	MSFT	Buy	09/10/2020	09/10/2020	$1,001 - $15,000	199.13	209.28	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017527.pdf
+2020	20017527	10/15/2020	JT	Williams Companies, Inc. (WMB)	WMB	Buy	09/28/2020	09/28/2020	$1,001 - $15,000	15.63	14.97	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017527.pdf
+2020	20017687	11/14/2020	JT	Boeing Company (BA) [ST]	BA	Buy	10/16/2020	10/16/2020	$1,001 - $15,000	169.35	184.36	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017687.pdf
+2020	20017687	11/14/2020	JT	FS KKR Capital Corp II [PS]	FSK	Buy	10/01/2020	10/01/2020	$1,001 - $15,000	7.77	7.91	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017687.pdf
+2020	20017687	11/14/2020	JT	Illinois Tool Works Inc. (ITW) [ST]	ITW	Buy	10/16/2020	10/16/2020	$1,001 - $15,000	182.77	187.23	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017687.pdf
+2020	20017687	11/14/2020	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	10/16/2020	10/16/2020	$1,001 - $15,000	127.48	128.87	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017687.pdf
+2020	20017687	11/14/2020	JT	McDonald's Corporation (MCD)	MCD	Buy	10/16/2020	10/16/2020	$1,001 - $15,000	204.1	189.19	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017687.pdf
+2020	20017687	11/14/2020	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	10/16/2020	10/16/2020	$1,001 - $15,000	66.46	67.65	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017687.pdf
+2020	20017853	12/14/2020	JT	Accenture plc Class A Ordinary	ACN	Buy	11/13/2020	11/13/2020	$1,001 - $15,000	224.1	228.57	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017853.pdf
+2020	20017853	12/14/2020	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	11/13/2020	11/13/2020	$1,001 - $15,000	23.52	30.44	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017853.pdf
+2020	20017853	12/14/2020	JT	Suncor Energy Inc. (SU) [ST]	SU	Sell	11/19/2020	11/19/2020	$1,001 - $15,000	12.5	15.2	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2020/20017853.pdf
+2021	20018029	1/15/2021	JT	Exxon Mobil Corporation (XOM)	XOM	Buy	12/10/2020	12/10/2020	$1,001 - $15,000	35.75	39.3	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018029.pdf
+2021	20018029	1/15/2021	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	12/17/2020	12/17/2020	$1,001 - $15,000	241.87	241.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018029.pdf
+2021	20018029	1/15/2021	JT	Microsoft Corporation (MSFT)	MSFT	Buy	12/10/2020	12/10/2020	$1,001 - $15,000	202.77	204.44	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018029.pdf
+2021	20018029	1/15/2021	JT	Williams Companies, Inc. (WMB)	WMB	Buy	12/28/2020	12/28/2020	$1,001 - $15,000	15.94	17.49	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018029.pdf
+2021	20018232	2/17/2021	JT	FS KKR Capital Corp. II (FSKR)	FSKR	Buy	01/11/2021	01/11/2021	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018232.pdf
+2021	20018400	3/15/2021	JT	Accenture plc Class A Ordinary	ACN	Buy	02/12/2021	02/12/2021	$1,001 - $15,000	240.18	247.92	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018400.pdf
+2021	20018400	3/15/2021	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	02/12/2021	02/12/2021	$1,001 - $15,000	34.23	39.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018400.pdf
+2021	20018550	4/9/2021	JT	Devon Energy Corporation (DVN)	DVN	Buy	03/31/2021	03/31/2021	$1,001 - $15,000	17.01	17.34	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018550.pdf
+2021	20018550	4/9/2021	JT	Exxon Mobil Corporation (XOM)	XOM	Buy	03/10/2021	03/10/2021	$1,001 - $15,000	50.9	46.5	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018550.pdf
+2021	20018550	4/9/2021	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	03/25/2021	03/25/2021	$1,001 - $15,000	263.56	283.09	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018550.pdf
+2021	20018550	4/9/2021	JT	Microsoft Corporation (MSFT)	MSFT	Buy	03/11/2021	03/11/2021	$1,001 - $15,000	227.81	245.02	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018550.pdf
+2021	20018550	4/9/2021	JT	Williams Companies, Inc. (WMB)	WMB	Buy	03/29/2021	03/29/2021	$1,001 - $15,000	19.23	18.73	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018550.pdf
+2021	20018919	6/15/2021	JT	Accenture plc Class A Ordinary	ACN	Buy	05/14/2021	05/14/2021	$1,001 - $15,000	271.48	268.41	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	AdaptHealth Corp. - Class A	AHCO	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	24.46	27.61	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	AdaptHealth Corp. - Class A	AHCO	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	24.46	27.61	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	AdaptHealth Corp. - Class A	AHCO	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	24.46	27.61	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	Adobe Inc. (ADBE) [ST]	ADBE	Buy	05/20/2021	05/20/2021	$250,001	489.88	550.23	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	Boston Scientific Corporation	BSX	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	41.81	42.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	Boston Scientific Corporation	BSX	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	41.81	42.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	Boston Scientific Corporation	BSX	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	41.81	42.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	Cadence Design Systems, Inc.	CDNS	Buy	05/26/2021	05/26/2021	$100,001	127.48	129.91	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	CareCloud, Inc. (MTBC) [ST]	MTBC	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	CareCloud, Inc. (MTBC) [ST]	MTBC	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	CareCloud, Inc. (MTBC) [ST]	MTBC	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	CareCloud, Inc. (MTBC) [ST]	MTBC	Buy	05/20/2021	05/20/2021	$15,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	Emerson Electric Company (EMR)	EMR	Buy	05/18/2021	05/18/2021	$250,001	86.36	89.47	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	Exact Sciences Corporation	EXAS	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	103.62	122.84	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	Exact Sciences Corporation	EXAS	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	103.62	122.84	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	Exact Sciences Corporation	EXAS	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	103.62	122.84	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	Exact Sciences Corporation	EXAS	Buy	05/20/2021	05/20/2021	$50,001	103.62	122.84	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	Freeport-McMoRan, Inc. (FCX)	FCX	Buy	05/18/2021	05/18/2021	$100,001	41.24	35.01	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	Honeywell International Inc.	HON	Buy	05/18/2021	05/18/2021	$250,001	191.89	191.17	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	ICON plc - Ordinary Shares (ICLR)	ICLR	Buy	05/18/2021	05/18/2021	$100,001	222.8	214.97	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	IQVIA Holdings, Inc. (IQV) [ST]	IQV	Buy	05/18/2021	05/18/2021	$100,001	230.8	246.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	IQVIA Holdings, Inc. (IQV) [ST]	IQV	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	235.54	246.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	IQVIA Holdings, Inc. (IQV) [ST]	IQV	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	235.54	246.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	IQVIA Holdings, Inc. (IQV) [ST]	IQV	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	235.54	246.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	05/18/2021	05/18/2021	$250,001	63.76	65.38	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	05/26/2021	05/26/2021	$1,001 - $15,000	40.8	43.42	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	O'Reilly Automotive, Inc. (ORLY)	ORLY	Buy	05/18/2021	05/18/2021	$100,001	36.7	35.58	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	PTC Inc. (PTC) [ST]	PTC	Buy	05/26/2021	05/26/2021	$50,001	133.07	136.96	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	05/18/2021	05/18/2021	$250,001	242.64	261.7	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	JT	Vuzix Corporation (VUZI) [ST]	VUZI	Buy	05/18/2021	05/18/2021	$15,001	16.48	16.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	Vuzix Corporation (VUZI) [ST]	VUZI	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	16.32	16.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	Vuzix Corporation (VUZI) [ST]	VUZI	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	16.32	16.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20018919	6/15/2021	DC	Vuzix Corporation (VUZI) [ST]	VUZI	Buy	05/20/2021	05/20/2021	$1,001 - $15,000	16.32	16.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20018919.pdf
+2021	20019089	7/14/2021	JT	Accenture plc Class A Ordinary	ACN	Buy	06/25/2021	06/25/2021	$100,001	274.91	295.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Asensus Surgical, Inc. (ASXC) [ST]	ASXC	Buy	06/25/2021	06/25/2021	$100,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Devon Energy Corporation (DVN)	DVN	Buy	06/30/2021	06/30/2021	$1,001 - $15,000	22.88	22.13	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Exxon Mobil Corporation (XOM)	XOM	Buy	06/10/2021	06/10/2021	$1,001 - $15,000	53.12	50.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	06/17/2021	06/17/2021	$1,001 - $15,000	271.16	285.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Honeywell International Inc.	HON	Buy	06/25/2021	06/25/2021	$50,001	187.8	194.8	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	06/25/2021	06/25/2021	$250,001	144.03	149.42	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	JP Morgan Chase & Co. (JPM)	JPM	Buy	06/25/2021	06/25/2021	$250,001	135.89	138.2	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Linde plc Ordinary Share (LIN)	LIN	Buy	06/25/2021	06/25/2021	$100,001	268.06	273.62	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Masimo Corporation (MASI) [ST]	MASI	Buy	06/25/2021	06/25/2021	$100,001	242.91	261.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Masimo Corporation (MASI) [ST]	MASI	Buy	06/25/2021	06/25/2021	$15,001	242.91	261.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Microsoft Corporation (MSFT)	MSFT	Buy	06/25/2021	06/25/2021	$250,001	256.1	272.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Microsoft Corporation (MSFT)	MSFT	Buy	06/25/2021	06/25/2021	$100,001	256.1	272.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Microsoft Corporation (MSFT)	MSFT	Buy	06/10/2021	06/10/2021	$1,001 - $15,000	246.9	272.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	06/15/2021	06/15/2021	$1,001 - $15,000	65.38	67.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Phillips 66 (PSX) [ST]	PSX	Buy	06/25/2021	06/25/2021	$15,001	75.4	67.04	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Pioneer Natural Resources	PXD	Buy	06/09/2021	06/09/2021	$500,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019089	7/14/2021	JT	Williams Companies, Inc. (WMB)	WMB	Buy	06/28/2021	06/28/2021	$1,001 - $15,000	21.28	20.84	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019089.pdf
+2021	20019334	9/15/2021	JT	Adobe Inc. (ADbE) [ST]	ADBE	Buy	07/21/2021	07/21/2021	$50,001	609.39	658.46	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Alphabet Inc. - Class A (gOOgl)	GOOGL	Buy	07/30/2021	07/30/2021	$100,001	133.75	142.33	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Amazon.com, Inc. (AMZN) [ST]	AMZN	Buy	07/30/2021	07/30/2021	$50,001	166.71	172.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	boston Scientific Corporation	BSX	Buy	07/01/2021	07/01/2021	$100,001	43.19	45	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	boston Scientific Corporation	BSX	Buy	07/21/2021	07/21/2021	$15,001	43.48	45	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Danaher Corporation (DHR) [ST]	DHR	Buy	07/01/2021	07/01/2021	$50,001	235.04	281.23	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	DexCom, Inc. (DXCM) [ST]	DXCM	Buy	07/01/2021	07/01/2021	$100,001	106.3	136.8	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Emerson Electric Company (EMR)	EMR	Buy	07/01/2021	07/01/2021	$50,001	88.5	90.39	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	07/01/2021	07/01/2021	$100,001	287.09	299.48	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Illinois Tool Works Inc. (ITW) [ST]	ITW	Buy	07/01/2021	07/01/2021	$50,001	201.81	197.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	iShares TIPS bond ETF (TIP) [ST]	TIP	Buy	07/08/2021	07/08/2021	$1,001 - $15,000	107.42	109.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	iShares TIPS bond ETF (TIP) [ST]	TIP	Buy	07/30/2021	07/30/2021	$250,001	109.61	109.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	07/31/2021	07/31/2021	$1,001 - $15,000	135.61	140.56	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	07/01/2021	07/01/2021	$50,001	138.67	140.56	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	JPMorgan Equity Premium	JPM	Buy	07/30/2021	07/30/2021	$100,001	135.61	140.56	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	linde plc Ordinary Share (lIN)	LIN	Buy	07/01/2021	07/01/2021	$15,001	272.99	296.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Microsoft Corporation (MSFT)	MSFT	Buy	07/21/2021	07/21/2021	$100,001	269.98	293.6	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	07/30/2021	07/30/2021	$50,001	69.51	75.58	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Pioneer Natural Resources	PXD	Buy	07/14/2021	07/14/2021	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	PTC Inc. (PTC) [ST]	PTC	Buy	07/21/2021	07/21/2021	$15,001	145.33	124.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	07/21/2021	07/21/2021	$50,001	275.79	293.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	SPDR S&P 500 (SPY) [ST]	SPY	Buy	07/30/2021	07/30/2021	$500,001	412.28	419.6	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	T. Rowe Price group, Inc. (TROW)	TROW	Buy	07/07/2021	07/07/2021	$1,001 - $15,000	168.37	178	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Thermo Fisher Scientific Inc	TMO	Buy	07/21/2021	07/21/2021	$50,001	508.66	555.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019334	9/15/2021	JT	Vuzix Corporation (VuZI) [ST]	VUZI	Buy	07/01/2021	07/01/2021	$50,001	18.43	11.49	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019334.pdf
+2021	20019490	9/15/2021	JT	Accenture plc Class A Ordinary	ACN	Buy	08/13/2021	08/13/2021	$1,001 - $15,000	303.48	322.49	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019490.pdf
+2021	20019490	9/15/2021	JT	AdaptHealth Corp. (AHCO) [ST]	AHCO	Buy	08/25/2021	08/25/2021	$100,001	23.79	23.95	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019490.pdf
+2021	20019490	9/15/2021	JT	Chubb limited (Cb) [ST]	CB	Buy	08/25/2021	08/25/2021	$100,001	175.41	171.65	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019490.pdf
+2021	20019490	9/15/2021	JT	Costco Wholesale Corporation	COST	Buy	08/25/2021	08/25/2021	$250,001	428.77	437.57	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019490.pdf
+2021	20019490	9/15/2021	JT	iShares TIPS bond ETF (TIP) [ST]	TIP	Buy	08/06/2021	08/06/2021	$1,001 - $15,000	108.87	109.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019490.pdf
+2021	20019490	9/15/2021	JT	iShares TIPS bond ETF (TIP) [ST]	TIP	Buy	08/06/2021	08/06/2021	$1,001 - $15,000	108.87	109.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019490.pdf
+2021	20019490	9/15/2021	JT	lockheed Martin Corporation	LMT	Buy	08/25/2021	08/25/2021	$100,001	317.56	307.54	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019490.pdf
+2021	20019490	9/15/2021	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	08/16/2021	08/16/2021	$1,001 - $15,000	41.16	43.49	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019490.pdf
+2021	20019594	10/7/2021	JT	Accenture plc Class A Ordinary	ACN	Buy	09/23/2021	09/23/2021	$100,001	320.96	307.4	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Cadence Design Systems, Inc.	CDNS	Buy	09/02/2021	09/02/2021	$15,001	164.88	152.22	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Devon Energy Corporation (DVN)	DVN	Buy	09/30/2021	09/30/2021	$1,001 - $15,000	28.5	30.8	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Devon Energy Corporation (DVN)	DVN	Buy	09/30/2021	09/30/2021	$1,001 - $15,000	28.5	30.8	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Emerson Electric Company (EMR)	EMR	Buy	09/10/2021	09/10/2021	$1,001 - $15,000	92.06	89.65	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Exxon Mobil Corporation (XOM)	XOM	Buy	09/02/2021	09/02/2021	$1,001 - $15,000	47.08	51.9	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	09/16/2021	09/16/2021	$1,001 - $15,000	302.55	302.9	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Honeywell International Inc.	HON	Buy	09/03/2021	09/03/2021	$1,001 - $15,000	197.42	188.46	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	ICON plc - Ordinary Shares (IClR)	ICLR	Buy	09/02/2021	09/02/2021	$15,001	260.33	265.83	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Intel Corporation (INTC) [ST]	INTC	Buy	09/02/2021	09/02/2021	$50,001	49.42	50.13	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	IQVIA Holdings, Inc. (IQV) [ST]	IQV	Buy	09/02/2021	09/02/2021	$15,001	264.44	243.43	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	iShares TIPS bond ETF (TIP) [ST]	TIP	Buy	09/08/2021	09/08/2021	$1,001 - $15,000	109.51	108.94	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	iShares TIPS bond ETF (TIP) [ST]	TIP	Buy	09/08/2021	09/08/2021	$1,001 - $15,000	109.51	108.94	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	09/02/2021	09/02/2021	$50,001	154.36	142.56	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	09/07/2021	09/07/2021	$1,001 - $15,000	152.88	142.56	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Microsoft Corporation (MSFT)	MSFT	Buy	09/09/2021	09/09/2021	$1,001 - $15,000	288.58	285.05	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	09/15/2021	09/15/2021	$1,001 - $15,000	75.58	72.75	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Pioneer Natural Resources	PXD	Buy	09/17/2021	09/17/2021	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Raytheon Technologies	RTX	Buy	09/02/2021	09/02/2021	$50,001	76.76	81.87	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Raytheon Technologies	RTX	Buy	09/23/2021	09/23/2021	$250,001	78.46	81.87	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	09/10/2021	09/10/2021	$1,001 - $15,000	292.36	282.29	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	SPDR S&P 500 (SPY) [ST]	SPY	Sell	09/20/2021	09/20/2021	$500,001	408.29	414.29	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	unitedHealth group Incorporated	UNH	Buy	09/02/2021	09/02/2021	$50,001	391.89	375.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	unitedHealth group Incorporated	UNH	Buy	09/23/2021	09/23/2021	$250,001	382.1	375.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019594	10/7/2021	JT	Williams Companies, Inc. (WMb)	WMB	Buy	09/27/2021	09/27/2021	$1,001 - $15,000	21.3	22.53	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019594.pdf
+2021	20019762	11/5/2021	JT	blackRock, Inc. (blK) [ST]	BLK	Buy	10/20/2021	10/20/2021	$15,001	812.03	862.63	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	Chevron Corporation (CVX) [ST]	CVX	Buy	10/20/2021	10/20/2021	$50,001	94.53	96.38	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	FS KKR Capital Corp [PS]	FSK	Buy	10/04/2021	10/04/2021	$1,001 - $15,000	12.03	11.78	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	Illinois Tool Works Inc. (ITW) [ST]	ITW	Buy	10/20/2021	10/20/2021	$15,001	202.62	212.03	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	iShares TIPS bond ETF (TIP) [ST]	TIP	Buy	10/07/2021	10/07/2021	$1,001 - $15,000	108.94	110.71	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	iShares TIPS bond ETF (TIP) [ST]	TIP	Buy	10/07/2021	10/07/2021	$1,001 - $15,000	108.94	110.71	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	10/29/2021	10/29/2021	$1,001 - $15,000	152.82	151.04	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	lockheed Martin Corporation	LMT	Buy	10/20/2021	10/20/2021	$50,001	330.58	301.86	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	O'Reilly Automotive, Inc. (ORlY)	ORLY	Buy	10/20/2021	10/20/2021	$15,001	42.94	42.42	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	Pioneer Natural Resources	PXD	Buy	10/20/2021	10/20/2021	$100,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	Pioneer Natural Resources	PXD	Buy	10/14/2021	10/14/2021	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019762	11/5/2021	JT	Visa Inc. (V) [ST]	V	Buy	10/20/2021	10/20/2021	$50,001	224.89	208.46	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019762.pdf
+2021	20019983	12/9/2021	JT	ABB Ltd (ABB) [ST]	ABB	Buy	11/26/2021	11/26/2021	$50,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	Accenture plc Class A Ordinary	ACN	Buy	11/26/2021	11/26/2021	$1,001 - $15,000	335.5	350.51	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	AgCO Corporation (AgCO) [ST]	AGCO	Buy	11/26/2021	11/26/2021	$50,001	102.51	104.63	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	ArcBest Corporation (ARCB) [ST]	ARCB	Buy	11/26/2021	11/26/2021	$50,001	102.88	104.62	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	Ball Corporation (BLL) [ST]	BLL	Buy	11/26/2021	11/26/2021	$50,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	Crane Co. (CR) [ST]	CR	Buy	11/26/2021	11/26/2021	$15,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	Duke Realty Corporation (DRE)	DRE	Buy	11/26/2021	11/26/2021	$50,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	Fidelity Total Bond ETF (FBND)	FBND	sale_partial	11/16/2021	11/16/2021	$50,001	44.61	44.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	FS KKR Capital Corp. (FSK) [ST]	FSK	Sell	11/26/2021	11/26/2021	$100,001	11.44	11.66	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	Intel Corporation (INTC) [ST]	INTC	Buy	11/26/2021	11/26/2021	$15,001	45.16	47.15	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	iShares TIPS Bond ETF (TIP) [ST]	TIP	Buy	11/05/2021	11/05/2021	$1,001 - $15,000	110.71	110.21	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	11/15/2021	11/15/2021	$1,001 - $15,000	50.7	49.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	Parker-Hannifin Corporation (PH)	PH	Buy	11/26/2021	11/26/2021	$15,001	294.63	300.68	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	Quanta Services, Inc. (PWR) [ST]	PWR	Buy	11/26/2021	11/26/2021	$50,001	116.82	113.95	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2021	20019983	12/9/2021	JT	TJX Companies, Inc. (TJX) [ST]	TJX	Buy	11/26/2021	11/26/2021	$15,001	65.61	69.93	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2021/20019983.pdf
+2022	20020202	1/11/2022	JT	Asensus Surgical, Inc. (ASXC) [ST]	ASXC	Sell	12/20/2021	12/20/2021	$15,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Devon Energy Corporation (DVN)	DVN	Buy	12/30/2021	12/30/2021	$15,001	36.08	40.37	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Devon Energy Corporation (DVN)	DVN	Buy	12/30/2021	12/30/2021	$1,001 - $15,000	36.08	40.37	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Emerson Electric Company (EMR)	EMR	Buy	12/10/2021	12/10/2021	$1,001 - $15,000	85.17	88.29	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Exxon Mobil Corporation (XOM)	XOM	Buy	12/10/2021	12/10/2021	$1,001 - $15,000	54.54	61.11	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	12/16/2021	12/16/2021	$1,001 - $15,000	363.49	350.33	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Honeywell International Inc.	HON	Buy	12/03/2021	12/03/2021	$1,001 - $15,000	175.72	186.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	12/07/2021	12/07/2021	$1,001 - $15,000	145.29	152.62	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Lockheed Martin Corporation	LMT	Buy	12/27/2021	12/27/2021	$1,001 - $15,000	313.73	326.41	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Microsoft Corporation (MSFT)	MSFT	Buy	12/09/2021	12/09/2021	$1,001 - $15,000	323.08	303.65	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	12/15/2021	12/15/2021	$1,001 - $15,000	81.85	75.82	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Pioneer Natural Resources	PXD	Buy	12/14/2021	12/14/2021	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Pioneer Natural Resources	PXD	Buy	12/14/2021	12/14/2021	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Raytheon Technologies	RTX	Buy	12/16/2021	12/16/2021	$1,001 - $15,000	76.01	82.44	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	12/10/2021	12/10/2021	$1,001 - $15,000	325.95	309.33	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	UnitedHealth group Incorporated	UNH	Buy	12/14/2021	12/14/2021	$1,001 - $15,000	448.56	436.23	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Vuzix Corporation (VUZI) [ST]	VUZI	Sell	12/20/2021	12/20/2021	$50,001	8.74	8.2	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020202	1/11/2022	JT	Williams Companies, Inc. (WMB)	WMB	Buy	12/27/2021	12/27/2021	$1,001 - $15,000	21.69	23.83	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020202.pdf
+2022	20020359	2/2/2022	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	01/31/2022	01/31/2022	$1,001 - $15,000	132.86	134.93	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020359.pdf
+2022	20020359	2/2/2022	JT	Pioneer Natural Resources	PXD	Buy	01/14/2022	01/14/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020359.pdf
+2022	20020571	3/7/2022	JT	Accenture plc Class A Ordinary	ACN	Buy	02/15/2022	02/15/2022	$1,001 - $15,000	311.79	290.86	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020571.pdf
+2022	20020571	3/7/2022	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	02/14/2022	02/14/2022	$1,001 - $15,000	51.69	55.93	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020571.pdf
+2022	20020789	4/12/2022	JT	Devon Energy Corporation (DVN)	DVN	Buy	03/31/2022	03/31/2022	$15,001	49.94	51.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Devon Energy Corporation (DVN)	DVN	Buy	03/31/2022	03/31/2022	$1,001 - $15,000	49.94	51.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Emerson Electric Company (EMR)	EMR	Buy	03/10/2022	03/10/2022	$1,001 - $15,000	87.44	86.3	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Exxon Mobil Corporation (XOM) [ST]	XOM	Buy	03/10/2022	03/10/2022	$1,001 - $15,000	74.25	75.38	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	03/24/2022	03/24/2022	$1,001 - $15,000	287.78	280.26	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Honeywell International Inc. (HON)	HON	Buy	03/11/2022	03/11/2022	$1,001 - $15,000	159.93	166.51	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Intel Corporation (INTC) [ST]	INTC	Buy	03/01/2022	03/01/2022	$1,001 - $15,000	43.9	43.87	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	03/08/2022	03/08/2022	$1,001 - $15,000	152.28	160.8	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Lockheed Martin Corporation (LMT)	LMT	Buy	03/25/2022	03/25/2022	$1,001 - $15,000	410.26	422.16	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Microsoft Corporation (MSFT) [ST]	MSFT	Buy	03/10/2022	03/10/2022	$1,001 - $15,000	275.61	275.78	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	03/15/2022	03/15/2022	$1,001 - $15,000	73.49	75.82	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Pioneer Natural Resources Company	PXD	Buy	03/14/2022	03/14/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Pioneer Natural Resources Company	PXD	Buy	03/14/2022	03/14/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Pioneer Natural Resources Company	PXD	Buy	03/14/2022	03/14/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Raytheon Technologies Corporation	RTX	Buy	03/24/2022	03/24/2022	$1,001 - $15,000	93.38	94.48	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	03/10/2022	03/10/2022	$1,001 - $15,000	245.91	248.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	UnitedHealth Group Incorporated	UNH	Buy	03/22/2022	03/22/2022	$1,001 - $15,000	475.61	501.61	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020789	4/12/2022	JT	Williams Companies, Inc. (WMB)	WMB	Buy	03/28/2022	03/28/2022	$1,001 - $15,000	28.1	29.39	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020789.pdf
+2022	20020995	5/12/2022	JT	AdaptHealth Corp. (AHCO) [ST]	AHCO	Sell	04/01/2022	04/01/2022	$50,001	16.47	15.2	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020995.pdf
+2022	20020995	5/12/2022	DC	AdaptHealth Corp. (AHCO) [ST]	AHCO	Sell	04/22/2022	04/22/2022	$1,001 - $15,000	14.58	15.2	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020995.pdf
+2022	20020995	5/12/2022	JT	Honeywell International Inc. (HON)	HON	Sell	04/08/2022	04/08/2022	$250,001	166.36	168.09	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020995.pdf
+2022	20020995	5/12/2022	DC	IQVIA Holdings, Inc. (IQV) [ST]	IQV	Sell	04/22/2022	04/22/2022	$1,001 - $15,000	230.17	201.93	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020995.pdf
+2022	20020995	5/12/2022	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	04/30/2022	04/30/2022	$1,001 - $15,000	109.57	106.5	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20020995.pdf
+2022	20021223	6/14/2022	JT	ABB Ltd (ABB) [ST]	ABB	Buy	05/11/2022	05/11/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021223.pdf
+2022	20021223	6/14/2022	JT	Accenture plc Class A Ordinary Shares	ACN	Buy	05/13/2022	05/13/2022	$1,001 - $15,000	270.5	260.57	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021223.pdf
+2022	20021223	6/14/2022	DC	CareCloud, Inc. (MTBC) [ST]	MTBC	Sell	05/16/2022	05/16/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021223.pdf
+2022	20021223	6/14/2022	DC	Exact Sciences Corporation (EXAS)	EXAS	Sell	05/16/2022	05/16/2022	$1,001 - $15,000	50.97	37.28	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021223.pdf
+2022	20021223	6/14/2022	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	05/16/2022	05/16/2022	$1,001 - $15,000	54.04	50.29	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021223.pdf
+2022	20021388	7/15/2022	JT	AGCO Corporation (AGCO) [ST]	AGCO	Buy	06/21/2022	06/21/2022	$1,001 - $15,000	99.83	82.42	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Devon Energy Corporation (DVN)	DVN	Buy	06/30/2022	06/30/2022	$1,001 - $15,000	46.84	44.34	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Devon Energy Corporation (DVN)	DVN	Buy	06/30/2022	06/30/2022	$15,001	46.84	44.34	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Emerson Electric Company (EMR)	EMR	Buy	06/10/2022	06/10/2022	$1,001 - $15,000	81.55	73.74	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Exxon Mobil Corporation (XOM) [ST]	XOM	Buy	06/10/2022	06/10/2022	$1,001 - $15,000	89.68	74.53	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	06/16/2022	06/16/2022	$1,001 - $15,000	249.89	268.04	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Intel Corporation (INTC) [ST]	INTC	Buy	06/01/2022	06/01/2022	$1,001 - $15,000	41.62	36.11	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	06/07/2022	06/07/2022	$1,001 - $15,000	160.37	160.15	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Lockheed Martin Corporation (LMT)	LMT	Buy	06/24/2022	06/24/2022	$1,001 - $15,000	378.86	363.91	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Microsoft Corporation (MSFT) [ST]	MSFT	Buy	06/09/2022	06/09/2022	$1,001 - $15,000	259.85	250.04	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	06/15/2022	06/15/2022	$1,001 - $15,000	67.13	70.74	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Pioneer Natural Resources Company	PXD	Buy	06/14/2022	06/14/2022	$15,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Pioneer Natural Resources Company	PXD	Buy	06/14/2022	06/14/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Raytheon Technologies Corporation	RTX	Buy	06/16/2022	06/16/2022	$1,001 - $15,000	83.05	84.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	06/10/2022	06/10/2022	$1,001 - $15,000	197.54	192.75	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021388	7/15/2022	JT	Williams Companies, Inc. (WMB)	WMB	Buy	06/27/2022	06/27/2022	$1,001 - $15,000	26.06	26.76	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021388.pdf
+2022	20021553	8/15/2022	JT	iShares TIPS Bond ETF (TIP) [ST]	TIP	Buy	07/08/2022	07/08/2022	$1,001 - $15,000	101.31	104.04	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021553.pdf
+2022	20021553	8/15/2022	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	07/31/2022	07/31/2022	$1,001 - $15,000	105.89	111.73	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021553.pdf
+2022	20021704	9/15/2022	JT	Accenture plc Class A Ordinary	ACN	Buy	08/15/2022	08/15/2022	$1,001 - $15,000	303.94	261.81	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021704.pdf
+2022	20021704	9/15/2022	JT	Cadence Design Systems, Inc. (CDNS)	CDNS	Buy	08/18/2022	08/18/2022	$15,001	191.31	163.33	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021704.pdf
+2022	20021704	9/15/2022	JT	Coterra Energy Inc. (CTRA) [ST]	CTRA	Buy	08/17/2022	08/17/2022	$15,001	25.56	27.1	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021704.pdf
+2022	20021704	9/15/2022	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	08/15/2022	08/15/2022	$1,001 - $15,000	53.14	52.74	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021704.pdf
+2022	20021704	9/15/2022	JT	PTC Inc. (PTC) [ST]	PTC	Buy	08/25/2022	08/25/2022	$15,001	118.47	115.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021704.pdf
+2022	20021828	10/10/2022	JT	Devon Energy Corporation (DVN)	DVN	Buy	09/30/2022	09/30/2022	$1,001 - $15,000	52.34	61.74	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	Devon Energy Corporation (DVN)	DVN	Buy	09/30/2022	09/30/2022	$15,001	52.34	61.74	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	Emerson Electric Company (EMR)	EMR	Buy	09/09/2022	09/09/2022	$1,001 - $15,000	79.23	73.29	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	Exxon Mobil Corporation (XOM) [ST]	XOM	Buy	09/09/2022	09/09/2022	$1,001 - $15,000	86.14	89.36	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	09/15/2022	09/15/2022	$1,001 - $15,000	251.77	260.19	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	JPMorgan Equity Premium Income	JPM	Buy	09/07/2022	09/07/2022	$1,001 - $15,000	105.31	97.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	09/15/2022	09/15/2022	$1,001 - $15,000	78.31	70.15	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	Pioneer Natural Resources Company	PXD	Buy	09/16/2022	09/16/2022	$15,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	Pioneer Natural Resources Company	PXD	Buy	09/16/2022	09/16/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	09/12/2022	09/12/2022	$1,001 - $15,000	242.3	213.25	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	UnitedHealth Group Incorporated	UNH	Buy	09/20/2022	09/20/2022	$1,001 - $15,000	491.47	471.94	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021828	10/10/2022	JT	Williams Companies, Inc. (WMB)	WMB	Buy	09/26/2022	09/26/2022	$1,001 - $15,000	24.76	25.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021828.pdf
+2022	20021964	11/9/2022	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	10/31/2022	10/31/2022	$1,001 - $15,000	116.77	120.32	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021964.pdf
+2022	20021964	11/9/2022	JT	JPMorgan Equity Premium Income	JPM	Buy	10/06/2022	10/06/2022	$1,001 - $15,000	100.55	120.32	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20021964.pdf
+2022	20022102	12/8/2022	JT	Accenture plc Class A Ordinary Shares	ACN	Buy	11/15/2022	11/15/2022	$1,001 - $15,000	279.9	277.96	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20022102.pdf
+2022	20022102	12/8/2022	JT	Ameriprise Financial, Inc. (AMP) [ST]	AMP	Sell	11/21/2022	11/21/2022	$1,001 - $15,000	312.3	310.34	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20022102.pdf
+2022	20022102	12/8/2022	JT	Crane Holdings, Co. (CR) [ST]	CR	Sell	11/21/2022	11/21/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20022102.pdf
+2022	20022102	12/8/2022	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	11/14/2022	11/14/2022	$1,001 - $15,000	55.39	54.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20022102.pdf
+2022	20022102	12/8/2022	JT	Sherwin-Williams Company (SHW)	SHW	Sell	11/21/2022	11/21/2022	$1,001 - $15,000	234.22	246.21	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20022102.pdf
+2022	20022102	12/8/2022	JT	V.F. Corporation (VFC) [ST]	VFC	Sell	11/21/2022	11/21/2022	$1,001 - $15,000	29.06	25.79	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2022/20022102.pdf
+2023	20022285	1/13/2023	JT	Adobe Inc. (ADBE) [ST]	ADBE	Sell	12/19/2022	12/19/2022	$250,001	331.93	341.51	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	ArcBest Corporation (ARCB) [ST]	ARCB	Sell	12/19/2022	12/19/2022	$50,001	72.73	76.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Ball Corporation (BLL) [ST]	BLL	Sell	12/19/2022	12/19/2022	$50,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	CareCloud, Inc. (CCLD) [ST]	CCLD	Sell	12/19/2022	12/19/2022	$1,001 - $15,000	3.23	3.38	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Devon Energy Corporation (DVN)	DVN	Buy	12/30/2022	12/30/2022	$1,001 - $15,000	54.19	56.26	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Devon Energy Corporation (DVN)	DVN	Buy	12/30/2022	12/30/2022	$15,001	54.19	56.26	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Ecolab Inc. (ECL) [ST]	ECL	Sell	12/19/2022	12/19/2022	$15,001	137.3	148.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Emerson Electric Company (EMR)	EMR	Buy	12/09/2022	12/09/2022	$1,001 - $15,000	89.26	92.05	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Exact Sciences Corporation (EXAS)	EXAS	Sell	12/19/2022	12/19/2022	$50,001	50.92	68.7	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Exxon Mobil Corporation (XOM) [ST]	XOM	Buy	12/09/2022	12/09/2022	$1,001 - $15,000	94.04	101.86	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	12/15/2022	12/15/2022	$1,001 - $15,000	302.98	305.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Intel Corporation (INTC) [ST]	INTC	Buy	12/01/2022	12/01/2022	$1,001 - $15,000	28.87	28.96	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	12/06/2022	12/06/2022	$1,001 - $15,000	161.88	158.17	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Lockheed Martin Corporation (LMT)	LMT	Buy	12/30/2022	12/30/2022	$1,001 - $15,000	447.75	414.19	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Masimo Corporation (MASI) [ST]	MASI	Sell	12/19/2022	12/19/2022	$50,001	139.8	155.16	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Microsoft Corporation (MSFT) [ST]	MSFT	Buy	12/08/2022	12/08/2022	$1,001 - $15,000	240.65	232.29	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	12/15/2022	12/15/2022	$1,001 - $15,000	78.92	77.41	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Pioneer Natural Resources Company	PXD	Buy	12/15/2022	12/15/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Pioneer Natural Resources Company	PXD	Buy	12/15/2022	12/15/2022	$15,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Raytheon Company (RTN) [ST]	RTN	Buy	12/15/2022	12/15/2022	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	12/12/2022	12/12/2022	$1,001 - $15,000	248.98	268.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	UnitedHealth Group Incorporated	UNH	Buy	12/13/2022	12/13/2022	$1,001 - $15,000	512.56	468.62	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Williams Companies, Inc. (WMB)	WMB	Buy	12/26/2022	12/26/2022	$1,001 - $15,000	28.99	28.65	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022285	1/13/2023	JT	Wynn Resorts, Limited (WYNN) [ST]	WYNN	Sell	12/19/2022	12/19/2022	$15,001	80.11	96.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022285.pdf
+2023	20022430	2/14/2023	JT	Accenture plc Class A Ordinary Shares	ACN	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	265.98	273.73	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Adobe Inc. (ADBE) [ST]	ADBE	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	368.35	376.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Amazon.com, Inc. (AMZN) [ST]	AMZN	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	102.54	99.38	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	American Tower Corporation (AMT)	AMT	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	200.27	194.53	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	BlackRock, Inc. (BLK) [ST]	BLK	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	702.33	681.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Boeing Company (BA) [ST]	BA	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	211.45	217.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Chubb Limited (CB) [ST]	CB	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	218.36	206.4	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Coca-Cola Company (KO) [ST]	KO	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	55.79	54.84	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Comcast Corporation - Class A	CMCSA	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	33.33	33.05	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Costco Wholesale Corporation (COST)	COST	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	487.74	483.83	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Danaher Corporation (DHR) [ST]	DHR	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	229.95	224.65	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Dollar General Corporation (DG) [ST]	DG	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	217.78	217.35	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Ecolab Inc. (ECL) [ST]	ECL	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	148.57	151.01	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Exact Sciences Corporation (EXAS)	EXAS	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	67.1	64.85	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Home Depot, Inc. (HD) [ST]	HD	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	297.62	295.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Honeywell International Inc. (HON)	HON	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	183.36	177.53	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	ICON plc - Ordinary Shares (ICLR)	ICLR	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	228.64	234.76	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Intel Corporation (INTC) [ST]	INTC	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	27.03	27.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Intercontinental Exchange Inc. (ICE)	ICE	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	103.13	104.6	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	148.46	148.11	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	129.86	133.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	01/31/2023	01/31/2023	$1,001 - $15,000	129.86	133.07	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Linde plc Ordinary Share (LIN) [ST]	LIN	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	316.87	320.4	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Lockheed Martin Corporation (LMT)	LMT	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	425.7	444.28	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Lowe's Companies, Inc. (LOW) [ST]	LOW	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	194.59	201.17	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Microsoft Corporation (MSFT) [ST]	MSFT	Sell	01/31/2023	01/31/2023	$15,001 - $50,000	240.49	265.79	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Microsoft Corporation (MSFT) [ST]	MSFT	Sell	01/04/2023	01/04/2023	$1,000,001	223.96	265.79	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	68.06	69.39	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Novartis AG (NVS) [ST]	NVS	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	80.26	77.99	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	O'Reilly Automotive, Inc. (ORLY) [ST]	ORLY	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	52.89	57.13	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Parker-Hannifin Corporation (PH)	PH	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	311.03	340.43	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Phillips 66 (PSX) [ST]	PSX	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	90.94	96.86	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Procter & Gamble Company (PG) [ST]	PG	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	131.41	129.11	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Raytheon Technologies Corporation	RTX	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	92.86	94.61	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Republic Services, Inc. (RSG) [ST]	RSG	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	119.99	120.9	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Rockwell Automation, Inc. (ROK)	ROK	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	264.97	277.57	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Salesforce, Inc. (CRM) [ST]	CRM	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	164.75	168.16	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Thermo Fisher Scientific Inc (TMO)	TMO	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	561.29	567.32	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	TJX Companies, Inc. (TJX) [ST]	TJX	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	78.4	77.67	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022430	2/14/2023	JT	Visa Inc. (V) [ST]	V	Sell	01/31/2023	01/31/2023	$1,001 - $15,000	224.68	224.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022430.pdf
+2023	20022580	3/15/2023	JT	Accenture plc Class A Ordinary	ACN	Buy	02/15/2023	02/15/2023	$1,001 - $15,000	274.11	235.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022580.pdf
+2023	20022580	3/15/2023	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	02/14/2023	02/14/2023	$1,001 - $15,000	60.55	52.94	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022580.pdf
+2023	20022580	3/15/2023	JT	Pioneer Natural Resources Company	PXD	Sell	02/01/2023	02/01/2023	$1,000,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022580.pdf
+2023	20022699	4/10/2023	JT	Devon Energy Corporation (DVN)	DVN	Buy	03/31/2023	03/31/2023	$1,001 - $15,000	45.55	48.39	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Devon Energy Corporation (DVN)	DVN	Buy	03/31/2023	03/31/2023	$15,001 - $50,000	45.55	48.39	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Emerson Electric Company (EMR)	EMR	Buy	03/10/2023	03/10/2023	$1,001 - $15,000	78.32	79.6	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	03/23/2023	03/23/2023	$1,001 - $15,000	264.5	270.48	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	03/23/2023	03/23/2023	$1,001 - $15,000	264.5	270.48	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Intel Corporation (INTC) [ST]	INTC	Buy	03/01/2023	03/01/2023	$1,001 - $15,000	24.8	31.71	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	03/07/2023	03/07/2023	$1,001 - $15,000	142.1	151.02	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Linde plc Ordinary Shares (LIN) [ST]	LIN	Buy	03/28/2023	03/28/2023	$1,001 - $15,000	334.56	344.86	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Lockheed Martin Corporation (LMT)	LMT	Buy	03/24/2023	03/24/2023	$1,001 - $15,000	438.15	459.66	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	03/15/2023	03/15/2023	$1,001 - $15,000	69.27	72.02	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Pioneer Natural Resources Company	PXD	Buy	03/17/2023	03/17/2023	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Raytheon Technologies Corporation	RTX	Buy	03/23/2023	03/23/2023	$1,001 - $15,000	90.56	93.05	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	03/10/2023	03/10/2023	$1,001 - $15,000	277.66	260.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	UnitedHealth Group Incorporated	UNH	Buy	03/21/2023	03/21/2023	$1,001 - $15,000	455.15	487.26	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022699	4/10/2023	JT	Williams Companies, Inc. (WMB)	WMB	Buy	03/27/2023	03/27/2023	$1,001 - $15,000	25.77	26.46	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022699.pdf
+2023	20022908	5/11/2023	DC	AdaptHealth Corp. (AHCO) [ST]	AHCO	Sell	04/06/2023	04/06/2023	$1,001 - $15,000	12.11	10.36	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022908.pdf
+2023	20022908	5/11/2023	DC	AdaptHealth Corp. (AHCO) [ST]	AHCO	Sell	04/06/2023	04/06/2023	$1,001 - $15,000	12.11	10.36	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022908.pdf
+2023	20022908	5/11/2023	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	04/28/2023	04/28/2023	$1,001 - $15,000	128.99	127.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20022908.pdf
+2023	20023136	6/13/2023	JT	ABB Ltd (ABB) [ST]	ABB	Buy	05/11/2023	05/11/2023	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023136.pdf
+2023	20023136	6/13/2023	JT	Accenture plc Class A Ordinary Shares	ACN	Buy	05/17/2023	05/17/2023	$1,001 - $15,000	273.19	303.62	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023136.pdf
+2023	20023136	6/13/2023	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	05/15/2023	05/15/2023	$1,001 - $15,000	51.18	53.21	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023136.pdf
+2023	20023303	7/12/2023	JT	Devon Energy Corporation (DVN)	DVN	Buy	06/30/2023	06/30/2023	$15,001 - $50,000	44.44	46.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Devon Energy Corporation (DVN)	DVN	Buy	06/30/2023	06/30/2023	$1,001 - $15,000	44.44	46.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Emerson Electric Company (EMR)	EMR	Buy	06/09/2023	06/09/2023	$1,001 - $15,000	80.2	88.03	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Exxon Mobil Corporation (XOM) [ST]	XOM	Buy	06/09/2023	06/09/2023	$1,001 - $15,000	98.76	97.88	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	06/15/2023	06/15/2023	$1,001 - $15,000	283.57	299.17	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	06/15/2023	06/15/2023	$1,001 - $15,000	283.57	299.17	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	06/06/2023	06/06/2023	$1,001 - $15,000	146.73	146.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Linde plc Ordinary Shares (LIN) [ST]	LIN	Buy	06/16/2023	06/16/2023	$1,001 - $15,000	363.43	360.17	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Lockheed Martin Corporation (LMT)	LMT	Buy	06/23/2023	06/23/2023	$1,001 - $15,000	430.39	432.69	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	06/15/2023	06/15/2023	$1,001 - $15,000	68.78	67.84	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Pioneer Natural Resources Company	PXD	Buy	06/21/2023	06/21/2023	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Raytheon Technologies Corporation	RTX	Buy	06/15/2023	06/15/2023	$1,001 - $15,000	92.48	92.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	06/12/2023	06/12/2023	$1,001 - $15,000	294.39	325.27	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	UnitedHealth Group Incorporated	UNH	Buy	06/27/2023	06/27/2023	$1,001 - $15,000	459.01	434.92	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023303	7/12/2023	JT	Williams Companies, Inc. (WMB)	WMB	Buy	06/26/2023	06/26/2023	$1,001 - $15,000	27.92	30.64	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023303.pdf
+2023	20023532	8/16/2023	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	07/31/2023	07/31/2023	$1,001 - $15,000	149.49	142.04	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023532.pdf
+2023	20023641	9/7/2023	JT	Accenture plc Class A Ordinary	ACN	Buy	08/15/2023	08/15/2023	$1,001 - $15,000	298.08	315.82	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023641.pdf
+2023	20023641	9/7/2023	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	08/14/2023	08/14/2023	$1,001 - $15,000	58.9	57.08	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023641.pdf
+2023	20023848	10/13/2023	JT	Devon Energy Corporation (DVN)	DVN	Buy	09/29/2023	09/29/2023	$1,001 - $15,000	44.43	44.45	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Devon Energy Corporation (DVN)	DVN	Buy	09/29/2023	09/29/2023	$15,001 - $50,000	44.43	44.45	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Emerson Electric Company (EMR)	EMR	Buy	09/11/2023	09/11/2023	$1,001 - $15,000	95.8	91.47	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Exxon Mobil Corporation (XOM) [ST]	XOM	Buy	09/11/2023	09/11/2023	$1,001 - $15,000	106.12	101.03	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	09/14/2023	09/14/2023	$1,001 - $15,000	310.67	276.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	09/14/2023	09/14/2023	$1,001 - $15,000	310.67	276.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	09/07/2023	09/07/2023	$1,001 - $15,000	149.31	146.26	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Linde plc Ordinary Shares (LIN) [ST]	LIN	Buy	09/19/2023	09/19/2023	$1,001 - $15,000	377.62	368.15	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	09/15/2023	09/15/2023	$1,001 - $15,000	64.54	50.86	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Pioneer Natural Resources Company	PXD	Buy	09/21/2023	09/21/2023	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	09/11/2023	09/11/2023	$1,001 - $15,000	284.02	280	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	RTX Corporation (RTX) [ST]	RTX	Buy	09/07/2023	09/07/2023	$1,001 - $15,000	80.12	70.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	UnitedHealth Group Incorporated	UNH	Buy	09/19/2023	09/19/2023	$1,001 - $15,000	460.61	515.81	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20023848	10/13/2023	JT	Williams Companies, Inc. (WMB)	WMB	Buy	09/25/2023	09/25/2023	$1,001 - $15,000	30.9	32.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20023848.pdf
+2023	20024020	11/17/2023	JT	JP Morgan Chase & Co. (JPM) [ST]	JPM	Buy	10/31/2023	10/31/2023	$1,001 - $15,000	131.96	145.11	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20024020.pdf
+2023	20024104	12/7/2023	JT	Accenture plc Class A Ordinary	ACN	Buy	11/15/2023	11/15/2023	$1,001 - $15,000	313.73	325.34	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20024104.pdf
+2023	20024104	12/7/2023	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	11/14/2023	11/14/2023	$1,001 - $15,000	59.56	61.36	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20024104.pdf
+2023	20024104	12/7/2023	JT	ONEOK, Inc. (OKE) [ST]	OKE	Buy	11/14/2023	11/14/2023	$1,001 - $15,000	59.56	61.36	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2023/20024104.pdf
+2024	20024305	1/13/2024	DC	CareCloud, Inc. (CCLD) [ST]	CCLD	Sell	12/08/2023	12/08/2023	$1,001 - $15,000	1.03	1.35	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Devon Energy Corporation (DVN)	DVN	Buy	12/29/2023	12/29/2023	$15,001	42.71	40.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Devon Energy Corporation (DVN)	DVN	Buy	12/29/2023	12/29/2023	$1,001 - $15,000	42.71	40.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Emerson Electric Company (EMR)	EMR	Buy	12/11/2023	12/11/2023	$1,001 - $15,000	86.76	91.67	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Exxon Mobil Corporation (XOM) [ST]	XOM	Buy	12/11/2023	12/11/2023	$1,001 - $15,000	92.67	93.21	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	12/14/2023	12/14/2023	$1,001 - $15,000	334.24	338.93	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	12/14/2023	12/14/2023	$1,001 - $15,000	334.24	338.93	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Johnson & Johnson (JNJ) [ST]	JNJ	Buy	12/05/2023	12/05/2023	$1,001 - $15,000	149.35	152.54	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Linde plc - Ordinary Shares (LIN)	LIN	Buy	12/18/2023	12/18/2023	$1,001 - $15,000	399.63	397.72	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Lockheed Martin Corporation (LMT)	LMT	Buy	12/29/2023	12/29/2023	$1,001 - $15,000	428.45	436.4	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	NextEra Energy, Inc. (NEE) [ST]	NEE	Buy	12/15/2023	12/15/2023	$1,001 - $15,000	58.24	57.68	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Pioneer Natural Resources Company	PXD	Buy	12/22/2023	12/22/2023	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Rockwell Automation, Inc. (ROK)	ROK	Buy	12/11/2023	12/11/2023	$1,001 - $15,000	271.3	294.44	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	RTX Corporation (RTX) [ST]	RTX	Buy	12/14/2023	12/14/2023	$1,001 - $15,000	79.09	82.82	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	UnitedHealth Group Incorporated	UNH	Buy	12/12/2023	12/12/2023	$1,001 - $15,000	523.98	500.68	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024305	1/13/2024	JT	Williams Companies, Inc. (WMB)	WMB	Buy	12/26/2023	12/26/2023	$1,001 - $15,000	32.56	32.42	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024305.pdf
+2024	20024481	2/11/2024	JT	Costco Wholesale Corporation -	COST	Buy	01/12/2024	01/12/2024	$1,001 - $15,000	673.55	716.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024481.pdf
+2024	20024481	2/11/2024	DC	Exact Sciences Corporation -	EXAS	Sell	01/02/2024	01/02/2024	$1,001 - $15,000	74.56	60.83	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024481.pdf
+2024	20024481	2/11/2024	JT	JP Morgan Chase & Co. Common	JPM	Buy	01/31/2024	01/31/2024	$1,001 - $15,000	168.29	167.26	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024481.pdf
+2024	20024481	2/11/2024	DC	Vuzix Corporation (VUZI) [ST]	VUZI	Sell	01/02/2024	01/02/2024	$1,001 - $15,000	2.16	1.71	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024481.pdf
+2024	20024669	3/12/2024	JT	Accenture plc Class A Ordinary	ACN	Buy	02/20/2024	02/20/2024	$1,001 - $15,000	355.26	369.34	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024669.pdf
+2024	20024669	3/12/2024	JT	ONEOK, Inc. Common Stock (OKE)	OKE	Buy	02/14/2024	02/14/2024	$1,001 - $15,000	63.65	71.12	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024669.pdf
+2024	20024669	3/12/2024	JT	ONEOK, Inc. Common Stock (OKE)	OKE	Buy	02/14/2024	02/14/2024	$1,001 - $15,000	63.65	71.12	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024669.pdf
+2024	20024869	4/12/2024	JT	Devon Energy Corporation Common	DVN	Buy	03/28/2024	03/28/2024	$15,001	47.49	51.16	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Devon Energy Corporation Common	DVN	Buy	03/28/2024	03/28/2024	$1,001 - $15,000	47.49	51.16	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Emerson Electric Company Common	EMR	Buy	03/11/2024	03/11/2024	$1,001 - $15,000	106	109.23	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Exxon Mobil Corporation Common	XOM	Buy	03/11/2024	03/11/2024	$1,001 - $15,000	102.14	114.16	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	03/21/2024	03/21/2024	$1,001 - $15,000	376.95	329.09	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	03/21/2024	03/21/2024	$1,001 - $15,000	376.95	329.09	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Johnson & Johnson Common Stock	JNJ	Buy	03/05/2024	03/05/2024	$1,001 - $15,000	151.76	140.17	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Linde plc - Ordinary Shares (LIN)	LIN	Buy	03/28/2024	03/28/2024	$1,001 - $15,000	453.93	437.75	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Lockheed Martin Corporation	LMT	Buy	03/29/2024	03/29/2024	$1,001 - $15,000	434.15	431.79	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	NextEra Energy, Inc. Common Stock	NEE	Buy	03/15/2024	03/15/2024	$1,001 - $15,000	56.77	60.33	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Pioneer Natural Resources Company	PXD	Buy	03/22/2024	03/22/2024	$1,001 - $15,000	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Rockwell Automation, Inc. Common	ROK	Buy	03/11/2024	03/11/2024	$1,001 - $15,000	278.5	276.67	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	RTX Corporation Common Stock	RTX	Buy	03/21/2024	03/21/2024	$1,001 - $15,000	91.35	97.17	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	UnitedHealth Group Incorporated	UNH	Buy	03/19/2024	03/19/2024	$1,001 - $15,000	474.17	423.77	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20024869	4/12/2024	JT	Williams Companies, Inc. (WMB)	WMB	Buy	03/25/2024	03/25/2024	$1,001 - $15,000	35.97	35.99	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20024869.pdf
+2024	20025040	5/12/2024	JT	JP Morgan Chase & Co. Common	JPM	Buy	04/30/2024	04/30/2024	$1,001 - $15,000	185.77	191.56	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025040.pdf
+2024	20025232	6/7/2024	JT	Accenture plc Class A Ordinary	ACN	Buy	05/17/2024	05/17/2024	$1,001 - $15,000	297.72	282.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025232.pdf
+2024	20025232	6/7/2024	JT	Exxon Mobil Corporation Common	XOM	Exchange	05/03/2024	05/03/2024	$100,001	108.64	107.67	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025232.pdf
+2024	20025232	6/7/2024	JT	ONEOK, Inc. Common Stock (OKE)	OKE	Buy	05/15/2024	05/15/2024	$1,001 - $15,000	75.92	72.94	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025232.pdf
+2024	20025232	6/7/2024	JT	ONEOK, Inc. Common Stock (OKE)	OKE	Buy	05/15/2024	05/15/2024	$1,001 - $15,000	75.92	72.94	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025232.pdf
+2024	20025232	6/7/2024	JT	Pioneer Natural Resources Company	PXD	Exchange	05/03/2024	05/03/2024	$100,001	0	0	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025232.pdf
+2024	20025473	7/15/2024	JT	AGCO Corporation Common Stock	AGCO	Buy	06/20/2024	06/20/2024	$1,001 - $15,000	99.59	96.83	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Devon Energy Corporation Common	DVN	Buy	06/28/2024	06/28/2024	$1,001 - $15,000	45.24	45.7	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Devon Energy Corporation Common	DVN	Buy	06/28/2024	06/28/2024	$1,001 - $15,000	45.24	45.7	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Emerson Electric Company Common	EMR	Buy	06/10/2024	06/10/2024	$1,001 - $15,000	105.85	113.36	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Exxon Mobil Corporation Common	XOM	Buy	06/10/2024	06/10/2024	$1,001 - $15,000	107.56	109.13	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Exxon Mobil Corporation Common	XOM	Buy	06/10/2024	06/10/2024	$1,001 - $15,000	107.56	109.13	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	06/13/2024	06/13/2024	$1,001 - $15,000	334.32	345.58	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	06/13/2024	06/13/2024	$1,001 - $15,000	334.32	345.58	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Johnson & Johnson Common Stock	JNJ	Buy	06/04/2024	06/04/2024	$1,001 - $15,000	140.85	142.78	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Linde plc - Ordinary Shares (LIN)	LIN	Buy	06/21/2024	06/21/2024	$1,001 - $15,000	433.77	430.54	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Lockheed Martin Corporation	LMT	Buy	06/28/2024	06/28/2024	$1,001 - $15,000	449.17	446.03	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	NextEra Energy, Inc. Common Stock	NEE	Buy	06/17/2024	06/17/2024	$1,001 - $15,000	69.52	68.95	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Rockwell Automation, Inc. Common	ROK	Buy	06/10/2024	06/10/2024	$1,001 - $15,000	248.8	279.53	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	RTX Corporation Common Stock	RTX	Buy	06/13/2024	06/13/2024	$1,001 - $15,000	102.22	99	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	UnitedHealth Group Incorporated	UNH	Buy	06/25/2024	06/25/2024	$1,001 - $15,000	470.11	503.78	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025473	7/15/2024	JT	Williams Companies, Inc. (WMB)	WMB	Buy	06/24/2024	06/24/2024	$1,001 - $15,000	40.56	40.59	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025473.pdf
+2024	20025634	8/10/2024	JT	Chubb Limited Common Stock (CB)	CB	Buy	07/08/2024	07/08/2024	$1,001 - $15,000	250.6	266.13	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20025634.pdf
+2024	20026222	11/15/2024	JT	McDonald's Corporation Common	MCD	Buy	10/29/2024	10/29/2024	$100,001	289.05	285.53	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20026222.pdf
+2025	20026597	1/15/2025	JT	AGCO Corporation Common Stock	AGCO	Sell	12/31/2024	12/31/2024	$50,001	92.55	96.9	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026597.pdf
+2025	20026597	1/15/2025	JT	Devon Energy Corporation Common	DVN	sale_partial	12/31/2024	12/31/2024	$250,001	31.59	37.14	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026597.pdf
+2025	20026597	1/15/2025	JT	DexCom, Inc. - Common Stock	DXCM	Sell	12/31/2024	12/31/2024	$50,001	77.96	80.91	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026597.pdf
+2025	20026597	1/15/2025	JT	Estee Lauder Companies, Inc. (EL)	EL	Sell	12/31/2024	12/31/2024	$15,001 - $50,000	73.64	73.79	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026597.pdf
+2025	20026597	1/15/2025	JT	Exxon Mobil Corporation Common	XOM	Buy	12/10/2024	12/10/2024	$1,001 - $15,000	108.77	106.98	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026597.pdf
+2025	20026597	1/15/2025	JT	Home Depot, Inc. (HD) [ST]	HD	Buy	12/12/2024	12/12/2024	$1,001 - $15,000	406.65	395.42	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026597.pdf
+2025	20026597	1/15/2025	JT	Intel Corporation - Common Stock	INTC	Sell	12/31/2024	12/31/2024	$50,001	20.11	19.55	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026597.pdf
+2025	20026597	1/15/2025	JT	Johnson & Johnson Common Stock	JNJ	Sell	12/31/2024	12/31/2024	$100,001	139.92	140.78	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026597.pdf
+2025	20032284	10/16/2025	JT	Accenture plc Class A Ordinary	ACN	sale_partial	09/26/2025	09/26/2025	$15,001	237.11	235.95	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032284.pdf
+2025	20032284	10/16/2025	JT	Home Depot, Inc. (HD) [ST]	HD	sale_partial	09/26/2025	09/26/2025	$15,001	406.48	384.63	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032284.pdf
+2025	20032284	10/16/2025	JT	Masimo Corporation - Common Stock	MASI	Sell	09/26/2025	09/26/2025	$15,001	141.27	147.6	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032284.pdf
+2025	20032284	10/16/2025	JT	Microsoft Corporation - Common	MSFT	sale_partial	09/26/2025	09/26/2025	$15,001	509.72	511.24	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032284.pdf
+2025	20033458	11/16/2025	JT	Accenture plc Class A Ordinary	ACN	Sell	10/27/2025	10/27/2025	$100,001	250.07	246.15	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033458.pdf
+2025	20033458	11/16/2025	JT	Boston Scientific Corporation	BSX	sale_partial	10/28/2025	10/28/2025	$15,001 - $50,000	101.58	103.31	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033458.pdf
+2025	20033458	11/16/2025	JT	McDonald's Corporation Common	MCD	Sell	10/23/2025	10/23/2025	$1,001 - $15,000	306.55	305.21	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033458.pdf
+2025	20033458	11/16/2025	JT	McDonald's Corporation Common	MCD	Sell	10/23/2025	10/23/2025	$100,001	306.55	305.21	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033458.pdf
+2025	20033458	11/16/2025	JT	Microsoft Corporation - Common	MSFT	sale_partial	10/28/2025	10/28/2025	$15,001 - $50,000	544.5	505.46	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033458.pdf
+2025	20033458	11/16/2025	JT	O'Reilly Automotive, Inc. - Common	ORLY	sale_partial	10/28/2025	10/28/2025	$1,001 - $15,000	96.61	98.94	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033458.pdf
+2026	20033829	1/22/2026	JT	UnitedHealth Group Incorporated	UNH	Sell	12/23/2025	12/23/2025	$250,001	325.45	352.06	https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033829.pdf

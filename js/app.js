@@ -1,0 +1,898 @@
+// ===== Main Application =====
+
+const App = {
+    currentTab: 'politicians',
+    currentSort: 'return',
+    currentFilter: 'all',
+    searchQuery: '',
+    onboardingStep: 1,
+    onboardingData: {
+        selectedPolitician: null,
+        selectedStocks: []
+    },
+    selectedPlan: 'yearly',
+
+    // Initialize app
+    async init() {
+        Toast.init();
+
+        // 로딩 화면 표시
+        document.getElementById('app').innerHTML = `
+            <div class="login-page">
+                <div class="login-container text-center">
+                    <div class="login-logo">
+                        <h1><i class="fas fa-chart-line"></i> Trade Signal</h1>
+                        <p>데이터를 불러오는 중...</p>
+                    </div>
+                    <div class="spinner" style="margin: 40px auto;"></div>
+                </div>
+            </div>
+        `;
+
+        // CSV 데이터 로드
+        await loadCSVData();
+
+        // Register routes
+        Router.register('/login', () => this.showLoginPage());
+        Router.register('/signup', () => this.showLoginPage());
+        Router.register('/', () => this.showHomePage());
+        Router.register('/politician/:id', (ctx) => this.showPoliticianPage(ctx.params.id));
+        Router.register('/trade/:id', (ctx) => this.showTradePage(ctx.params.id));
+        Router.register('/stock/:id', (ctx) => this.showStockPage(ctx.params.id));
+        Router.register('/onboarding', () => this.showOnboardingPage());
+        Router.register('/settings', () => this.showSettingsPage());
+        Router.register('/subscription', () => this.showSubscriptionPage());
+
+        Router.init();
+
+        Auth.trackEvent('app_init');
+    },
+
+    // ===== Page Renderers =====
+
+    showLoginPage() {
+        if (Auth.isAuthenticated()) {
+            Router.navigate('/');
+            return;
+        }
+        document.getElementById('app').innerHTML = Components.renderLoginPage();
+        Auth.trackEvent('auth_check');
+    },
+
+    async showHomePage() {
+        document.getElementById('app').innerHTML = Components.renderHomePage();
+
+        // Simulate loading
+        await Auth.delay(500);
+        this.renderList();
+
+        Auth.trackEvent('list_view');
+    },
+
+    async showPoliticianPage(id) {
+        const politician = MOCK_POLITICIANS.find(p => p.id === parseInt(id));
+
+        if (!politician) {
+            Toast.show('존재하지 않는 의원입니다.', 'error');
+            Router.navigate('/');
+            return;
+        }
+
+        document.getElementById('app').innerHTML = Components.renderPoliticianProfile(politician);
+
+        // Draw chart after render
+        await Auth.delay(100);
+        this.drawPerformanceChart(politician);
+
+        Auth.trackEvent('view_politician_profile', { politicianId: id });
+    },
+
+    async showTradePage(id) {
+        const trade = MOCK_TRADES.find(t => t.id === parseInt(id));
+
+        if (!trade) {
+            Toast.show('존재하지 않는 거래입니다.', 'error');
+            Router.navigate('/');
+            return;
+        }
+
+        document.getElementById('app').innerHTML = Components.renderTradeDetail(trade);
+
+        // Draw chart after render (실제 주가 API 사용 시 비동기)
+        await Auth.delay(100);
+        await this.drawStockChart(trade);
+
+        Auth.trackEvent('trade_detail_view', { tradeId: id });
+    },
+
+    showStockPage(id) {
+        const stock = MOCK_STOCKS.find(s => s.id === parseInt(id));
+        if (!stock) {
+            Toast.show('존재하지 않는 종목입니다.', 'error');
+            Router.navigate('/');
+            return;
+        }
+        const trades = MOCK_TRADES.filter(t => t.ticker === stock.ticker || (t.stockName && stock.name && t.stockName === stock.name));
+        document.getElementById('app').innerHTML = Components.renderStockDetail(stock, trades);
+        Auth.trackEvent('view_stock_detail', { stockId: id, ticker: stock.ticker });
+    },
+
+    showOnboardingPage() {
+        document.getElementById('app').innerHTML = Components.renderOnboardingPage(this.onboardingStep);
+        Auth.trackEvent('onboarding_step_view', { step: this.onboardingStep });
+    },
+
+    showSettingsPage() {
+        document.getElementById('app').innerHTML = Components.renderSettingsPage();
+        Auth.trackEvent('settings_view');
+    },
+
+    showSubscriptionPage() {
+        this.showPaywall();
+        Router.navigate('/settings');
+    },
+
+    // ===== Authentication Handlers =====
+
+    async handleEmailLogin(event) {
+        event.preventDefault();
+
+        const email = document.getElementById('loginEmail').value;
+        const password = document.getElementById('loginPassword').value;
+        const errorEl = document.getElementById('loginError');
+        const btn = document.getElementById('loginBtn');
+
+        btn.disabled = true;
+        btn.innerHTML = '<div class="spinner" style="width: 20px; height: 20px;"></div>';
+        errorEl.style.display = 'none';
+
+        try {
+            await Auth.login(email, password);
+            Toast.show('로그인 성공!', 'success');
+
+            if (!Auth.isOnboardingCompleted()) {
+                Router.navigate('/onboarding');
+            } else {
+                Router.navigate('/');
+            }
+        } catch (error) {
+            errorEl.textContent = error.message;
+            errorEl.style.display = 'block';
+            Auth.trackEvent('login_fail', { error: error.message });
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = '로그인';
+        }
+    },
+
+    async handleEmailSignup(event) {
+        event.preventDefault();
+
+        const email = document.getElementById('signupEmail').value;
+        const password = document.getElementById('signupPassword').value;
+        const confirmPassword = document.getElementById('signupPasswordConfirm').value;
+        const termsAgreed = document.getElementById('termsAgreed').checked;
+        const errorEl = document.getElementById('signupError');
+        const btn = document.getElementById('signupBtn');
+
+        btn.disabled = true;
+        btn.innerHTML = '<div class="spinner" style="width: 20px; height: 20px;"></div>';
+        errorEl.style.display = 'none';
+
+        try {
+            await Auth.signup(email, password, confirmPassword, termsAgreed);
+            Toast.show('회원가입 성공!', 'success');
+            Router.navigate('/onboarding');
+        } catch (error) {
+            errorEl.textContent = error.message;
+            errorEl.style.display = 'block';
+            Auth.trackEvent('signup_fail', { error: error.message });
+        } finally {
+            btn.disabled = false;
+            btn.innerHTML = '가입하기';
+        }
+    },
+
+    async handleGoogleLogin() {
+        try {
+            await Auth.loginWithGoogle();
+            Toast.show('Google 로그인 성공!', 'success');
+
+            if (!Auth.isOnboardingCompleted()) {
+                Router.navigate('/onboarding');
+            } else {
+                Router.navigate('/');
+            }
+        } catch (error) {
+            Toast.show('로그인이 취소되었습니다. 다시 진행해 주세요.', 'error');
+            Auth.trackEvent('google_oauth_fail');
+        }
+    },
+
+    handleLogout() {
+        Auth.logout();
+        Toast.show('로그아웃되었습니다.', 'info');
+        Router.navigate('/login');
+    },
+
+    // ===== Home Page Handlers =====
+
+    switchHomeTab(tab) {
+        this.currentTab = tab;
+
+        const tabs = document.querySelectorAll('.tabs .tab');
+        tabs.forEach(t => t.classList.remove('active'));
+        tabs[tab === 'politicians' ? 0 : 1].classList.add('active');
+
+        // Update filter options
+        const partyFilter = document.getElementById('partyFilter');
+        if (tab === 'stocks') {
+            partyFilter.innerHTML = `
+                <option value="all">전체 섹터</option>
+                <option value="Technology">기술</option>
+                <option value="Financial Services">금융</option>
+                <option value="Consumer Cyclical">소비재</option>
+                <option value="Automotive">자동차</option>
+            `;
+        } else {
+            partyFilter.innerHTML = `
+                <option value="all">전체 정당</option>
+                <option value="Democrat">민주당</option>
+                <option value="Republican">공화당</option>
+            `;
+        }
+
+        this.currentFilter = 'all';
+        this.renderList();
+
+        Auth.trackEvent('tab_changed', { tab });
+    },
+
+    handleSearch: Utils.debounce(function(query) {
+        App.searchQuery = query.toLowerCase();
+        App.renderList();
+        Auth.trackEvent('search_submitted', { query });
+    }, 300),
+
+    handleSort(sortBy) {
+        this.currentSort = sortBy;
+        this.renderList();
+        Auth.trackEvent('sort_changed', { sortBy });
+    },
+
+    handleFilter(filter) {
+        this.currentFilter = filter;
+        this.renderList();
+        Auth.trackEvent('filter_changed', { filter });
+    },
+
+    renderList() {
+        const container = document.getElementById('listContainer');
+        if (!container) return;
+
+        if (this.currentTab === 'politicians') {
+            let data = [...MOCK_POLITICIANS];
+
+            // Filter
+            if (this.currentFilter !== 'all') {
+                data = data.filter(p => p.party === this.currentFilter);
+            }
+
+            // Search
+            if (this.searchQuery) {
+                data = data.filter(p =>
+                    p.name.toLowerCase().includes(this.searchQuery) ||
+                    p.state.toLowerCase().includes(this.searchQuery)
+                );
+            }
+
+            // Sort
+            switch (this.currentSort) {
+                case 'return':
+                    data.sort((a, b) => b.return10Y - a.return10Y);
+                    break;
+                case 'trades':
+                    data.sort((a, b) => b.totalTrades - a.totalTrades);
+                    break;
+                case 'recent':
+                    data.sort((a, b) => new Date(b.lastTradeDate) - new Date(a.lastTradeDate));
+                    break;
+                case 'name':
+                    data.sort((a, b) => a.name.localeCompare(b.name));
+                    break;
+            }
+
+            container.innerHTML = Components.renderPoliticianList(data);
+        } else {
+            let data = [...MOCK_STOCKS];
+
+            // Filter
+            if (this.currentFilter !== 'all') {
+                data = data.filter(s => s.sector === this.currentFilter);
+            }
+
+            // Search
+            if (this.searchQuery) {
+                data = data.filter(s =>
+                    s.ticker.toLowerCase().includes(this.searchQuery) ||
+                    s.name.toLowerCase().includes(this.searchQuery)
+                );
+            }
+
+            // Sort
+            switch (this.currentSort) {
+                case 'return':
+                    data.sort((a, b) => b.dailyChange - a.dailyChange);
+                    break;
+                case 'trades':
+                    data.sort((a, b) => b.tradeCount - a.tradeCount);
+                    break;
+                case 'recent':
+                    data.sort((a, b) => new Date(b.lastTradeDate) - new Date(a.lastTradeDate));
+                    break;
+                case 'name':
+                    data.sort((a, b) => a.ticker.localeCompare(b.ticker));
+                    break;
+            }
+
+            container.innerHTML = Components.renderStockList(data);
+        }
+    },
+
+    toggleFollow(politicianId, event) {
+        if (event) event.stopPropagation();
+
+        const result = UserData.toggleFollowPolitician(politicianId);
+
+        if (!result.success) {
+            Toast.show(result.error, 'error');
+            this.showPaywall();
+            Auth.trackEvent('follow_limit_hit');
+            return;
+        }
+
+        if (result.following) {
+            Toast.show('팔로우했습니다.', 'success');
+        } else {
+            Toast.show('팔로우를 취소했습니다.', 'info');
+        }
+
+        // Re-render if on home page
+        if (Router.currentRoute === '/') {
+            this.renderList();
+        } else {
+            // Update button state on profile page
+            const btn = event.target.closest('.follow-btn') || event.target.closest('.btn');
+            if (btn) {
+                btn.classList.toggle('following');
+                btn.classList.toggle('btn-primary');
+                btn.classList.toggle('btn-outline');
+                const icon = btn.querySelector('i');
+                icon.className = result.following ? 'fas fa-check' : 'fas fa-plus';
+                btn.innerHTML = `<i class="fas fa-${result.following ? 'check' : 'plus'}"></i> ${result.following ? '팔로잉' : '팔로우'}`;
+            }
+        }
+
+        Auth.trackEvent('follow_toggle', { politicianId, following: result.following });
+    },
+
+    toggleWatchlist(stockId, event) {
+        if (event) event.stopPropagation();
+
+        const result = UserData.toggleWatchlist(stockId);
+
+        if (result.watching) {
+            Toast.show('관심 종목에 추가했습니다.', 'success');
+        } else {
+            Toast.show('관심 종목에서 제거했습니다.', 'info');
+        }
+
+        this.renderList();
+        Auth.trackEvent('watchlist_toggle', { stockId, watching: result.watching });
+    },
+
+    // ===== Onboarding Handlers =====
+
+    selectOnboardingPolitician(id) {
+        this.onboardingData.selectedPolitician = id;
+
+        // Update UI
+        document.querySelectorAll('.onboarding-item').forEach(item => {
+            item.classList.remove('selected');
+        });
+        event.currentTarget.classList.add('selected');
+
+        // Enable next button
+        document.getElementById('onboardingNextBtn').disabled = false;
+
+        Auth.trackEvent('onboarding_follow_select', { politicianId: id });
+    },
+
+    toggleOnboardingStock(id) {
+        const index = this.onboardingData.selectedStocks.indexOf(id);
+        if (index > -1) {
+            this.onboardingData.selectedStocks.splice(index, 1);
+        } else {
+            this.onboardingData.selectedStocks.push(id);
+        }
+
+        // Update UI
+        event.currentTarget.classList.toggle('selected');
+
+        Auth.trackEvent('onboarding_ticker_select', { stockId: id });
+    },
+
+    searchOnboardingStocks(query) {
+        const filtered = MOCK_STOCKS.filter(s =>
+            s.ticker.toLowerCase().includes(query.toLowerCase()) ||
+            s.name.toLowerCase().includes(query.toLowerCase())
+        );
+
+        const watchlist = this.onboardingData.selectedStocks;
+        document.getElementById('stockList').innerHTML = filtered.map(s => `
+            <div class="onboarding-item ${watchlist.includes(s.id) ? 'selected' : ''}"
+                 onclick="App.toggleOnboardingStock(${s.id})">
+                <div class="onboarding-item-check"></div>
+                <div class="ticker-logo" style="width: 48px; height: 48px; font-size: 16px;">
+                    ${s.ticker.slice(0, 2)}
+                </div>
+                <div class="list-item-info" style="flex: 1;">
+                    <div class="list-item-name">${s.ticker}</div>
+                    <div class="list-item-meta">
+                        <span>${s.name}</span>
+                        <span>${s.sector}</span>
+                    </div>
+                </div>
+                <div style="text-align: right;">
+                    <div class="stat-value">$${s.currentPrice.toFixed(2)}</div>
+                    <div class="stat-label ${s.dailyChange >= 0 ? 'text-success' : 'text-danger'}">
+                        ${Utils.formatPercent(s.dailyChange)}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        Auth.trackEvent('onboarding_ticker_search_submit', { query });
+    },
+
+    onboardingNext() {
+        if (this.onboardingStep === 1) {
+            if (!this.onboardingData.selectedPolitician) {
+                Toast.show('의원을 1명 이상 선택해주세요.', 'error');
+                return;
+            }
+
+            // Save follow
+            UserData.toggleFollowPolitician(this.onboardingData.selectedPolitician);
+
+            this.onboardingStep = 2;
+            this.showOnboardingPage();
+        } else {
+            // Save watchlist
+            this.onboardingData.selectedStocks.forEach(id => {
+                const watchlist = UserData.getWatchlist();
+                if (!watchlist.includes(id)) {
+                    UserData.toggleWatchlist(id);
+                }
+            });
+
+            // Complete onboarding
+            Auth.completeOnboarding();
+            Toast.show('설정이 완료되었습니다!', 'success');
+            Router.navigate('/');
+
+            Auth.trackEvent('onboarding_complete');
+        }
+    },
+
+    onboardingBack() {
+        this.onboardingStep = 1;
+        this.showOnboardingPage();
+    },
+
+    // ===== Settings Handlers =====
+
+    updateSetting(key, value) {
+        UserData.updateSettings({ [key]: value });
+        Toast.show('설정이 저장되었습니다.', 'success');
+
+        if (key === 'emailAlerts') {
+            Auth.trackEvent(value ? 'email_subscribe' : 'email_unsubscribe', { source: 'inapp' });
+        } else if (key === 'newsletter') {
+            Auth.trackEvent(value ? 'newsletter_subscribe' : 'newsletter_unsubscribe');
+        }
+    },
+
+    // ===== Paywall Handlers =====
+
+    showPaywall() {
+        const paywallEl = document.createElement('div');
+        paywallEl.id = 'paywallModal';
+        paywallEl.innerHTML = Components.renderPaywall();
+        document.body.appendChild(paywallEl);
+
+        Auth.trackEvent('paywall_view');
+    },
+
+    closePaywall(event) {
+        if (event && event.target !== event.currentTarget) return;
+        const modal = document.getElementById('paywallModal');
+        if (modal) modal.remove();
+    },
+
+    selectPlan(plan) {
+        this.selectedPlan = plan;
+
+        document.querySelectorAll('.plan-card').forEach(card => {
+            card.classList.remove('selected');
+        });
+        event.currentTarget.classList.add('selected');
+
+        Auth.trackEvent('click_paywall', { plan });
+    },
+
+    proceedToCheckout() {
+        Toast.show('결제 페이지로 이동합니다...', 'info');
+        this.closePaywall();
+
+        // In real app, would redirect to checkout
+        Auth.trackEvent('checkout_view', { plan: this.selectedPlan });
+    },
+
+    // Chart.js 인스턴스 저장
+    performanceChart: null,
+    stockChart: null,
+
+    // ===== Chart Drawing =====
+
+    drawPerformanceChart(politician) {
+        const canvas = document.getElementById('performanceChart');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+
+        // 기존 차트 제거
+        if (this.performanceChart) {
+            this.performanceChart.destroy();
+        }
+
+        // 포트폴리오 성과 데이터 생성
+        const { politicianData, sp500Data } = generatePoliticianPerformanceData(politician.id);
+
+        // 데이터가 없으면 시뮬레이션 데이터 사용
+        let chartPoliticianData, chartSp500Data;
+
+        if (politicianData.length > 0 && sp500Data.length > 0) {
+            chartPoliticianData = politicianData;
+            chartSp500Data = sp500Data;
+        } else {
+            // 시뮬레이션 데이터 생성
+            const startValue = 100;
+            const simData = generateChartData('2016-01-01', '2026-01-01', startValue);
+            const finalValue = startValue * (1 + (politician.return10Y || 50) / 100);
+            const scale = finalValue / simData[simData.length - 1].value;
+
+            chartPoliticianData = simData.filter((d, i) => i % 30 === 0).map(d => ({
+                date: d.date,
+                value: d.value * scale
+            }));
+
+            chartSp500Data = SP500_DATA.length > 0
+                ? SP500_DATA.filter((d, i) => i % 30 === 0).map(d => ({
+                    date: d.date,
+                    value: (d.value / SP500_DATA[0].value) * 100
+                }))
+                : chartPoliticianData.map(d => ({ date: d.date, value: 100 + Math.random() * 150 }));
+        }
+
+        // 최종 수익률 계산 (첫 값 0이면 Infinity 방지)
+        const pFirst = chartPoliticianData.length > 0 ? chartPoliticianData[0].value : 0;
+        const pLast = chartPoliticianData.length > 0 ? chartPoliticianData[chartPoliticianData.length - 1].value : 0;
+        const politicianFinalReturn = (chartPoliticianData.length > 0 && pFirst > 0 && Number.isFinite(pLast / pFirst))
+            ? ((pLast / pFirst - 1) * 100).toFixed(1)
+            : '0.0';
+        const sFirst = chartSp500Data.length > 0 ? chartSp500Data[0].value : 0;
+        const sLast = chartSp500Data.length > 0 ? chartSp500Data[chartSp500Data.length - 1].value : 0;
+        const sp500FinalReturn = (chartSp500Data.length > 0 && sFirst > 0 && Number.isFinite(sLast / sFirst))
+            ? ((sLast / sFirst - 1) * 100).toFixed(1)
+            : '0.0';
+        const fmtPct = (v) => { const n = parseFloat(v); return (Number.isFinite(n) ? (n >= 0 ? '+' : '') + n + '%' : '-'); };
+
+        // Chart.js 설정
+        this.performanceChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: chartPoliticianData.map(d => d.date),
+                datasets: [
+                    {
+                        label: `${politician.name} (${fmtPct(politicianFinalReturn)})`,
+                        data: chartPoliticianData.map(d => d.value),
+                        borderColor: '#3b82f6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        borderWidth: 2.5,
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 0,
+                        pointHoverRadius: 6,
+                        pointHoverBackgroundColor: '#3b82f6',
+                        pointHoverBorderColor: '#fff',
+                        pointHoverBorderWidth: 2
+                    },
+                    {
+                        label: `S&P 500 (${fmtPct(sp500FinalReturn)})`,
+                        data: chartSp500Data.map(d => d.value),
+                        borderColor: '#64748b',
+                        backgroundColor: 'transparent',
+                        borderWidth: 2,
+                        borderDash: [5, 5],
+                        fill: false,
+                        tension: 0.3,
+                        pointRadius: 0,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: '#64748b',
+                        pointHoverBorderColor: '#fff',
+                        pointHoverBorderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    intersect: false,
+                    mode: 'index'
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        align: 'end',
+                        labels: {
+                            color: '#e2e8f0',
+                            font: { family: 'Inter', size: 12 },
+                            usePointStyle: true,
+                            pointStyle: 'line',
+                            padding: 20
+                        }
+                    },
+                    tooltip: {
+                        enabled: true,
+                        backgroundColor: 'rgba(30, 41, 59, 0.95)',
+                        titleColor: '#f8fafc',
+                        bodyColor: '#e2e8f0',
+                        borderColor: '#475569',
+                        borderWidth: 1,
+                        padding: 12,
+                        titleFont: { family: 'Inter', size: 13, weight: '600' },
+                        bodyFont: { family: 'Inter', size: 12 },
+                        displayColors: true,
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const date = tooltipItems[0].label;
+                                return new Date(date).toLocaleDateString('ko-KR', {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric'
+                                });
+                            },
+                            label: function(context) {
+                                const value = context.parsed.y;
+                                const change = (value - 100).toFixed(1);
+                                const sign = change >= 0 ? '+' : '';
+                                return ` ${context.dataset.label.split(' (')[0]}: ${value.toFixed(1)} (${sign}${change}%)`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        type: 'category',
+                        grid: {
+                            display: true,
+                            color: 'rgba(71, 85, 105, 0.3)'
+                        },
+                        ticks: {
+                            color: '#94a3b8',
+                            font: { family: 'Inter', size: 11 },
+                            maxRotation: 0,
+                            callback: function(value, index, ticks) {
+                                const date = this.getLabelForValue(value);
+                                const year = date.substring(0, 4);
+                                // 연도만 표시 (첫 번째 또는 연도가 바뀔 때)
+                                if (index === 0) return year;
+                                const prevDate = this.getLabelForValue(ticks[index - 1].value);
+                                const prevYear = prevDate.substring(0, 4);
+                                return year !== prevYear ? year : '';
+                            }
+                        }
+                    },
+                    y: {
+                        grid: {
+                            display: true,
+                            color: 'rgba(71, 85, 105, 0.3)'
+                        },
+                        ticks: {
+                            color: '#94a3b8',
+                            font: { family: 'Inter', size: 11 },
+                            callback: function(value) {
+                                return value.toFixed(0);
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // 수익률 요약 업데이트
+        this.updateChartSummary(politician, politicianFinalReturn, sp500FinalReturn);
+    },
+
+    updateChartSummary(politician, politicianReturn, sp500Return) {
+        const summaryEl = document.getElementById('chartSummary');
+        if (!summaryEl) return;
+
+        const p = parseFloat(politicianReturn);
+        const s = parseFloat(sp500Return);
+        const excess = (Number.isFinite(p) && Number.isFinite(s) ? (p - s).toFixed(1) : '0.0');
+        const isOutperforming = parseFloat(excess) > 0;
+        const fmt = (v) => (Number.isFinite(parseFloat(v)) ? (parseFloat(v) >= 0 ? '+' : '') + parseFloat(v) + '%' : '-');
+
+        summaryEl.innerHTML = `
+            <div class="chart-summary-item">
+                <span class="chart-summary-label">${politician.name}</span>
+                <span class="chart-summary-value text-primary">${fmt(politicianReturn)}</span>
+            </div>
+            <div class="chart-summary-item">
+                <span class="chart-summary-label">S&P 500</span>
+                <span class="chart-summary-value">${fmt(sp500Return)}</span>
+            </div>
+            <div class="chart-summary-item">
+                <span class="chart-summary-label">초과 수익 <span class="text-muted" style="font-size:0.85em">(기간 누적)</span></span>
+                <span class="chart-summary-value ${isOutperforming ? 'text-success' : 'text-danger'}">
+                    ${isOutperforming ? '+' : ''}${excess}%
+                </span>
+            </div>
+        `;
+    },
+
+    async drawStockChart(trade) {
+        const canvas = document.getElementById('stockChart');
+        const container = document.getElementById('stockChartContainer');
+        if (!canvas || !container) return;
+
+        const ctx = canvas.getContext('2d');
+        const rect = container.getBoundingClientRect();
+        const width = Math.floor(rect.width) || 400;
+        const height = Math.floor(rect.height) || 400;
+        canvas.width = width;
+        canvas.height = height;
+
+        const padding = 40;
+        const startPrice = (trade.closingPrice && trade.closingPrice > 0) ? trade.closingPrice : 100;
+        const endDateStr = new Date().toISOString().split('T')[0];
+
+        // 1) Yahoo Finance API(서버 /api/stock/<ticker>)에서 실제 주가 시도
+        let priceData = [];
+        let usedApi = false;
+        if (trade.ticker) {
+            try {
+                const url = `/api/stock?ticker=${encodeURIComponent(trade.ticker)}&from=${encodeURIComponent(trade.tradeDate || '')}&to=${encodeURIComponent(endDateStr)}`;
+                const res = await fetch(url);
+                if (res.ok) {
+                    const json = await res.json();
+                    if (json.data && json.data.length > 0) {
+                        priceData = json.data.map(d => ({ date: d.date, value: d.close }));
+                        usedApi = true;
+                    }
+                }
+            } catch (_) {
+                // 네트워크/서버 미사용 시 아래 시뮬레이션 사용
+            }
+        }
+
+        // 2) API 실패 또는 데이터 없으면 시뮬레이션
+        if (priceData.length === 0) {
+            priceData = generateChartData(trade.tradeDate, endDateStr, startPrice);
+            if (priceData.length === 0 && trade.tradeDate) {
+                const d = new Date(trade.tradeDate);
+                d.setDate(d.getDate() + 30);
+                const fallbackEnd = d.toISOString().split('T')[0];
+                priceData = generateChartData(trade.tradeDate, fallbackEnd, startPrice);
+            }
+        }
+
+        if (priceData.length === 0) {
+            ctx.fillStyle = '#334155';
+            ctx.fillRect(0, 0, width, height);
+            ctx.fillStyle = '#94a3b8';
+            ctx.font = '14px Inter';
+            ctx.textAlign = 'center';
+            ctx.fillText('해당 구간 주가 데이터가 없습니다.', width / 2, height / 2);
+            return;
+        }
+
+        // 시뮬레이션만 마지막 점을 CURRENT_PRICES 기준으로 보정. 실제 API 데이터는 그대로 사용
+        if (!usedApi) {
+            const lastVal = priceData[priceData.length - 1].value;
+            const currentPrice = (typeof CURRENT_PRICES !== 'undefined' && trade.ticker && CURRENT_PRICES[trade.ticker] > 0)
+                ? CURRENT_PRICES[trade.ticker]
+                : (lastVal || startPrice);
+            if (lastVal > 0) {
+                const scaleFactor = currentPrice / lastVal;
+                priceData.forEach(d => { d.value *= scaleFactor; });
+            }
+        }
+
+        const minValue = Math.min(...priceData.map(d => d.value)) * 0.98;
+        const maxValue = Math.max(...priceData.map(d => d.value)) * 1.02;
+        const range = maxValue - minValue || 1;
+        const n = priceData.length;
+        const div = n > 1 ? n - 1 : 1;
+
+        // Clear canvas
+        ctx.fillStyle = '#334155';
+        ctx.fillRect(0, 0, width, height);
+
+        // Draw grid
+        ctx.strokeStyle = '#475569';
+        ctx.lineWidth = 0.5;
+        for (let i = 0; i <= 4; i++) {
+            const y = padding + (height - 2 * padding) * (i / 4);
+            ctx.beginPath();
+            ctx.moveTo(padding, y);
+            ctx.lineTo(width - padding, y);
+            ctx.stroke();
+            const value = maxValue - range * (i / 4);
+            ctx.fillStyle = '#94a3b8';
+            ctx.font = '11px Inter';
+            ctx.textAlign = 'left';
+            ctx.fillText('$' + value.toFixed(0), 5, y + 4);
+        }
+
+        // Draw price line
+        ctx.strokeStyle = '#3b82f6';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        priceData.forEach((d, i) => {
+            const x = padding + (width - 2 * padding) * (i / div);
+            const y = padding + (height - 2 * padding) * (1 - (d.value - minValue) / range);
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+
+        // Draw trade date marker
+        const tradeDateIndex = priceData.findIndex(d => d.date === trade.tradeDate);
+        if (tradeDateIndex >= 0) {
+            const x = padding + (width - 2 * padding) * (tradeDateIndex / div);
+            const y = padding + (height - 2 * padding) * (1 - (priceData[tradeDateIndex].value - minValue) / range);
+            ctx.fillStyle = '#10b981';
+            ctx.beginPath();
+            ctx.arc(x, y, 6, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        // Draw disclosure date marker
+        const disclosureDateIndex = priceData.findIndex(d => d.date === trade.disclosureDate);
+        if (disclosureDateIndex >= 0) {
+            const x = padding + (width - 2 * padding) * (disclosureDateIndex / div);
+            const y = padding + (height - 2 * padding) * (1 - (priceData[disclosureDateIndex].value - minValue) / range);
+            ctx.fillStyle = '#f59e0b';
+            ctx.beginPath();
+            ctx.arc(x, y, 6, 0, Math.PI * 2);
+            ctx.fill();
+        }
+    },
+
+    switchChartType(type) {
+        const btns = document.querySelectorAll('.chart-toggle-btn');
+        btns.forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+
+        Toast.show(`${type === 'trade' ? '거래일' : '공시일'} 기준으로 전환`, 'info');
+        Auth.trackEvent('view_compare_chart', { type });
+    }
+};
+
+// Initialize app when DOM is ready
+document.addEventListener('DOMContentLoaded', () => App.init());

@@ -1,0 +1,131 @@
+year,filing_date,owner,asset,ticker,type,transaction_date,amount_range,price_trade_date,price_filing_date,URL
+2024,11/7/2024,,"AppFolio, Inc. - Class A Common",APPF,Sell,10/01/2024,"$1,001 - $15,000",232.15,228.53,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20026099.pdf
+2024,11/7/2024,SP,"AppFolio, Inc. - Class A Common",APPF,Sell,10/01/2024,"$1,001 - $15,000",232.15,228.53,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20026099.pdf
+2024,11/7/2024,SP,McKesson Corporation Common,MCK,Buy,10/01/2024,"$1,001 - $15,000",493.63,596.05,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20026099.pdf
+2024,11/7/2024,,McKesson Corporation Common,MCK,Buy,10/01/2024,"$1,001 - $15,000",493.63,596.05,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20026099.pdf
+2024,11/7/2024,,Nu Holdings Ltd. Class A Ordinary,NU,Buy,10/01/2024,"$1,001 - $15,000",13.51,15.17,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20026099.pdf
+2024,11/7/2024,SP,Nu Holdings Ltd. Class A Ordinary,NU,Buy,10/01/2024,"$1,001 - $15,000",13.51,15.17,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20026099.pdf
+2024,11/7/2024,,"Synopsys, Inc. - Common Stock",SNPS,Sell,10/01/2024,"$1,001 - $15,000",498.16,568.68,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20026099.pdf
+2024,11/7/2024,SP,"Synopsys, Inc. - Common Stock",SNPS,Sell,10/01/2024,"$1,001 - $15,000",498.16,568.68,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2024/20026099.pdf
+2025,2/10/2025,,"First Citizens BancShares, Inc. - Class",FCNCA,Buy,01/21/2025,"$1,001 - $15,000",2219.42,2166.7,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,SP,"First Citizens BancShares, Inc. - Class",FCNCA,Buy,01/21/2025,"$1,001 - $15,000",2219.42,2166.7,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,,"First Citizens BancShares, Inc. - Class",FCNCA,Buy,01/16/2025,"$1,001 - $15,000",2133.61,2166.7,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,,GoDaddy Inc. Class A Common Stock,GDDY,Buy,01/16/2025,"$1,001 - $15,000",201.29,212.09,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,SP,GoDaddy Inc. Class A Common Stock,GDDY,Buy,01/16/2025,"$1,001 - $15,000",201.29,212.09,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,SP,GoDaddy Inc. Class A Common Stock,GDDY,Buy,01/21/2025,"$1,001 - $15,000",204.46,212.09,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,,GoDaddy Inc. Class A Common Stock,GDDY,Buy,01/21/2025,"$1,001 - $15,000",204.46,212.09,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,,"Merck & Company, Inc. Common",MRK,Sell,01/16/2025,"$1,001 - $15,000",96.87,83.74,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,SP,"Merck & Company, Inc. Common",MRK,Sell,01/16/2025,"$1,001 - $15,000",96.87,83.74,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,SP,RLI Corp. Common Stock,RLI,Sell,01/21/2025,"$1,001 - $15,000",75.11,73.05,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,2/10/2025,,RLI Corp. Common Stock,RLI,Sell,01/16/2025,"$1,001 - $15,000",73.73,73.05,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026712.pdf
+2025,3/25/2025,,"DoorDash, Inc. - Common Stock",DASH,Buy,02/13/2025,"$1,001 - $15,000",202.42,199.2,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20027903.pdf
+2025,3/25/2025,SP,"DoorDash, Inc. - Common Stock",DASH,Buy,02/13/2025,"$1,001 - $15,000",202.42,199.2,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20027903.pdf
+2025,3/25/2025,,FactSet Research Systems Inc.,FDS,Sell,02/13/2025,"$1,001 - $15,000",452.85,433.72,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20027903.pdf
+2025,3/25/2025,SP,FactSet Research Systems Inc.,FDS,Sell,02/13/2025,"$1,001 - $15,000",452.85,433.72,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20027903.pdf
+2025,3/25/2025,SP,"Fortinet, Inc. - Common Stock",FTNT,Buy,02/13/2025,"$1,001 - $15,000",109.21,101.29,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20027903.pdf
+2025,3/25/2025,,"Fortinet, Inc. - Common Stock",FTNT,Buy,02/13/2025,"$1,001 - $15,000",109.21,101.29,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20027903.pdf
+2025,3/25/2025,,Lockheed Martin Corporation,LMT,Sell,02/13/2025,"$1,001 - $15,000",424.82,430.26,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20027903.pdf
+2025,3/25/2025,SP,Lockheed Martin Corporation,LMT,Sell,02/13/2025,"$1,001 - $15,000",424.82,430.26,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20027903.pdf
+2025,4/14/2025,,Abbott Laboratories Common Stock,ABT,Buy,03/20/2025,"$1,001 - $15,000",124.63,125.41,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,Abbott Laboratories Common Stock,ABT,Buy,03/20/2025,"$1,001 - $15,000",124.63,125.41,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Amazon.com, Inc. - Common Stock",AMZN,Buy,03/20/2025,"$1,001 - $15,000",195.52,182.93,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Amazon.com, Inc. - Common Stock",AMZN,Buy,03/20/2025,"$1,001 - $15,000",195.52,182.93,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Arista Networks, Inc. Common Stock",ANET,Buy,03/20/2025,"$1,001 - $15,000",83.45,74.52,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Arista Networks, Inc. Common Stock",ANET,Buy,03/20/2025,"$1,001 - $15,000",83.45,74.52,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Autodesk, Inc. - Common Stock",ADSK,Buy,03/20/2025,"$1,001 - $15,000",268.48,260.85,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Autodesk, Inc. - Common Stock",ADSK,Buy,03/20/2025,"$1,001 - $15,000",268.48,260.85,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,Broadcom Inc. - Common Stock,AVGO,Buy,03/20/2025,"$1,001 - $15,000",189.97,178.99,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,Broadcom Inc. - Common Stock,AVGO,Buy,03/20/2025,"$1,001 - $15,000",189.97,178.99,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Brown & Brown, Inc. Common Stock",BRO,Buy,03/20/2025,"$1,001 - $15,000",119.36,120.02,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Brown & Brown, Inc. Common Stock",BRO,Buy,03/20/2025,"$1,001 - $15,000",119.36,120.02,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,Chemed Corp,CHE,Sell,03/06/2025,"$1,001 - $15,000",592.34,597.24,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,Chemed Corp,CHE,Sell,03/06/2025,"$1,001 - $15,000",592.34,597.24,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Chipotle Mexican Grill, Inc. Common",CMG,Buy,03/20/2025,"$1,001 - $15,000",48.95,49.38,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Chipotle Mexican Grill, Inc. Common",CMG,Buy,03/20/2025,"$1,001 - $15,000",48.95,49.38,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"DoorDash, Inc. - Common Stock",DASH,Sell,03/20/2025,"$1,001 - $15,000",192.0,182.48,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"DoorDash, Inc. - Common Stock",DASH,Sell,03/20/2025,"$1,001 - $15,000",192.0,182.48,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Equifax, Inc. Common Stock",EFX,Sell,03/20/2025,"$1,001 - $15,000",241.8,222.85,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Equifax, Inc. Common Stock",EFX,Sell,03/20/2025,"$1,001 - $15,000",241.8,222.85,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"First Citizens BancShares, Inc. - Class",FCNCA,Sell,03/20/2025,"$1,001 - $15,000",1856.65,1667.97,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"First Citizens BancShares, Inc. - Class",FCNCA,Sell,03/20/2025,"$1,001 - $15,000",1856.65,1667.97,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Fiserv, Inc. Common Stock",FISV,Buy,03/20/2025,"$1,001 - $15,000",221.01,211.94,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Fiserv, Inc. Common Stock",FISV,Buy,03/20/2025,"$1,001 - $15,000",221.01,211.94,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Gartner, Inc. Common Stock",IT,Sell,03/20/2025,"$1,001 - $15,000",425.73,407.15,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Gartner, Inc. Common Stock",IT,Sell,03/20/2025,"$1,001 - $15,000",425.73,407.15,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,GoDaddy Inc. Class A Common Stock,GDDY,Sell,03/20/2025,"$1,001 - $15,000",180.85,172.74,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,GoDaddy Inc. Class A Common Stock,GDDY,Sell,03/20/2025,"$1,001 - $15,000",180.85,172.74,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,JP Morgan Chase & Co. Common,JPM,Sell,03/20/2025,"$1,001 - $15,000",234.19,232.73,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,JP Morgan Chase & Co. Common,JPM,Sell,03/20/2025,"$1,001 - $15,000",234.19,232.73,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,MSCI Inc. Common Stock,MSCI,Sell,03/20/2025,"$1,001 - $15,000",561.48,547.09,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,MSCI Inc. Common Stock,MSCI,Sell,03/20/2025,"$1,001 - $15,000",561.48,547.09,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,Novo Nordisk A/S Common Stock,NVO,Sell,03/20/2025,"$1,001 - $15,000",76.83,65.31,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,Novo Nordisk A/S Common Stock,NVO,Sell,03/20/2025,"$1,001 - $15,000",76.83,65.31,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"PayPal Holdings, Inc. - Common",PYPL,Buy,03/20/2025,"$1,001 - $15,000",69.75,62.48,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"PayPal Holdings, Inc. - Common",PYPL,Buy,03/20/2025,"$1,001 - $15,000",69.75,62.48,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,Progressive Corporation,PGR,Buy,03/20/2025,"$1,001 - $15,000",258.4,261.75,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,Progressive Corporation,PGR,Buy,03/20/2025,"$1,001 - $15,000",258.4,261.75,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Robinhood Markets, Inc. - Class A",HOOD,Buy,03/06/2025,"$1,001 - $15,000",46.1,43.91,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Robinhood Markets, Inc. - Class A",HOOD,Buy,03/06/2025,"$1,001 - $15,000",46.1,43.91,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"Robinhood Markets, Inc. - Class A",HOOD,Sell,03/20/2025,"$1,001 - $15,000",43.28,43.91,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"Robinhood Markets, Inc. - Class A",HOOD,Sell,03/20/2025,"$1,001 - $15,000",43.28,43.91,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,"The Trade Desk, Inc. - Class A",TTD,Buy,03/06/2025,"$1,001 - $15,000",65.54,49.36,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,"The Trade Desk, Inc. - Class A",TTD,Buy,03/06/2025,"$1,001 - $15,000",65.54,49.36,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,Tradeweb Markets Inc. - Class A,TW,Buy,03/20/2025,"$1,001 - $15,000",142.12,130.39,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,Tradeweb Markets Inc. - Class A,TW,Buy,03/20/2025,"$1,001 - $15,000",142.12,130.39,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,Veeva Systems Inc. Class A Common,VEEV,Sell,03/20/2025,"$1,001 - $15,000",235.7,223.05,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,Veeva Systems Inc. Class A Common,VEEV,Sell,03/20/2025,"$1,001 - $15,000",235.7,223.05,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,,Vertex Pharmaceuticals Incorporated,VRTX,Sell,03/20/2025,"$1,001 - $15,000",510.45,492.89,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,4/14/2025,SP,Vertex Pharmaceuticals Incorporated,VRTX,Sell,03/20/2025,"$1,001 - $15,000",510.45,492.89,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20029092.pdf
+2025,5/24/2025,,Amphenol Corporation Common,APH,Buy,04/10/2025,"$1,001 - $15,000",63.5,84.57,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030342.pdf
+2025,5/24/2025,SP,Amphenol Corporation Common,APH,Buy,04/10/2025,"$1,001 - $15,000",63.5,84.57,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030342.pdf
+2025,5/24/2025,SP,Nu Holdings Ltd. Class A Ordinary,NU,Sell,04/10/2025,"$1,001 - $15,000",10.3,11.96,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030342.pdf
+2025,5/24/2025,,Nu Holdings Ltd. Class A Ordinary,NU,Sell,04/10/2025,"$1,001 - $15,000",10.3,11.96,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030342.pdf
+2025,5/24/2025,,"Regeneron Pharmaceuticals, Inc. -",REGN,Sell,04/10/2025,"$1,001 - $15,000",547.04,585.82,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030342.pdf
+2025,5/24/2025,SP,"Regeneron Pharmaceuticals, Inc. -",REGN,Sell,04/10/2025,"$1,001 - $15,000",547.04,585.82,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030342.pdf
+2025,5/24/2025,SP,Visa Inc.,V,Buy,04/10/2025,"$1,001 - $15,000",320.94,352.6,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030342.pdf
+2025,5/24/2025,,Visa Inc.,V,Buy,04/10/2025,"$1,001 - $15,000",320.94,352.6,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030342.pdf
+2025,9/5/2025,,Deckers Outdoor Corporation,DECK,Sell,08/07/2025,"$1,001 - $15,000",102.73,121.86,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032038.pdf
+2025,9/5/2025,SP,Deckers Outdoor Corporation,DECK,Sell,08/07/2025,"$1,001 - $15,000",102.73,121.86,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032038.pdf
+2025,9/5/2025,SP,Lam Research Corporation - Common,LRCX,Buy,08/07/2025,"$1,001 - $15,000",98.75,101.84,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032038.pdf
+2025,9/5/2025,,Lam Research Corporation - Common,LRCX,Buy,08/07/2025,"$1,001 - $15,000",98.75,101.84,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032038.pdf
+2025,10/7/2025,,"Brown & Brown, Inc. Common Stock",BRO,Sell,09/04/2025,"$1,001 - $15,000",94.95,95.05,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,SP,"Brown & Brown, Inc. Common Stock",BRO,Sell,09/04/2025,"$1,001 - $15,000",94.95,95.05,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,SP,"Chipotle Mexican Grill, Inc. Common",CMG,Sell,09/04/2025,"$1,001 - $15,000",41.42,41.16,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,,"Chipotle Mexican Grill, Inc. Common",CMG,Sell,09/04/2025,"$1,001 - $15,000",41.42,41.16,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,,"Fiserv, Inc. Common Stock",FISV,Sell,09/04/2025,"$1,001 - $15,000",136.06,126.85,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,SP,"Fiserv, Inc. Common Stock",FISV,Sell,09/04/2025,"$1,001 - $15,000",136.06,126.85,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,SP,"Fortinet, Inc. - Common Stock",FTNT,Sell,09/04/2025,"$1,001 - $15,000",76.06,85.54,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,,"Fortinet, Inc. - Common Stock",FTNT,Sell,09/04/2025,"$1,001 - $15,000",76.06,85.54,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,,"IDEXX Laboratories, Inc. - Common",IDXX,Buy,09/04/2025,"$1,001 - $15,000",637.49,629.51,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,SP,"IDEXX Laboratories, Inc. - Common",IDXX,Buy,09/04/2025,"$1,001 - $15,000",637.49,629.51,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,SP,Molina Healthcare Inc Common,MOH,Sell,09/04/2025,"$1,001 - $15,000",169.93,204.18,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,,Molina Healthcare Inc Common,MOH,Sell,09/04/2025,"$1,001 - $15,000",169.93,204.18,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,,Progressive Corporation,PGR,Sell,09/04/2025,"$1,001 - $15,000",233.81,227.88,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,SP,Progressive Corporation,PGR,Sell,09/04/2025,"$1,001 - $15,000",233.81,227.88,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,SP,"The Trade Desk, Inc. - Class A",TTD,Sell,09/04/2025,"$1,001 - $15,000",52.57,54.23,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,,"The Trade Desk, Inc. - Class A",TTD,Sell,09/04/2025,"$1,001 - $15,000",52.57,54.23,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,,Tradeweb Markets Inc. - Class A,TW,Sell,09/04/2025,"$1,001 - $15,000",124.25,104.12,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,10/7/2025,SP,Tradeweb Markets Inc. - Class A,TW,Sell,09/04/2025,"$1,001 - $15,000",124.25,104.12,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20032234.pdf
+2025,11/18/2025,,"Brown & Brown, Inc. Common Stock",BRO,Buy,10/09/2025,"$1,001 - $15,000",95.27,80.52,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,,"Brown & Brown, Inc. Common Stock",BRO,Buy,10/24/2025,"$1,001 - $15,000",88.23,80.52,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,SP,"Brown & Brown, Inc. Common Stock",BRO,Buy,10/09/2025,"$1,001 - $15,000",95.27,80.52,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,,Carnival Corporation Common Stock,CCL,Buy,10/09/2025,"$1,001 - $15,000",28.66,25.69,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,SP,Carnival Corporation Common Stock,CCL,Buy,10/09/2025,"$1,001 - $15,000",28.66,25.69,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,,"Chipotle Mexican Grill, Inc. Common",CMG,Buy,10/09/2025,"$1,001 - $15,000",41.14,30.68,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,SP,"Chipotle Mexican Grill, Inc. Common",CMG,Buy,10/09/2025,"$1,001 - $15,000",41.14,30.68,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,SP,"Fortinet, Inc. - Common Stock",FTNT,Buy,10/09/2025,"$1,001 - $15,000",85.62,80.52,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,,"Fortinet, Inc. - Common Stock",FTNT,Buy,10/09/2025,"$1,001 - $15,000",85.62,80.52,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,SP,Progressive Corporation,PGR,Buy,10/09/2025,"$1,001 - $15,000",228.61,212.65,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,,Progressive Corporation,PGR,Buy,10/09/2025,"$1,001 - $15,000",228.61,212.65,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,,Progressive Corporation,PGR,Buy,10/24/2025,"$1,001 - $15,000",205.78,212.65,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,,"The Trade Desk, Inc. - Class A",TTD,Buy,10/09/2025,"$1,001 - $15,000",53.75,40.45,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,SP,"The Trade Desk, Inc. - Class A",TTD,Buy,10/09/2025,"$1,001 - $15,000",53.75,40.45,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,SP,Tradeweb Markets Inc. - Class A,TW,Buy,10/09/2025,"$1,001 - $15,000",108.28,109.55,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,,Tradeweb Markets Inc. - Class A,TW,Buy,10/09/2025,"$1,001 - $15,000",108.28,109.55,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2025,11/18/2025,SP,Visa Inc.,V,Buy,10/24/2025,"$1,001 - $15,000",346.57,321.39,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033491.pdf
+2026,1/7/2026,,Abbott Laboratories Common Stock,ABT,Sell,12/04/2025,"$1,001 - $15,000",124.38,126.66,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033747.pdf
+2026,1/7/2026,SP,Abbott Laboratories Common Stock,ABT,Sell,12/04/2025,"$1,001 - $15,000",124.38,126.66,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033747.pdf
+2026,1/7/2026,,Bitcoin,BTC-USD,Buy,12/18/2025,"$50,001 - $100,000",86437.16,91882.88,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033747.pdf
+2026,1/7/2026,,"Comfort Systems USA, Inc. Common",FIX,Buy,12/04/2025,"$1,001 - $15,000",983.75,1029.74,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033747.pdf
+2026,1/7/2026,SP,"Comfort Systems USA, Inc. Common",FIX,Buy,12/04/2025,"$1,001 - $15,000",983.75,1029.74,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033747.pdf
+2026,1/9/2026,,2000152815 SP Bitcoin (CRYPTO:BTC),BTC-USD,Buy,12/18/2025,"$50,001 - $100,000",86437.16,90683.05,https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033780.pdf
