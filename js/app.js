@@ -630,7 +630,7 @@ const App = {
 
     updateSetting(key, value) {
         UserData.updateSettings({ [key]: value });
-        Toast.show('성공', 'success');
+        Toast.show('알림 설정 완료', 'success');
 
         if (key === 'emailAlerts') {
             Auth.trackEvent(value ? 'email_subscribe' : 'email_unsubscribe', {
