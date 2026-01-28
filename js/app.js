@@ -454,7 +454,7 @@ const App = {
                 btn.classList.toggle('btn-outline');
                 const icon = btn.querySelector('i');
                 icon.className = result.following ? 'fas fa-check' : 'fas fa-plus';
-                btn.innerHTML = `<i class="fas fa-${result.following ? 'check' : 'plus'}"></i> ${result.following ? '???' : '???'}`;
+                btn.innerHTML = `<i class="fas fa-${result.following ? 'check' : 'plus'}"></i> ${result.following ? '팔로잉' : '팔로우'}`;
             }
         }
 
