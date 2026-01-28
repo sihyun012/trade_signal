@@ -27,21 +27,15 @@ const Router = {
         const params = this.parseParams(path);
         const query = this.parseQuery(queryString);
 
-        // Auth guard
-        if (path !== '/login' && path !== '/signup') {
-            if (!Auth.isAuthenticated()) {
-                Auth.trackEvent('auth_guard_blocked');
-                Toast.show('로그인이 필요한 서비스입니다.', 'error');
-                this.navigate('/login');
-                return;
-            }
-
-            // Onboarding guard
-            if (!Auth.isOnboardingCompleted() && !path.startsWith('/onboarding')) {
-                Auth.trackEvent('onboarding_gate_blocked');
-                this.navigate('/onboarding');
-                return;
-            }
+        // Onboarding guard - ???? ???? ???? ????? ??
+        if (!Auth.isOnboardingCompleted() && path !== '/onboarding' && path !== '/login' && path !== '/signup') {
+            Auth.trackEvent('onboarding_gate_blocked', {
+                event_category: 'onboarding',
+                attempted_route: path,
+                reason: 'onboarding_not_completed'
+            });
+            this.navigate('/onboarding');
+            return;
         }
 
         // Find matching route
@@ -59,6 +53,16 @@ const Router = {
 
         if (matchedRoute && this.routes[matchedRoute]) {
             this.currentRoute = matchedRoute;
+            
+            // Track page view in GA4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'page_view', {
+                    page_title: matchedRoute,
+                    page_location: window.location.href,
+                    page_path: path
+                });
+            }
+            
             this.routes[matchedRoute]({ params: routeParams, query });
         } else {
             // 404 - redirect to home

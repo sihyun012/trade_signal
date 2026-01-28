@@ -956,37 +956,46 @@ const Components = {
             <div class="paywall-overlay" onclick="App.closePaywall(event)">
                 <div class="paywall-modal" onclick="event.stopPropagation()">
                     <div class="paywall-header">
-                        <h2><i class="fas fa-crown" style="color: #f59e0b;"></i> 프리미엄 업그레이드</h2>
-                        <p>더 많은 기능을 이용해보세요</p>
+                        <h2><i class="fas fa-gift" style="color: #10b981;"></i> 무료 이용권 증정</h2>
+                        <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.6; margin-top: 12px;">
+                            지금 웹사이트 테스트 중인데 이메일 남겨주시면<br>
+                            <strong style="color: var(--primary);">3개월 무료 이용권</strong>을 증정하고 있습니다!
+                        </p>
                     </div>
 
-                    <div class="plan-card" onclick="App.selectPlan('monthly')">
-                        <div class="plan-card-header">
-                            <span class="plan-name">월간 구독</span>
-                            <span class="plan-price">$9.99<span>/월</span></span>
-                        </div>
-                        <ul class="plan-features">
+                    <div style="background: var(--bg-tertiary); border-radius: var(--border-radius); padding: 20px; margin: 24px 0;">
+                        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-right: 8px;"></i>
+                            포함된 기능
+                        </h3>
+                        <ul class="plan-features" style="margin: 0; padding: 0;">
                             <li><i class="fas fa-check"></i> 무제한 의원 팔로우</li>
                             <li><i class="fas fa-check"></i> 실시간 거래 알림</li>
                             <li><i class="fas fa-check"></i> 주간 뉴스레터</li>
                             <li><i class="fas fa-check"></i> 전 기간 그래프 조회</li>
-                        </ul>
-                    </div>
-
-                    <div class="plan-card selected" onclick="App.selectPlan('yearly')">
-                        <div class="plan-card-header">
-                            <span class="plan-name">연간 구독 <span style="color: var(--success); font-size: 12px;">20% 할인</span></span>
-                            <span class="plan-price">$95.88<span>/년</span></span>
-                        </div>
-                        <ul class="plan-features">
-                            <li><i class="fas fa-check"></i> 월간 구독의 모든 기능</li>
                             <li><i class="fas fa-check"></i> 프리미엄 리포트</li>
-                            <li><i class="fas fa-check"></i> 우선 고객 지원</li>
                         </ul>
                     </div>
 
-                    <button class="btn btn-primary btn-block mt-3" onclick="App.proceedToCheckout()">
-                        구독 시작하기
+                    <div class="form-group" style="margin-top: 24px;">
+                        <label class="form-label" for="subscription-email">
+                            <i class="fas fa-envelope" style="margin-right: 6px;"></i> 이메일 주소
+                        </label>
+                        <input 
+                            type="email" 
+                            id="subscription-email" 
+                            class="form-input" 
+                            placeholder="example@email.com"
+                            oninput="App.validateSubscriptionEmail(this.value)"
+                        />
+                        <div id="subscription-email-error" class="form-error" style="display: none;"></div>
+                        <p style="color: var(--text-muted); font-size: 12px; margin-top: 6px;">
+                            무료 이용권 정보를 이메일로 발송해드립니다.
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary btn-block mt-3" id="subscription-submit-btn" onclick="App.proceedToCheckout()">
+                        무료 이용권 받기
                     </button>
                     <button class="btn btn-secondary btn-block mt-2" onclick="App.closePaywall()">
                         나중에 하기

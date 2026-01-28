@@ -1151,7 +1151,7 @@ a:hover {
 }
 
 .onboarding-item.selected .onboarding-item-check::after {
-    content: '✓';
+    content: '?';
     color: white;
     font-size: 14px;
 }

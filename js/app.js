@@ -11,25 +11,26 @@ const App = {
         selectedStocks: []
     },
     selectedPlan: 'yearly',
+    subscriptionEmail: '',
 
     // Initialize app
     async init() {
         Toast.init();
 
-        // 로딩 화면 표시
+        // ?? ?? ??
         document.getElementById('app').innerHTML = `
             <div class="login-page">
                 <div class="login-container text-center">
                     <div class="login-logo">
                         <h1><i class="fas fa-chart-line"></i> Trade Signal</h1>
-                        <p>데이터를 불러오는 중...</p>
+                        <p>???? ???? ??...</p>
                     </div>
                     <div class="spinner" style="margin: 40px auto;"></div>
                 </div>
             </div>
         `;
 
-        // CSV 데이터 로드
+        // CSV ??? ??
         await loadCSVData();
 
         // Register routes
@@ -45,7 +46,22 @@ const App = {
 
         Router.init();
 
-        Auth.trackEvent('app_init');
+        // ??? ?? ??? ?? ?? ??? ??
+        const hash = window.location.hash.slice(1);
+        if (!hash || hash === '/') {
+            if (!Auth.isOnboardingCompleted()) {
+                Router.navigate('/onboarding');
+            } else {
+                Router.navigate('/');
+            }
+        }
+
+        Auth.trackEvent('app_init', {
+            event_category: 'app',
+            timestamp: new Date().toISOString(),
+            user_authenticated: Auth.isAuthenticated(),
+            onboarding_completed: Auth.isOnboardingCompleted()
+        });
     },
 
     // ===== Page Renderers =====
@@ -66,14 +82,19 @@ const App = {
         await Auth.delay(500);
         this.renderList();
 
-        Auth.trackEvent('list_view');
+        Auth.trackEvent('list_view', {
+            event_category: 'navigation',
+            tab: this.currentTab,
+            filter: this.currentFilter,
+            sort: this.currentSort
+        });
     },
 
     async showPoliticianPage(id) {
         const politician = MOCK_POLITICIANS.find(p => p.id === parseInt(id));
 
         if (!politician) {
-            Toast.show('존재하지 않는 의원입니다.', 'error');
+            Toast.show('의원을 찾을 수 없습니다다.', 'error');
             Router.navigate('/');
             return;
         }
@@ -84,47 +105,77 @@ const App = {
         await Auth.delay(100);
         this.drawPerformanceChart(politician);
 
-        Auth.trackEvent('view_politician_profile', { politicianId: id });
+        Auth.trackEvent('view_politician_profile', {
+            politicianId: id,
+            politician_name: politician.name,
+            party: politician.party,
+            event_category: 'engagement',
+            content_type: 'politician'
+        });
     },
 
     async showTradePage(id) {
         const trade = MOCK_TRADES.find(t => t.id === parseInt(id));
 
         if (!trade) {
-            Toast.show('존재하지 않는 거래입니다.', 'error');
+            Toast.show('거래를 찾을 수 없습니다다.', 'error');
             Router.navigate('/');
             return;
         }
 
         document.getElementById('app').innerHTML = Components.renderTradeDetail(trade);
 
-        // Draw chart after render (실제 주가 API 사용 시 비동기)
+        // Draw chart after render (?? ??? API ??)
         await Auth.delay(100);
         await this.drawStockChart(trade);
 
-        Auth.trackEvent('trade_detail_view', { tradeId: id });
+        Auth.trackEvent('trade_detail_view', {
+            tradeId: id,
+            ticker: trade.ticker,
+            trade_type: trade.type,
+            politician: trade.politician,
+            event_category: 'engagement',
+            content_type: 'trade'
+        });
     },
 
     showStockPage(id) {
         const stock = MOCK_STOCKS.find(s => s.id === parseInt(id));
         if (!stock) {
-            Toast.show('존재하지 않는 종목입니다.', 'error');
+            Toast.show('종목을 찾을 수 없습니다.', 'error');
             Router.navigate('/');
             return;
         }
         const trades = MOCK_TRADES.filter(t => t.ticker === stock.ticker || (t.stockName && stock.name && t.stockName === stock.name));
         document.getElementById('app').innerHTML = Components.renderStockDetail(stock, trades);
-        Auth.trackEvent('view_stock_detail', { stockId: id, ticker: stock.ticker });
+        Auth.trackEvent('view_stock_detail', {
+            stockId: id,
+            ticker: stock.ticker,
+            stock_name: stock.name,
+            sector: stock.sector,
+            event_category: 'engagement',
+            content_type: 'stock'
+        });
     },
 
     showOnboardingPage() {
+        if (!window.onboardingStartTime) {
+            window.onboardingStartTime = Date.now();
+        }
         document.getElementById('app').innerHTML = Components.renderOnboardingPage(this.onboardingStep);
-        Auth.trackEvent('onboarding_step_view', { step: this.onboardingStep });
+        Auth.trackEvent('onboarding_step_view', {
+            event_category: 'onboarding',
+            step: this.onboardingStep,
+            step_name: this.onboardingStep === 1 ? 'politician_selection' : 'stock_selection'
+        });
     },
 
     showSettingsPage() {
         document.getElementById('app').innerHTML = Components.renderSettingsPage();
-        Auth.trackEvent('settings_view');
+        Auth.trackEvent('settings_view', {
+            event_category: 'navigation',
+            page: 'settings'
+        });
     },
 
     showSubscriptionPage() {
@@ -158,10 +209,14 @@ const App = {
         } catch (error) {
             errorEl.textContent = error.message;
             errorEl.style.display = 'block';
-            Auth.trackEvent('login_fail', { error: error.message });
+            Auth.trackEvent('login_fail', {
+                event_category: 'authentication',
+                error_type: error.message,
+                method: 'email'
+            });
         } finally {
             btn.disabled = false;
-            btn.innerHTML = '로그인';
+            btn.innerHTML = '???';
         }
     },
 
@@ -186,10 +241,14 @@ const App = {
         } catch (error) {
             errorEl.textContent = error.message;
             errorEl.style.display = 'block';
-            Auth.trackEvent('signup_fail', { error: error.message });
+            Auth.trackEvent('signup_fail', {
+                event_category: 'authentication',
+                error_type: error.message,
+                method: 'email'
+            });
         } finally {
             btn.disabled = false;
-            btn.innerHTML = '가입하기';
+            btn.innerHTML = '????';
         }
     },
 
@@ -204,8 +263,12 @@ const App = {
                 Router.navigate('/');
             }
         } catch (error) {
-            Toast.show('로그인이 취소되었습니다. 다시 진행해 주세요.', 'error');
-            Auth.trackEvent('google_oauth_fail');
+            Toast.show('???? ??????. ?? ??? ???.', 'error');
+            Auth.trackEvent('google_oauth_fail', {
+                event_category: 'authentication',
+                method: 'google',
+                error_type: error.message || 'unknown'
+            });
         }
     },
 
@@ -228,42 +291,59 @@ const App = {
         const partyFilter = document.getElementById('partyFilter');
         if (tab === 'stocks') {
             partyFilter.innerHTML = `
-                <option value="all">전체 섹터</option>
-                <option value="Technology">기술</option>
-                <option value="Financial Services">금융</option>
-                <option value="Consumer Cyclical">소비재</option>
-                <option value="Automotive">자동차</option>
+                <option value="all">?? ??</option>
+                <option value="Technology">??</option>
+                <option value="Financial Services">??</option>
+                <option value="Consumer Cyclical">???</option>
+                <option value="Automotive">???</option>
             `;
         } else {
             partyFilter.innerHTML = `
-                <option value="all">전체 정당</option>
-                <option value="Democrat">민주당</option>
-                <option value="Republican">공화당</option>
+                <option value="all">?? ??</option>
+                <option value="Democrat">???</option>
+                <option value="Republican">???</option>
             `;
         }
 
         this.currentFilter = 'all';
         this.renderList();
 
-        Auth.trackEvent('tab_changed', { tab });
+        Auth.trackEvent('tab_changed', {
+            event_category: 'navigation',
+            tab: tab,
+            previous_tab: this.currentTab === 'politicians' ? 'stocks' : 'politicians'
+        });
     },
 
     handleSearch: Utils.debounce(function(query) {
         App.searchQuery = query.toLowerCase();
         App.renderList();
-        Auth.trackEvent('search_submitted', { query });
+        Auth.trackEvent('search_submitted', {
+            event_category: 'search',
+            search_term: query,
+            search_length: query.length,
+            tab: App.currentTab
+        });
     }, 300),
 
     handleSort(sortBy) {
         this.currentSort = sortBy;
         this.renderList();
-        Auth.trackEvent('sort_changed', { sortBy });
+        Auth.trackEvent('sort_changed', {
+            event_category: 'interaction',
+            sort_by: sortBy,
+            tab: this.currentTab
+        });
     },
 
     handleFilter(filter) {
         this.currentFilter = filter;
         this.renderList();
-        Auth.trackEvent('filter_changed', { filter });
+        Auth.trackEvent('filter_changed', {
+            event_category: 'interaction',
+            filter_value: filter,
+            tab: this.currentTab
+        });
     },
 
     renderList() {
@@ -347,7 +427,12 @@ const App = {
         if (!result.success) {
             Toast.show(result.error, 'error');
             this.showPaywall();
-            Auth.trackEvent('follow_limit_hit');
+            Auth.trackEvent('follow_limit_hit', {
+                event_category: 'conversion',
+                limit_type: 'free_plan',
+                current_follows: UserData.getFollowedPoliticians().length,
+                action: 'follow_politician'
+            });
             return;
         }
 
@@ -369,11 +454,16 @@ const App = {
                 btn.classList.toggle('btn-outline');
                 const icon = btn.querySelector('i');
                 icon.className = result.following ? 'fas fa-check' : 'fas fa-plus';
-                btn.innerHTML = `<i class="fas fa-${result.following ? 'check' : 'plus'}"></i> ${result.following ? '팔로잉' : '팔로우'}`;
+                btn.innerHTML = `<i class="fas fa-${result.following ? 'check' : 'plus'}"></i> ${result.following ? '???' : '???'}`;
             }
         }
 
-        Auth.trackEvent('follow_toggle', { politicianId, following: result.following });
+        Auth.trackEvent('follow_toggle', {
+            event_category: 'engagement',
+            politician_id: politicianId,
+            following: result.following,
+            action: result.following ? 'follow' : 'unfollow'
+        });
     },
 
     toggleWatchlist(stockId, event) {
@@ -384,11 +474,16 @@ const App = {
         if (result.watching) {
             Toast.show('관심 종목에 추가했습니다.', 'success');
         } else {
-            Toast.show('관심 종목에서 제거했습니다.', 'info');
+            Toast.show('관심 종목에서 취소했습니다.', 'info');
         }
 
         this.renderList();
-        Auth.trackEvent('watchlist_toggle', { stockId, watching: result.watching });
+        Auth.trackEvent('watchlist_toggle', {
+            event_category: 'engagement',
+            stock_id: stockId,
+            watching: result.watching,
+            action: result.watching ? 'add' : 'remove'
+        });
     },
 
     // ===== Onboarding Handlers =====
@@ -419,7 +514,12 @@ const App = {
         // Update UI
         event.currentTarget.classList.toggle('selected');
 
-        Auth.trackEvent('onboarding_ticker_select', { stockId: id });
+        Auth.trackEvent('onboarding_ticker_select', {
+            event_category: 'onboarding',
+            stock_id: id,
+            step: 2,
+            total_selected: this.onboardingData.selectedStocks.length
+        });
     },
 
     searchOnboardingStocks(query) {
@@ -452,13 +552,18 @@ const App = {
             </div>
         `).join('');
 
-        Auth.trackEvent('onboarding_ticker_search_submit', { query });
+        Auth.trackEvent('onboarding_ticker_search_submit', {
+            event_category: 'onboarding',
+            search_term: query,
+            search_length: query.length,
+            step: 2
+        });
     },
 
     onboardingNext() {
         if (this.onboardingStep === 1) {
             if (!this.onboardingData.selectedPolitician) {
-                Toast.show('의원을 1명 이상 선택해주세요.', 'error');
+                Toast.show('?의원 1명을 선택해주세요요.', 'error');
                 return;
             }
 
@@ -478,10 +583,15 @@ const App = {
 
             // Complete onboarding
             Auth.completeOnboarding();
-            Toast.show('설정이 완료되었습니다!', 'success');
+            Toast.show('온보딩 완료!', 'success');
             Router.navigate('/');
 
-            Auth.trackEvent('onboarding_complete');
+            Auth.trackEvent('onboarding_complete', {
+                event_category: 'onboarding',
+                politicians_selected: 1,
+                stocks_selected: this.onboardingData.selectedStocks.length,
+                total_time_seconds: Math.round((Date.now() - (window.onboardingStartTime || Date.now())) / 1000)
+            });
         }
     },
 
@@ -494,12 +604,19 @@ const App = {
 
     updateSetting(key, value) {
         UserData.updateSettings({ [key]: value });
-        Toast.show('설정이 저장되었습니다.', 'success');
+        Toast.show('??? ???????.', 'success');
 
         if (key === 'emailAlerts') {
-            Auth.trackEvent(value ? 'email_subscribe' : 'email_unsubscribe', { source: 'inapp' });
+            Auth.trackEvent(value ? 'email_subscribe' : 'email_unsubscribe', {
+                event_category: 'engagement',
+                source: 'inapp',
+                setting_type: 'email_alerts'
+            });
         } else if (key === 'newsletter') {
-            Auth.trackEvent(value ? 'newsletter_subscribe' : 'newsletter_unsubscribe');
+            Auth.trackEvent(value ? 'newsletter_subscribe' : 'newsletter_unsubscribe', {
+                event_category: 'engagement',
+                setting_type: 'newsletter'
+            });
         }
     },
 
@@ -511,7 +628,30 @@ const App = {
         paywallEl.innerHTML = Components.renderPaywall();
         document.body.appendChild(paywallEl);
 
-        Auth.trackEvent('paywall_view');
+        // ??? ?? ?? ??? ? ??? ??? ??? ?? ???
+        const emailInput = document.getElementById('subscription-email');
+        const submitBtn = document.getElementById('subscription-submit-btn');
+        
+        // ???? ???? ??? ?? ???
+        const user = Auth.getUser();
+        if (emailInput) {
+            if (user && user.email) {
+                emailInput.value = user.email;
+                this.validateSubscriptionEmail(user.email);
+            } else {
+                emailInput.value = '';
+            }
+        }
+        
+        // ???? ??? ?? ????
+        if (submitBtn && (!emailInput || !emailInput.value.trim())) {
+            submitBtn.disabled = true;
+        }
+
+        Auth.trackEvent('paywall_view', {
+            event_category: 'conversion',
+            source: Router.currentRoute || 'unknown'
+        });
     },
 
     closePaywall(event) {
@@ -531,15 +671,56 @@ const App = {
         Auth.trackEvent('click_paywall', { plan });
     },
 
+    validateSubscriptionEmail(email) {
+        const emailInput = document.getElementById('subscription-email');
+        const errorDiv = document.getElementById('subscription-email-error');
+        const submitBtn = document.getElementById('subscription-submit-btn');
+        
+        if (!email || !email.trim()) {
+            errorDiv.textContent = '이메일 주소를 입력해주세요요.';
+            errorDiv.style.display = 'block';
+            emailInput.classList.add('error');
+            if (submitBtn) submitBtn.disabled = true;
+            return false;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            errorDiv.textContent = '??? ??? ??? ????.';
+            errorDiv.style.display = 'block';
+            emailInput.classList.add('error');
+            if (submitBtn) submitBtn.disabled = true;
+            return false;
+        }
+
+        errorDiv.style.display = 'none';
+        emailInput.classList.remove('error');
+        this.subscriptionEmail = email.trim();
+        if (submitBtn) submitBtn.disabled = false;
+        return true;
+    },
+
     proceedToCheckout() {
+        const emailInput = document.getElementById('subscription-email');
+        const email = emailInput ? emailInput.value.trim() : '';
+
+        if (!this.validateSubscriptionEmail(email)) {
+            return;
+        }
+
+        this.subscriptionEmail = email;
         Toast.show('결제 페이지로 이동합니다...', 'info');
         this.closePaywall();
 
-        // In real app, would redirect to checkout
-        Auth.trackEvent('checkout_view', { plan: this.selectedPlan });
+        // ?? ??? ??? ?? ??
+        Auth.trackEvent('free_trial_email_submitted', {
+            event_category: 'conversion',
+            email: this.subscriptionEmail,
+            source: 'paywall_modal'
+        });
     },
 
-    // Chart.js 인스턴스 저장
+    // Chart.js ???? ??
     performanceChart: null,
     stockChart: null,
 
@@ -551,22 +732,22 @@ const App = {
 
         const ctx = canvas.getContext('2d');
 
-        // 기존 차트 제거
+        // ?? ?? ??
         if (this.performanceChart) {
             this.performanceChart.destroy();
         }
 
-        // 포트폴리오 성과 데이터 생성
+        // ????? ?? ??? ??
         const { politicianData, sp500Data } = generatePoliticianPerformanceData(politician.id);
 
-        // 데이터가 없으면 시뮬레이션 데이터 사용
+        // ???? ??? ????? ??? ??
         let chartPoliticianData, chartSp500Data;
 
         if (politicianData.length > 0 && sp500Data.length > 0) {
             chartPoliticianData = politicianData;
             chartSp500Data = sp500Data;
         } else {
-            // 시뮬레이션 데이터 생성
+            // ????? ??? ??
             const startValue = 100;
             const simData = generateChartData('2016-01-01', '2026-01-01', startValue);
             const finalValue = startValue * (1 + (politician.return10Y || 50) / 100);
@@ -585,7 +766,7 @@ const App = {
                 : chartPoliticianData.map(d => ({ date: d.date, value: 100 + Math.random() * 150 }));
         }
 
-        // 최종 수익률 계산 (첫 값 0이면 Infinity 방지)
+        // ?? ??? ?? (0?? ??? ??)
         const pFirst = chartPoliticianData.length > 0 ? chartPoliticianData[0].value : 0;
         const pLast = chartPoliticianData.length > 0 ? chartPoliticianData[chartPoliticianData.length - 1].value : 0;
         const politicianFinalReturn = (chartPoliticianData.length > 0 && pFirst > 0 && Number.isFinite(pLast / pFirst))
@@ -598,7 +779,7 @@ const App = {
             : '0.0';
         const fmtPct = (v) => { const n = parseFloat(v); return (Number.isFinite(n) ? (n >= 0 ? '+' : '') + n + '%' : '-'); };
 
-        // Chart.js 설정
+        // Chart.js ??
         this.performanceChart = new Chart(ctx, {
             type: 'line',
             data: {
@@ -698,7 +879,7 @@ const App = {
                             callback: function(value, index, ticks) {
                                 const date = this.getLabelForValue(value);
                                 const year = date.substring(0, 4);
-                                // 연도만 표시 (첫 번째 또는 연도가 바뀔 때)
+                                // ?? ?? (?? ??? ??)
                                 if (index === 0) return year;
                                 const prevDate = this.getLabelForValue(ticks[index - 1].value);
                                 const prevYear = prevDate.substring(0, 4);
@@ -723,7 +904,7 @@ const App = {
             }
         });
 
-        // 수익률 요약 업데이트
+        // ?? ?? ????
         this.updateChartSummary(politician, politicianFinalReturn, sp500FinalReturn);
     },
 
@@ -747,7 +928,7 @@ const App = {
                 <span class="chart-summary-value">${fmt(sp500Return)}</span>
             </div>
             <div class="chart-summary-item">
-                <span class="chart-summary-label">초과 수익 <span class="text-muted" style="font-size:0.85em">(기간 누적)</span></span>
+                <span class="chart-summary-label">초과 수익익 <span class="text-muted" style="font-size:0.85em">(???)</span></span>
                 <span class="chart-summary-value ${isOutperforming ? 'text-success' : 'text-danger'}">
                     ${isOutperforming ? '+' : ''}${excess}%
                 </span>
@@ -771,26 +952,65 @@ const App = {
         const startPrice = (trade.closingPrice && trade.closingPrice > 0) ? trade.closingPrice : 100;
         const endDateStr = new Date().toISOString().split('T')[0];
 
-        // 1) Yahoo Finance API(서버 /api/stock/<ticker>)에서 실제 주가 시도
+        // 1) Yahoo Finance API(?? /api/stock/<ticker>)? ?? ??? ????
         let priceData = [];
         let usedApi = false;
         if (trade.ticker) {
             try {
                 const url = `/api/stock?ticker=${encodeURIComponent(trade.ticker)}&from=${encodeURIComponent(trade.tradeDate || '')}&to=${encodeURIComponent(endDateStr)}`;
+                const startTime = performance.now();
+                
+                Auth.trackEvent('api_call', {
+                    event_category: 'api',
+                    api_endpoint: '/api/stock',
+                    ticker: trade.ticker,
+                    method: 'GET'
+                });
+                
                 const res = await fetch(url);
+                const endTime = performance.now();
+                const duration = Math.round(endTime - startTime);
+                
                 if (res.ok) {
                     const json = await res.json();
                     if (json.data && json.data.length > 0) {
                         priceData = json.data.map(d => ({ date: d.date, value: d.close }));
                         usedApi = true;
+                        
+                        Auth.trackEvent('api_success', {
+                            event_category: 'api',
+                            api_endpoint: '/api/stock',
+                            ticker: trade.ticker,
+                            response_time_ms: duration,
+                            data_points: json.data.length
+                        });
+                    } else {
+                        Auth.trackEvent('api_empty_response', {
+                            event_category: 'api',
+                            api_endpoint: '/api/stock',
+                            ticker: trade.ticker
+                        });
                     }
+                } else {
+                    Auth.trackEvent('api_error', {
+                        event_category: 'api',
+                        api_endpoint: '/api/stock',
+                        ticker: trade.ticker,
+                        status_code: res.status,
+                        response_time_ms: duration
+                    });
                 }
-            } catch (_) {
-                // 네트워크/서버 미사용 시 아래 시뮬레이션 사용
+            } catch (error) {
+                Auth.trackEvent('api_exception', {
+                    event_category: 'api',
+                    api_endpoint: '/api/stock',
+                    ticker: trade.ticker,
+                    error_message: error.message
+                });
             }
         }
 
-        // 2) API 실패 또는 데이터 없으면 시뮬레이션
+        // 2) API ???? ??? ????? ??? ??
         if (priceData.length === 0) {
             priceData = generateChartData(trade.tradeDate, endDateStr, startPrice);
             if (priceData.length === 0 && trade.tradeDate) {
@@ -807,11 +1027,11 @@ const App = {
             ctx.fillStyle = '#94a3b8';
             ctx.font = '14px Inter';
             ctx.textAlign = 'center';
-            ctx.fillText('해당 구간 주가 데이터가 없습니다.', width / 2, height / 2);
+            ctx.fillText('주가 데이터를 불러올 수 없습니다.', width / 2, height / 2);
             return;
         }
 
-        // 시뮬레이션만 마지막 점을 CURRENT_PRICES 기준으로 보정. 실제 API 데이터는 그대로 사용
+        // ????? ???? ?? CURRENT_PRICES? ??. ?? API ???? ??? ??
         if (!usedApi) {
             const lastVal = priceData[priceData.length - 1].value;
             const currentPrice = (typeof CURRENT_PRICES !== 'undefined' && trade.ticker && CURRENT_PRICES[trade.ticker] > 0)
@@ -889,8 +1109,12 @@ const App = {
         btns.forEach(b => b.classList.remove('active'));
         event.target.classList.add('active');
 
-        Toast.show(`${type === 'trade' ? '거래일' : '공시일'} 기준으로 전환`, 'info');
-        Auth.trackEvent('view_compare_chart', { type });
+        Toast.show(`${type === 'trade' ? '거래일' : '공개일'} 기준으로 표시`, 'info');
+        Auth.trackEvent('view_compare_chart', {
+            event_category: 'interaction',
+            chart_type: type,
+            view_type: type === 'trade' ? 'trade_date' : 'disclosure_date'
+        });
     }
 };
 

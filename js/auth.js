@@ -59,11 +59,11 @@ const Auth = {
 
         // Basic validation
         if (!email || !password) {
-            throw new Error('이메일 또는 비밀번호를 입력해 주세요.');
+            throw new Error('占쎈쐻占쎈윪��얠쥉異�嚥▲꺂毓쇔뜝�럥�럡 占쎈쐻占쎈윪�뤃�꽒�쐻占쎈윥獒뺧옙 �뜝�럥�몡�넭怨ｋ쳟占쎌굲占쎈쐻占쎈쓠�뵳怨ㅼ삕占쎌맇�뜝�럡�돭�뜝�럥�걫占쎈쐻�뜝占� 占쎈쐻占쎈윪�굢占쏙옙�쐻占쎈윪占쎌죷占쎈쐻占쎈윥占쎈뤅 占쎌뜏占쎌뒩占쎈땾占쎈빝�뜝�뜴�쐻占쎈윪占쎈��.');
         }
 
         if (!this.isValidEmail(email)) {
-            throw new Error('이메일 형식을 확인해 주세요.');
+            throw new Error('占쎈쐻占쎈윪��얠쥉異�嚥▲꺂毓쇔뜝�럥�럡 占쎈쐻占쎈윪�뤃�벂�쐻占쎈윥筌묒뇯�쐻占쎈윪獄�占� 占쎈쐻占쎈윪占쎄섈占쎈쐻占쎈윪��앓듬쐻占쎈윥占쎈뤅 占쎌뜏占쎌뒩占쎈땾占쎈빝�뜝�뜴�쐻占쎈윪占쎈��.');
         }
 
         // Check if user exists (mock)
@@ -71,12 +71,12 @@ const Auth = {
         const user = users.find(u => u.email === email);
 
         if (!user) {
-            throw new Error('등록되지 않은 이메일입니다. 회원가입을 진행해 주세요.');
+            throw new Error('占쎈쐻占쎈윥�떋�궍�뒙占쎈룱�뜮戮ル뎨�뇡�빘占썬굝�쐻�뜝占� 占쎈쐻占쎈윥�몴�깷�쐻占쎈짗占쎌굲占쎈쐻�뜝占� 占쎈쐻占쎈윪��얠쥉異�嚥▲꺂毓쇔뜝�럥�럡占쎈쐻占쎈윪�굢占쏙옙�쐻占쎈윥�뜮�씢�쐻占쎈윥�젆占�. 占쎈쐻占쎈윪占쎈쨧占쎈쐻占쎈윪占쎌맱占쎈쨬占쎈즸占쎌굲占쎈쐻占쎈윪�굢占쏙옙�쐻占쎈윪獄�占� 癲ル슣�돰占쎈쳯嶺뚮쵐堉뀐옙�굲占쎈쑏�뜝占� 占쎌뜏占쎌뒩占쎈땾占쎈빝�뜝�뜴�쐻占쎈윪占쎈��.');
         }
 
         // In real app, would compare hashed password
         if (user.passwordHash !== this.hashPassword(password)) {
-            throw new Error('비밀번호가 일치하지 않습니다.');
+            throw new Error('�뜝�럥�몡�넭怨ｋ쳟占쎌굲占쎈쐻占쎈쓠�뵳怨ㅼ삕占쎌맇�뜝�럡�돭占쎈쨬占쎈즸占쎌굲 占쎈쐻占쎈윪��앗낅뇲占쎄땀�몭諛깅눀�뜝�뜾異�占쎌돸占쎌굲 占쎈쐻占쎈윥�몴�깷�쐻占쎈윥獒뺣ŀ�쐻占쎈윥�뜮�씢�쐻占쎈윥�젆占�.');
         }
 
         // Generate token and store
@@ -88,7 +88,11 @@ const Auth = {
             createdAt: user.createdAt
         }));
 
-        this.trackEvent('login_success', { method: 'email' });
+        this.trackEvent('login_success', {
+            event_category: 'authentication',
+            method: 'email',
+            user_id: user.id
+        });
         return user;
     },
 
@@ -120,9 +124,17 @@ const Auth = {
 
             // Reset onboarding for new users
             localStorage.removeItem(this.ONBOARDING_KEY);
-            this.trackEvent('signup_success', { method: 'google' });
+            this.trackEvent('signup_success', {
+                event_category: 'authentication',
+                method: 'google',
+                user_id: user.id
+            });
         } else {
-            this.trackEvent('login_success', { method: 'google' });
+            this.trackEvent('login_success', {
+                event_category: 'authentication',
+                method: 'google',
+                user_id: user.id
+            });
         }
 
         const token = this.generateToken(user.id);
@@ -138,29 +150,29 @@ const Auth = {
 
         // Validation
         if (!email || !password) {
-            throw new Error('이메일 또는 비밀번호를 입력해 주세요.');
+            throw new Error('占쎈쐻占쎈윪��얠쥉異�嚥▲꺂毓쇔뜝�럥�럡 占쎈쐻占쎈윪�뤃�꽒�쐻占쎈윥獒뺧옙 �뜝�럥�몡�넭怨ｋ쳟占쎌굲占쎈쐻占쎈쓠�뵳怨ㅼ삕占쎌맇�뜝�럡�돭�뜝�럥�걫占쎈쐻�뜝占� 占쎈쐻占쎈윪�굢占쏙옙�쐻占쎈윪占쎌죷占쎈쐻占쎈윥占쎈뤅 占쎌뜏占쎌뒩占쎈땾占쎈빝�뜝�뜴�쐻占쎈윪占쎈��.');
         }
 
         if (!this.isValidEmail(email)) {
-            throw new Error('이메일 형식을 확인해 주세요.');
+            throw new Error('占쎈쐻占쎈윪��얠쥉異�嚥▲꺂毓쇔뜝�럥�럡 占쎈쐻占쎈윪�뤃�벂�쐻占쎈윥筌묒뇯�쐻占쎈윪獄�占� 占쎈쐻占쎈윪占쎄섈占쎈쐻占쎈윪��앓듬쐻占쎈윥占쎈뤅 占쎌뜏占쎌뒩占쎈땾占쎈빝�뜝�뜴�쐻占쎈윪占쎈��.');
         }
 
         if (password.length < 8) {
-            throw new Error('비밀번호는 8자 이상이어야 합니다.');
+            throw new Error('�뜝�럥�몡�넭怨ｋ쳟占쎌굲占쎈쐻占쎈쓠�뵳怨ㅼ삕占쎌맇�뜝�럡�돭占쎈쐻占쎈윥獒뺧옙 8占쎈쐻占쎈윪占쎄껑 占쎈쐻占쎈윪��얠±�쐻占쎈윞筌띾�ｋ쐻占쎈윪��얠±�쐻占쎈윥占쎄퐨占쎈쐻占쎈윥占쎈뭾 占쎈쐻占쎈윥�뜝�룞�삕占쎈쐻占쎈윥�뜮�씢�쐻占쎈윥�젆占�.');
         }
 
         if (password !== confirmPassword) {
-            throw new Error('비밀번호가 일치하지 않습니다.');
+            throw new Error('�뜝�럥�몡�넭怨ｋ쳟占쎌굲占쎈쐻占쎈쓠�뵳怨ㅼ삕占쎌맇�뜝�럡�돭占쎈쨬占쎈즸占쎌굲 占쎈쐻占쎈윪��앗낅뇲占쎄땀�몭諛깅눀�뜝�뜾異�占쎌돸占쎌굲 占쎈쐻占쎈윥�몴�깷�쐻占쎈윥獒뺣ŀ�쐻占쎈윥�뜮�씢�쐻占쎈윥�젆占�.');
         }
 
         if (!termsAgreed) {
-            throw new Error('가입을 위해 필수 약관 동의가 먼저 필요합니다.');
+            throw new Error('占쎈쨬占쎈즸占쎌굲占쎈쐻占쎈윪�굢占쏙옙�쐻占쎈윪獄�占� 占쎈쐻占쎈윪筌띻쐼�쐻占쎈윥占쎈뤅 占쎈쐻占쎈윥占쎈떋占쎈쐻占쎈윥占쎈묄 占쎈쐻占쎈윥占쎈뭿�뜝�럡�뒋占쎈쐻�뜝占� 占쎈쐻占쎈윥筌욎�λ쐻占쎈윪甕겄띕쨬占쎈즸占쎌굲 �뜝�럩�꼥�뜝�럥�땾占쎈쐻占쎈짗占쎌굲 占쎈쐻占쎈윥占쎈떋占쎈쐻占쎈윪占쎈�듸옙�쐻占쎈윥�뜝�룞�삕占쎈쐻占쎈윥�뜮�씢�쐻占쎈윥�젆占�.');
         }
 
         // Check duplicate
         const users = this.getStoredUsers();
         if (users.find(u => u.email === email)) {
-            throw new Error('이미 가입된 이메일입니다. 로그인을 먼저 진행해 주세요.');
+            throw new Error('占쎈쐻占쎈윪��얠×苡э옙瑗삼옙�굲 占쎈쨬占쎈즸占쎌굲占쎈쐻占쎈윪�굢占쏙옙�쐻占쎈윥壤쏉옙 占쎈쐻占쎈윪��얠쥉異�嚥▲꺂毓쇔뜝�럥�럡占쎈쐻占쎈윪�굢占쏙옙�쐻占쎈윥�뜮�씢�쐻占쎈윥�젆占�. 占쎌뒙占쎈룱獒뺢쒀�삕占쎌읇占쎈쐻占쎈윪��앓듬쐻占쎈윪獄�占� �뜝�럩�꼥�뜝�럥�땾占쎈쐻占쎈짗占쎌굲 癲ル슣�돰占쎈쳯嶺뚮쵐堉뀐옙�굲占쎈쑏�뜝占� 占쎌뜏占쎌뒩占쎈땾占쎈빝�뜝�뜴�쐻占쎈윪占쎈��.');
         }
 
         // Create user
@@ -188,7 +200,11 @@ const Auth = {
         // Reset onboarding for new users
         localStorage.removeItem(this.ONBOARDING_KEY);
 
-        this.trackEvent('signup_success', { method: 'email' });
+        this.trackEvent('signup_success', {
+            event_category: 'authentication',
+            method: 'email',
+            user_id: user.id
+        });
         return user;
     },
 
@@ -196,7 +212,10 @@ const Auth = {
     logout() {
         localStorage.removeItem(this.TOKEN_KEY);
         localStorage.removeItem(this.USER_KEY);
-        this.trackEvent('logout');
+        this.trackEvent('logout', {
+            event_category: 'authentication',
+            method: 'manual'
+        });
     },
 
     // Helper: Get stored users
@@ -231,9 +250,57 @@ const Auth = {
         return new Promise(resolve => setTimeout(resolve, ms));
     },
 
-    // Event tracking (mock)
+    // Event tracking with GA4
     trackEvent(eventName, data = {}) {
+        // Console log for debugging
         console.log(`[Event] ${eventName}`, data);
+        
+        // Send to GA4 if gtag is available
+        if (typeof gtag !== 'undefined') {
+            // Map custom events to GA4 standard events where applicable
+            const eventMapping = {
+                'login_success': 'login',
+                'signup_success': 'sign_up',
+                'logout': 'logout',
+                'list_view': 'page_view',
+                'view_politician_profile': 'view_item',
+                'trade_detail_view': 'view_item',
+                'view_stock_detail': 'view_item',
+                'follow_toggle': 'add_to_cart', // Using add_to_cart as analogy for follow
+                'watchlist_toggle': 'add_to_watchlist',
+                'checkout_view': 'begin_checkout',
+                'onboarding_complete': 'tutorial_complete',
+                'onboarding_step_view': 'tutorial_step_view',
+                'search_submitted': 'search',
+                'filter_changed': 'filter',
+                'sort_changed': 'sort',
+                'tab_changed': 'select_content',
+                'paywall_view': 'view_promotion',
+                'click_paywall': 'select_promotion',
+                'api_call': 'api_call',
+                'email_subscribe': 'generate_lead',
+                'newsletter_subscribe': 'generate_lead'
+            };
+            
+            const ga4EventName = eventMapping[eventName] || eventName;
+            
+            // Prepare GA4 event parameters
+            const ga4Params = {
+                ...data,
+                event_category: data.event_category || 'user_interaction',
+                event_label: data.event_label || eventName
+            };
+            
+            // Remove undefined values
+            Object.keys(ga4Params).forEach(key => {
+                if (ga4Params[key] === undefined) {
+                    delete ga4Params[key];
+                }
+            });
+            
+            // Send event to GA4
+            gtag('event', ga4EventName, ga4Params);
+        }
     }
 };
 
@@ -258,10 +325,10 @@ const UserData = {
         if (index > -1) {
             follows.splice(index, 1);
         } else {
-            // Check limit for free users (무료: 1명까지만 팔로우 가능)
+            // Check limit for free users (�뜝�럥�떛�뜝�룞�삕�뜝�룞彛⒴뜝占�: 1癲ル슢�뀖�뤃�룊�삕占쎈��癲ル슣�돸占쎌굲癲ル슢�뿪占쎌굲 占쎈쐻占쎈윥占쎈꺕占쎌뒙占쎈룱獒뺣돍�삕占쎈�� 占쎈쨬占쎈즸占쎌굲占쎈쐻占쎈윥獒뺧옙)
             const subscription = this.getSubscription();
             if (!subscription.active && follows.length >= 1) {
-                return { success: false, error: '멤버십 업그레이드가 필요합니다.' };
+                return { success: false, error: '癲ル슢��곻옙嫄욑옙�뼀�뜝�뜴�쐻占쎈윥�젆占� 占쎈쐻占쎈윥占쎈턀占쎌쐺獄쏅챷援▼뜝�럩�쓨占쎈쐻占쎈윪��얠±�쐻占쎈윥�뤃�넂琉놅옙猷딉옙�굲 占쎈쐻占쎈윥占쎈떋占쎈쐻占쎈윪占쎈�듸옙�쐻占쎈윥�뜝�룞�삕占쎈쐻占쎈윥�뜮�씢�쐻占쎈윥�젆占�.' };
             }
             follows.push(politicianId);
         }
