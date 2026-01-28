@@ -328,7 +328,7 @@ const UserData = {
             // Check limit for free users (�뜝�럥�떛�뜝�룞�삕�뜝�룞彛⒴뜝占�: 1癲ル슢�뀖�뤃�룊�삕占쎈��癲ル슣�돸占쎌굲癲ル슢�뿪占쎌굲 占쎈쐻占쎈윥占쎈꺕占쎌뒙占쎈룱獒뺣돍�삕占쎈�� 占쎈쨬占쎈즸占쎌굲占쎈쐻占쎈윥獒뺧옙)
             const subscription = this.getSubscription();
             if (!subscription.active && follows.length >= 1) {
-                return { success: false, error: '癲ル슢��곻옙嫄욑옙�뼀�뜝�뜴�쐻占쎈윥�젆占� 占쎈쐻占쎈윥占쎈턀占쎌쐺獄쏅챷援▼뜝�럩�쓨占쎈쐻占쎈윪��얠±�쐻占쎈윥�뤃�넂琉놅옙猷딉옙�굲 占쎈쐻占쎈윥占쎈떋占쎈쐻占쎈윪占쎈�듸옙�쐻占쎈윥�뜝�룞�삕占쎈쐻占쎈윥�뜮�씢�쐻占쎈윥�젆占�.' };
+                return { success: false, error: '구독이 활성화되지 않았습니다. 구독을 활성화하려면 먼저 구독을 해야 합니다.' };
             }
             follows.push(politicianId);
         }
