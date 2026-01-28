@@ -327,7 +327,7 @@ const UserData = {
         } else {
             // Check limit for free users 
             const subscription = this.getSubscription();
-            if (!subscription.active && follows.length >1) {
+            if (!subscription.active && follows.length >= 1) {
                 return { success: false, error: '멤버십 업그레이드가 필요합니다. 무료 플랜은 최대 1명까지만 팔로우할 수 있습니다.' };
             }
             follows.push(politicianId);
