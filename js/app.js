@@ -44,6 +44,32 @@ const App = {
         Router.register('/settings', () => this.showSettingsPage());
         Router.register('/subscription', () => this.showSubscriptionPage());
 
+        // GA4 페이지 제목: 의원명·종목명·거래명 등 실제 이름 노출
+        Router.setPageTitleResolver((path, matchedRoute, params) => {
+            switch (matchedRoute) {
+                case '/politician/:id': {
+                    const p = (typeof MOCK_POLITICIANS !== 'undefined') && MOCK_POLITICIANS.find(pp => pp.id === parseInt(params.id, 10));
+                    return p ? `의원 - ${p.name}` : null;
+                }
+                case '/stock/:id': {
+                    const s = (typeof MOCK_STOCKS !== 'undefined') && MOCK_STOCKS.find(ss => ss.id === parseInt(params.id, 10));
+                    return s ? `종목 - ${s.name || s.ticker || params.id}` : null;
+                }
+                case '/trade/:id': {
+                    const t = (typeof MOCK_TRADES !== 'undefined') && MOCK_TRADES.find(tt => tt.id === parseInt(params.id, 10));
+                    if (!t) return null;
+                    const parts = [t.stockName || t.ticker, t.politician].filter(Boolean);
+                    return parts.length ? `거래 - ${parts.join(' / ')}` : `거래 - ${params.id}`;
+                }
+                case '/': return '홈';
+                case '/onboarding': return '온보딩';
+                case '/settings': return '설정';
+                case '/login':
+                case '/signup': return '로그인';
+                default: return null;
+            }
+        });
+
         Router.init();
 
         // ??? ?? ??? ?? ?? ??? ??

@@ -3,6 +3,11 @@
 const Router = {
     routes: {},
     currentRoute: null,
+    pageTitleResolver: null,
+
+    setPageTitleResolver(fn) {
+        this.pageTitleResolver = fn;
+    },
 
     // Initialize router
     init() {
@@ -54,10 +59,17 @@ const Router = {
         if (matchedRoute && this.routes[matchedRoute]) {
             this.currentRoute = matchedRoute;
             
-            // Track page view in GA4 (실제 경로/ID가 보이도록 path 사용)
+            // Track page view in GA4 (의원명/종목명 등 실제 이름이 보이도록 resolver 사용)
             if (typeof gtag !== 'undefined') {
+                let pageTitle = path;
+                if (typeof this.pageTitleResolver === 'function') {
+                    try {
+                        const custom = this.pageTitleResolver(path, matchedRoute, routeParams);
+                        if (custom != null && String(custom).trim() !== '') pageTitle = custom;
+                    } catch (e) { /* fallback to path */ }
+                }
                 gtag('event', 'page_view', {
-                    page_title: path,
+                    page_title: pageTitle,
                     page_location: window.location.href,
                     page_path: path
                 });
