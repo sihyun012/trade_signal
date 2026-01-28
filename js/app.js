@@ -23,7 +23,7 @@ const App = {
                 <div class="login-container text-center">
                     <div class="login-logo">
                         <h1><i class="fas fa-chart-line"></i> Trade Signal</h1>
-                        <p>???? ???? ??...</p>
+                        <p>데이터를 불러오는 중...</p>
                     </div>
                     <div class="spinner" style="margin: 40px auto;"></div>
                 </div>
