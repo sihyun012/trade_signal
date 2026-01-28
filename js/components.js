@@ -459,7 +459,7 @@ const Components = {
                                     <td>
                                         <a href="${t.sourceUrl}" target="_blank" class="source-link"
                                            onclick="event.stopPropagation()">
-                                            <i class="fas fa-external-link-alt"></i> SEC
+                                            <i class="fas fa-external-link-alt"></i> view origin file
                                         </a>
                                     </td>
                                 </tr>
