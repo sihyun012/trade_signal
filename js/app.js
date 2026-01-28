@@ -263,7 +263,7 @@ const App = {
                 Router.navigate('/');
             }
         } catch (error) {
-            Toast.show('???? ??????. ?? ??? ???.', 'error');
+            Toast.show('로그인이 취소되었습니다. 다시 진행해 주세요.', 'error');
             Auth.trackEvent('google_oauth_fail', {
                 event_category: 'authentication',
                 method: 'google',
